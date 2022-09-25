@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8D5A00C0-B3FD-496C-AE4E-DD312B3601EA}" SchemaVersion="110">
+	<ControlSurfaceSessions>
+		<WorkUnit Name="Default Work Unit" ID="{8D5A00C0-B3FD-496C-AE4E-DD312B3601EA}" PersistMode="Standalone"/>
+	</ControlSurfaceSessions>
+</WwiseDocument>

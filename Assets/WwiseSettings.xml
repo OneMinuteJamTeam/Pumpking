@@ -1,0 +1,9 @@
+<?xml version='1.0'?>
+<WwiseSettings>
+    <CreateWwiseGlobal>true</CreateWwiseGlobal>
+    <CreateWwiseListener>true</CreateWwiseListener>
+    <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+    <WwiseProjectPath>../One-Minute-Game_WwiseProject/One-Minute-Game_WwiseProject.wproj</WwiseProjectPath>
+    <WwiseInstallationPathWindows>D:\Programmi (x86)\Wwise 2022.1.0.7985</WwiseInstallationPathWindows>
+    <WwiseInstallationPathMac></WwiseInstallationPathMac>
+</WwiseSettings>
