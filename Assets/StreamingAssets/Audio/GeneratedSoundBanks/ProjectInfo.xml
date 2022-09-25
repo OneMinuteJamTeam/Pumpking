@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="One-Minute-Game_WwiseProject" GUID="{5087B269-BDDD-41A4-8766-E35AB51793F1}" Generator="2022.1.0.7985"/>
+	<CacheRoot>../../../../One-Minute-Game_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Android" GUID="{3E0272ED-F60E-4DC8-9FFE-A921D74FD6E4}" BasePlatform="Android" BasePlatformGUID="{A2D401DE-B8B6-4FEB-8142-137C34D507CA}" Path="../../../../One-Minute-Game_WwiseProject/GeneratedSoundBanks/Android"/>
+		<Platform Name="Mac" GUID="{F947FDBF-7F0D-415F-B0D9-8BC9D09F867A}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../One-Minute-Game_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{B215005B-5032-4D81-9FC6-56FCF9030402}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../One-Minute-Game_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{F14298A5-6EAA-41A9-BBF4-88389CFB6353}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{2F321973-DA90-8DD0-3711-5C82474A8DAF}</FileHash>
+</ProjectInfo>
