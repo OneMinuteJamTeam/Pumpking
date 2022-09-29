@@ -26,6 +26,36 @@
 						<ActiveSource Name="Arrow Into Wood 01" ID="{EDC78D77-534C-474B-A3B3-6A66CABD1377}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Jump" ID="{D661EEBE-0D7A-470C-AEBE-6626D62CFEAF}" ShortID="477204318">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{02D62016-F39E-47E5-BBA8-3E1B1E998FBD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{33470477-DCAE-49D3-859D-47FC89E2D9CB}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Foot Conc SneakerJump3" ID="{99B2CEA3-17D9-4CAB-8053-6280209610A7}">
+							<Language>SFX</Language>
+							<AudioFile>Foot Conc SneakerJump3.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="378928537"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Foot Conc SneakerJump3" ID="{99B2CEA3-17D9-4CAB-8053-6280209610A7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

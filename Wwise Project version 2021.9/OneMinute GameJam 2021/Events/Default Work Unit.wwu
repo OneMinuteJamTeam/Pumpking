@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Jump" ID="{FB630F23-F57E-4C9E-B409-60A94DD582E7}">
+					<ChildrenList>
+						<Action Name="" ID="{627B8852-8315-469B-8188-09B3BC53B5B2}" ShortID="68290275">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{D661EEBE-0D7A-470C-AEBE-6626D62CFEAF}" WorkUnitID="{9268B127-ED8D-46C8-A8C4-0BE4C90BEAF6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

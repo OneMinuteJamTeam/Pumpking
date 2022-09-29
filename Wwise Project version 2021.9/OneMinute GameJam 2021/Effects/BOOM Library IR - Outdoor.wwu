@@ -8,32 +8,16 @@
 						<Effect Name="Field_Narrow_Small_Hills_and_Forest_30m" ID="{E8F83208-8132-4F50-9755-7B497086E01B}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
 								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.39751085182768</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.39751085182768"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevelAutomate" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="IRLevelAutomate" Type="bool" Value="False"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Narrow, Small Hills and Forest 30m" ID="{8EF0AB5A-CC91-4503-A2D0-42A8A19ACE2A}">
@@ -46,7 +30,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{F41840F3-BF2A-4B26-8829-060453BA9CD4}">
@@ -106,37 +91,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Narrow_Small_Hills_and_Forest_50m" ID="{4FEF2EFF-1003-4608-A340-67A6AF0AF838}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
 								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.77593777197563</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.77593777197563"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevelAutomate" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="IRLevelAutomate" Type="bool" Value="False"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Narrow, Small Hills and Forest 50m" ID="{80E3849C-D27D-4149-98D3-76ABAB75F3CC}">
@@ -145,11 +115,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Field, Narrow, Small Hills and Forest 50m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="99941492"/>
+										<MediaID ID="301760549"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{D1AEDD09-7658-40D2-8EED-C172F23D767B}">
@@ -209,36 +180,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Crater_Inside_30m" ID="{2658A60F-AFD1-44A8-A3AF-29CB96143433}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.59898302872063</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.59898302872063"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-74</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Crater, Inside 30m" ID="{0105AEA4-6210-4D85-BBB3-D610675D92C1}">
@@ -251,7 +207,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{1BB17F49-7D88-426B-8F1A-29A4AE4EBD61}">
@@ -311,31 +268,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Plane_5m" ID="{A00EE727-081D-49D3-BC22-CB9BFDB3CC00}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.98440635879025</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.98440635879025"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-90</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-23</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-23"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Plane 5m" ID="{5B342F96-B6FD-486D-B7BA-CAEE04753407}">
@@ -348,7 +294,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{F2D0C815-3422-4FCA-8C36-20FC4CEC7012}">
@@ -408,26 +355,15 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Light_Forest_Valleys_50m" ID="{FE5F1E37-E618-468C-B3D5-BF1C485A1DF7}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.64353377937337</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.64353377937337"/>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Light Forest, Valleys 50m" ID="{D1B900B4-6A0E-46EA-83A7-A9FC783AE3A0}">
@@ -440,7 +376,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{1027D5C7-1C90-4EED-83CB-15DC72DEF353}">
@@ -500,31 +437,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Few_Houses_30m" ID="{35C9D743-3703-4C53-8195-DBF092C6126C}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.27281440382942</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.27281440382942"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-72</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Few Houses 30m" ID="{CCC7D579-8E8C-4657-9815-34DCA8F5FAA5}">
@@ -537,7 +463,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{F6ADA14F-E614-4D3F-B3C2-0AB122273E75}">
@@ -597,31 +524,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Creek_Forest_50m" ID="{6826E190-A892-4017-9515-692663BDEA0A}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>20</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.91706723237598</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="20"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.91706723237598"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-84</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Creek, Forest 50m" ID="{7F59CA21-6AAF-465F-8020-ADE8EA41B547}">
@@ -634,7 +550,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{1FDDCA20-7E77-4E74-BFDF-044AD3FD0F9D}">
@@ -675,31 +592,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Narrow_Small_Hills_Mics_in_Forest_30m" ID="{4DE5D0F7-60B5-4A96-8EF5-6B7A127919C2}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.32196475195822</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.32196475195822"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-71</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Narrow, Small Hills, Mics in Forest 30m" ID="{544D0F15-0E89-4D5E-AD62-6EEF1DD9EFCF}">
@@ -712,7 +618,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{1EBD3803-F11C-4A26-A594-1063E47E38AD}">
@@ -772,26 +679,19 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Narrow_Small_Hills_Mics_in_Forest_50m" ID="{1E3E743E-AA18-4F43-B5DC-9842EFF54E3C}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.09566231505657</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.09566231505657"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-76</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Narrow, Small Hills, Mics in Forest 50m" ID="{B3A8964C-47A6-4F4C-B452-9B03055A7E7F}">
@@ -804,7 +704,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{8D5AEDE5-E9E8-473F-9B38-65888A3F1DFA}">
@@ -864,36 +765,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Small_Holler_with_Forest_30m" ID="{62F38A72-7B6A-4548-B50B-3FCB06A02175}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>19</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.04446793407311</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="19"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.04446793407311"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-76</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Small, Holler with Forest 30m" ID="{EA0F2C8F-7731-407E-80E7-D3D3C4AD8E4D}">
@@ -902,11 +788,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Field, Small, Holler with Forest 30m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="748781907"/>
+										<MediaID ID="954565786"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{6F15B0A7-1CD9-47AC-9382-CC89EBC4D0DA}">
@@ -966,31 +853,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Small_Holler_with_Forest_50m" ID="{7FFABDA2-81E1-4D57-A568-AF48A0E19DCA}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.4710932332463</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.4710932332463"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-72</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Small, Holler with Forest 50m" ID="{33669580-E1F7-4A94-B448-FFFF5FE7C15D}">
@@ -999,11 +875,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Field, Small, Holler with Forest 50m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="283821037"/>
+										<MediaID ID="498101223"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{E55F0113-50FE-4C5E-A6B0-E4E37D7E4C0B}">
@@ -1063,31 +940,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Surround_by_Trees_10m" ID="{C67A914A-B0A8-4838-A6AB-EA6E656D18DF}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.17035150130548</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.17035150130548"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-77</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Surround by Trees 10m" ID="{7E2478E8-2040-4113-8C03-29A10170F1F5}">
@@ -1100,7 +966,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{2133DD6E-6EDB-4303-BD2B-1D0152F5B15D}">
@@ -1160,31 +1027,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Surround_by_Trees_30m" ID="{A5EAD563-7D40-4B18-8E0B-F707FDF238F5}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.11727839425587</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.11727839425587"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-69</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Surround by Trees 30m" ID="{E71EAD2B-153A-4956-A35F-4410EC01135A}">
@@ -1197,7 +1053,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{EA932FB1-D2E3-46BD-981C-3782A0469A52}">
@@ -1257,31 +1114,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Surround_by_Trees_50m" ID="{70C30FE9-C015-431C-86A5-9A4B539247F1}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.56017123585727</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.56017123585727"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-68</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Surround by Trees 50m" ID="{33C647CD-E654-47B8-AEB0-E2E4681DB8FD}">
@@ -1294,7 +1140,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{83F94908-9014-406E-B954-5D5113B5A29E}">
@@ -1354,31 +1201,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Surround_by_Trees_100m" ID="{3351B387-A495-4E80-81C1-31CA33236067}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.9928170691906</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.9928170691906"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-68</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Surround by Trees 100m" ID="{6C051CE4-4A2C-4CAF-9E45-1895275F1BC9}">
@@ -1391,7 +1227,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{264A49CC-9202-4E3C-9EC1-39A504910FC4}">
@@ -1451,31 +1288,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Field_Wide_Small_Hills_and_Forest_100m" ID="{D8AB49F8-C565-4861-9F88-42E5B05A05DA}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.19572302001741</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.19572302001741"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-77</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Wide, Small Hills and Forest 100m" ID="{2CE7188D-05B8-43D5-A05E-72D94504A5FC}">
@@ -1484,11 +1310,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Field, Wide, Small Hills and Forest 100m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="451867903"/>
+										<MediaID ID="601636302"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{001F5022-B3CD-4A44-BFC1-D65C08DB3E40}">
@@ -1548,41 +1375,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Crater_Inside_10m" ID="{F07EA926-DD31-428E-AD63-742E97FF498C}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>8</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.08840872497824</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="8"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.08840872497824"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-83</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Crater, Inside 10m" ID="{E1B61151-8C83-4EA4-B9FA-C4129A9C7546}">
@@ -1595,7 +1403,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{F7DEF19B-D58D-478B-8C19-8A070D674FF4}">
@@ -1655,36 +1464,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Crater_Inside_50m" ID="{34674962-9FFA-4007-9409-78CCFF72B320}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.80730556462141</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.80730556462141"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-73</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Crater, Inside 50m" ID="{18FA65BE-072D-4E53-BCAC-7504B4686CDA}">
@@ -1693,11 +1487,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Forest, Crater, Inside 50m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="244124"/>
+										<MediaID ID="258800313"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{83382115-DE18-46C9-94A3-4BD22DB32116}">
@@ -1757,36 +1552,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Crater_Outside_10m" ID="{D0B234A7-AFB1-4284-9930-74F63E76C333}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.31024249347258</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.31024249347258"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-70</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Crater, Outside 10m" ID="{0043235A-14BD-4903-AD19-14ABC980841C}">
@@ -1799,7 +1579,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{1A640C35-C716-449C-9710-52684630907A}">
@@ -1859,36 +1640,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Crater_Outside_15m" ID="{F23C8890-0915-4E99-8AFB-2C0FADB1DDCD}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.85680368798956</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.85680368798956"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-72</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Crater, Outside 15m" ID="{F2385C6E-5990-4616-B917-B2A85776AEF4}">
@@ -1901,7 +1667,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{9194C71C-F687-4241-AAE9-7F4107880B3A}">
@@ -1961,36 +1728,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Crater_Outside_40m" ID="{383D128E-6075-438B-9ADB-86F12A1C2F34}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.25474061684073</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.25474061684073"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-74</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Crater, Outside 40m" ID="{A01BD8FC-C322-4730-B5D0-67532F5221D9}">
@@ -2003,7 +1755,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{D3038E4F-BB69-4FA7-B319-A96C121CB298}">
@@ -2063,36 +1816,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Crater_Outside_80m" ID="{1D3897D7-7F9B-43CD-AB4E-5A06C9F64448}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.91719957571802</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.91719957571802"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-68</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Crater, Outside 80m" ID="{90DC5113-48E1-4896-9277-90A82F8F1F90}">
@@ -2105,7 +1843,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{CB57AF4C-2CC7-4827-8491-4214B9329B26}">
@@ -2165,36 +1904,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Hillside_30m" ID="{21274708-894A-4C39-9164-968FE36B6A93}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.9289626305483</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.9289626305483"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Hillside 30m" ID="{AE178637-EC4B-4A3C-BFF3-7CBB956C33A8}">
@@ -2203,11 +1927,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Forest, Hillside 30m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="44194436"/>
+										<MediaID ID="165067180"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{D5DD56A8-7CF5-447E-969E-265FDF06492A}">
@@ -2267,36 +1992,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Hillside_50m" ID="{BF644446-E867-4E00-94F5-C620F4DB126D}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.47637880765883</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.47637880765883"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-69</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Hillside 50m" ID="{927EEF49-33D5-40D5-8DB3-80BF5C4955E0}">
@@ -2305,11 +2015,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Forest, Hillside 50m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="106055021"/>
+										<MediaID ID="313526621"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{B8948CEF-F34E-4296-8F01-EC5F7672D882}">
@@ -2369,36 +2080,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Light_Small_Hill_5m" ID="{19940F57-214A-4257-A316-362A7C782A7C}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.23219957571802</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.23219957571802"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-83</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Light, Small Hill 5m" ID="{87375F40-09BA-4888-BD3E-0C33925AA7A1}">
@@ -2411,7 +2107,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{8D019591-32E3-4AF6-BE99-A7ED7EC853CD}">
@@ -2471,36 +2168,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Light_Small_Hill_15m" ID="{8EFCCE80-1943-4296-A7F4-1F4A4A89CF6C}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.96023912097476</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.96023912097476"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-74</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-23</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-23"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Light, Small Hill 15m" ID="{8773D93C-ED3B-40B6-A7E0-34A61326E772}">
@@ -2513,7 +2195,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{2122336D-0988-4CD9-A55F-167E605B62F6}">
@@ -2573,36 +2256,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Light_Small_Hill_20m" ID="{9CEBCA87-5242-40E0-940D-437E2EB31657}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.92354892841601</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.92354892841601"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-67</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Light, Small Hill 20m" ID="{BD2C4BA5-D8E3-4C96-A3AD-557325555FDD}">
@@ -2615,7 +2283,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{73C7144A-FD1E-4D43-B4EC-53AFA7300DBE}">
@@ -2675,31 +2344,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Plane_4m" ID="{24F51BC8-DDCF-4C58-A015-BE12505FF4C0}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.2695378862054</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.2695378862054"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-76</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-23</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-23"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Plane 4m" ID="{D669FCCB-7A70-4C10-BD18-551FB5F50F8F}">
@@ -2712,7 +2370,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{27C09F52-5943-4883-8F3B-C58B00A0992F}">
@@ -2772,31 +2431,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Plane_20m" ID="{1136F4AC-1699-482E-8C69-B87DE831A2A2}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.78705458550914</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.78705458550914"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-66</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-27</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-27"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Plane 20m" ID="{78979FF3-4F7C-4CC8-9828-FEA3356AADFF}">
@@ -2805,11 +2453,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Forest, Plane 20m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="77713943"/>
+										<MediaID ID="185704032"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{D4509C6C-DCA7-425B-85D8-42C780A83020}">
@@ -2869,36 +2518,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Small_Trees_10m" ID="{1993507B-9337-41CB-91FF-469098775271}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.16230221932115</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.16230221932115"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-93</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-32</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-32"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Small Trees 10m" ID="{654A5074-7106-4FB2-9AFC-8063E381A67C}">
@@ -2911,7 +2545,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{B89750BC-1720-4115-91E2-5186BE121F6F}">
@@ -2971,36 +2606,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Small_Trees_20m" ID="{4DE17F9A-AAFD-4598-A4E9-25EB86676FCD}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.39184562663185</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.39184562663185"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-85</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-34</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-34"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Small Trees 20m" ID="{740691D0-599E-4D15-B444-62AC47DF7669}">
@@ -3013,7 +2633,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{13582531-76DE-4D5F-9999-F3C266668DA1}">
@@ -3073,36 +2694,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Forest_Small_Trees_Indirect_20m" ID="{86316DC8-5412-44D0-ACD9-9207973493D1}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.61003002610966</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.61003002610966"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-90</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-34</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-34"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Small Trees, indirect 20m" ID="{3E23E729-C3D0-494A-AB1E-2335F7667864}">
@@ -3111,11 +2717,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Forest, Small Trees, indirect 20m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="420933770"/>
+										<MediaID ID="704065667"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{B39D317D-2DE1-4FFB-9118-19D213CBF0B7}">
@@ -3175,31 +2782,16 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Creek_Forest_30m" ID="{2B8EEF1D-D4EE-4AD8-90B2-0E7949072E04}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.88448150565709</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.88448150565709"/>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Creek, Forest 30m" ID="{500683F3-FB28-4400-926A-D3A1AC6A3875}">
@@ -3212,7 +2804,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{5CD9E31E-027B-49A7-902C-2CC8A8CBA2A0}">
@@ -3272,41 +2865,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Creek_Forest_100m" ID="{2E193E83-DF68-4E71-B9D1-DCF62675BD53}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>51</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>4.05247046344647</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="51"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="4.05247046344647"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-82</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-23</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-23"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Creek, Forest 100m" ID="{1000D6C0-7F63-4E36-B3FE-BA04353AFCA7}">
@@ -3315,11 +2889,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Hills, Creek, Forest 100m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="139835843"/>
+										<MediaID ID="566343418"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{0FFAF1A5-AB6E-4119-9078-4C338F88DEAF}">
@@ -3379,36 +2954,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Hillside_Forest_30m" ID="{64238F48-8B33-41D3-8EE6-0BFB3AE33DF7}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.18412304177546</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.18412304177546"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-83</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Hillside, Forest 30m" ID="{6E9F47C1-61ED-4A58-B951-C716B113F8EB}">
@@ -3421,7 +2981,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{77F02F04-6D4A-4E05-8145-04E62A63D145}">
@@ -3481,36 +3042,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Hillside_Forest_50m" ID="{EE61D3C3-62FB-4AF8-AE10-F92CC3F67D6B}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.30077186684073</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.30077186684073"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-79</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-23</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-23"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Hillside, Forest 50m" ID="{DD41027C-B317-4EA5-A583-9E78953F4F21}">
@@ -3523,7 +3069,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{234142FE-70D3-46F1-9667-1FECE654CF06}">
@@ -3583,31 +3130,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Light_Forest_Valleys_30m" ID="{B382952F-34EA-46C6-BDC9-D71250E1637E}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.48684203655352</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.48684203655352"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-78</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-28</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-28"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Light Forest, Valleys 30m" ID="{4A53FC78-5F9C-4F3E-A82F-760B034736C9}">
@@ -3620,7 +3156,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{C284A7FA-B9EC-4D41-9164-E8CFB78B6B3C}">
@@ -3680,42 +3217,23 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Small_and_Close_Light_Forest_43m" ID="{0E9E176A-6A6D-4224-8C51-B28D444990D7}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
 								<Property Name="Color" Type="int16" Value="21"/>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.28138734769365</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.28138734769365"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-77</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Small and Close, Light Forest 43m" ID="{B409A903-05C8-422C-8CC2-2E78E2D86E81}">
@@ -3728,7 +3246,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{CC12C81E-CF26-4EA8-8856-6666CBB62FFB}">
@@ -3788,31 +3307,16 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Small_Creek_Forest_30m" ID="{221CBB0E-229D-400E-9F60-E717CA589FA8}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.98197739882507</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.98197739882507"/>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Small Creek, Forest 30m" ID="{85C35018-F22F-41DB-BD70-0B3615C3FECE}">
@@ -3825,7 +3329,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{4578927A-8693-49DE-A4D3-85A97A1B6039}">
@@ -3885,41 +3390,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Small_Creek_Forest_50m" ID="{8ACE1C28-9F1B-4124-8E8A-07190F4660F3}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>33</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.90894614882506</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="33"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.90894614882506"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-84</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Small Creek, Forest 50m" ID="{AD794B1B-0B15-424E-A313-9DCAA7E1CF4E}">
@@ -3932,7 +3418,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{785C8F8E-BF73-4C3C-B255-B9F46D0E2655}">
@@ -3992,36 +3479,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Hills_Small_Light_Forest_43m" ID="{78EEB297-67F6-449D-8489-463C88A5D225}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.81841432767624</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.81841432767624"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-86</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Small, Light Forest 43m" ID="{BA4DB560-D9A2-4904-913A-282604983960}">
@@ -4034,7 +3506,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{C3DB3974-FDF9-434F-9D16-A9E9D22D42C5}">
@@ -4094,36 +3567,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Mountains_Field_Few_Houses_50m" ID="{EBC9B666-29C4-4434-92BB-267BE25B3FC7}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.8007589208007</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.8007589208007"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-78</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Mountains, Field, Few Houses 50m" ID="{BFAA9C2D-8BD6-4B34-8D20-BFB1F7F71C95}">
@@ -4136,7 +3594,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{EE9C7C63-BA2B-4E1F-9040-2F0DCAA67E7A}">
@@ -4196,31 +3655,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Few_Houses_10m" ID="{9696346F-E1A5-4F98-B17F-C03B8F8AAE63}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.1714341818973</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.1714341818973"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-86</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Few Houses 10m" ID="{AD75F9C8-4E72-4D0E-802F-A4250B2E6DD9}">
@@ -4233,7 +3681,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{495583C9-FABD-450C-9B4D-D328881EE688}">
@@ -4293,31 +3742,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Few_Houses_50m" ID="{DE27EF11-B174-4B64-97B4-F7E591005A68}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.60522369995648</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.60522369995648"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-68</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Few Houses 50m" ID="{9EBC49D1-01C6-47EE-A645-C790CD4ACBEA}">
@@ -4330,7 +3768,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{BB667050-E10A-4A6B-9662-15DE11EA31E1}">
@@ -4390,31 +3829,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Few_Houses_100m" ID="{59C4D23D-72B7-4EC4-8546-7FF17720E5BA}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.00988424717145</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.00988424717145"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-72</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Few Houses 100m" ID="{E023C7D0-0D67-4843-8873-CEA6B308EF3F}">
@@ -4427,7 +3855,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{53C1460B-CE90-43AA-AD80-E104575B5B49}">
@@ -4487,31 +3916,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Narrow_Street_Open_Back_30m" ID="{AA1A0266-07B2-4FEA-B784-EC543D769621}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.03446273933856</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.03446273933856"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-83</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-38</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-38"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Narrow Street, Open Back 30m" ID="{4534D5CA-8A1B-4091-9D56-F7ADA8492640}">
@@ -4524,7 +3942,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{0110120F-63CC-4226-8312-FDCF05F8B34D}">
@@ -4584,36 +4003,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Narrow_Street_Open_Front_30m" ID="{2448CEA2-0F41-45A8-95C9-010D5768DB4C}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>46</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.96296953872933</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="46"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.96296953872933"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-89</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-38</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-38"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Narrow Street, Open Front 30m" ID="{4BFEDDED-12DE-48C8-A9B4-763C178F1A16}">
@@ -4626,7 +4030,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{7380925F-A09D-4EA8-9164-201AE664DE99}">
@@ -4686,32 +4091,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Open_Industrial_Street_10m" ID="{3A6CBA5C-2A6C-46B4-86BC-B36143C578BE}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
 								<Property Name="Color" Type="int16" Value="7"/>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>0.961349325500435</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="0.961349325500435"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-83</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Open Industrial Street 10m" ID="{E1BF4434-16FF-4573-98B1-11D99100ABE8}">
@@ -4724,7 +4118,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{84610F97-AA5C-4281-9EAD-3B1CCE8D3680}">
@@ -4784,31 +4179,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Open_Industrial_Street_30m" ID="{DF58CEDD-8F37-48C0-90AA-EC6A285183DE}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.16207000652741</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.16207000652741"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-79</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Open Industrial Street 30m" ID="{CED59790-2824-42D6-B0CC-CA32661390A9}">
@@ -4821,7 +4205,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{1901FF65-2603-4007-9A20-CCDF773A3B57}">
@@ -4881,36 +4266,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Open_Industrial_Street_50m" ID="{4ACB6A6F-0BD0-458B-99C5-126A1533F59B}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>15</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.96735598890339</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="15"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.96735598890339"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-84</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Open Industrial Street 50m" ID="{E329E02C-DC59-488E-A395-B00278A7DE64}">
@@ -4923,7 +4293,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{875C27F5-03E6-4D93-BBB4-8C3AB7647C52}">
@@ -4983,36 +4354,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Open_Industrial_Street_100m" ID="{F7198D04-6E56-4B2C-8A2E-0ED933A2AD29}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.82205308964317</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.82205308964317"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-74</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Open Industrial Street 100m" ID="{617EC7DA-4F2E-4903-9F2A-DA4CCBD43EC8}">
@@ -5025,7 +4381,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{1EA3AA9F-AD03-4F2F-BD7B-DB47AC5719E1}">
@@ -5105,36 +4462,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Two_Houses_30m" ID="{03AE9F79-9A4C-4513-8287-201907F5D8C6}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.6704588772846</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.6704588772846"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-73</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-28</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-28"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Two Houses 30m" ID="{23AF79A7-BD2F-47FA-B6FA-9E9ED3F5198F}">
@@ -5147,7 +4489,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{A0998CF7-AFFF-4846-9557-2EAC2613A43C}">
@@ -5207,36 +4550,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Two_Houses_50m" ID="{679FB2D6-56B8-43F6-B3C9-305F5C4A38E7}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.5037990100087</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.5037990100087"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-73</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Two Houses 50m" ID="{F758A461-11F6-4754-8091-FD2CA8B1FDFC}">
@@ -5249,7 +4577,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{E71B1C6D-E862-4736-A0B3-6DA48C58A47E}">
@@ -5309,31 +4638,16 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Urban_Two_Houses_100m" ID="{D660AEE8-BF0B-4E59-932C-4FBE23DEC931}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.89924815056571</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.89924815056571"/>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Two Houses 100m" ID="{C38F73BA-8BB4-4408-9607-8D2B52D1C684}">
@@ -5346,7 +4660,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{AB6322A2-6E99-4695-ADC0-87BB5736FF1B}">
@@ -5406,31 +4721,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Creek_Forest_30m" ID="{446E9B0D-FA21-47E8-820E-6E8CD64FF988}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.51774654590949</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.51774654590949"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-65</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-28</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-28"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Creek, Forest 30m" ID="{7F98E719-3A06-4630-AD91-A5FBCF947CBD}">
@@ -5443,7 +4747,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{AF7CA9AF-7A97-4E8F-BE6D-052F9B4E6E93}">
@@ -5503,36 +4808,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Creek_Forest_100m" ID="{101C4742-C1AC-4193-B56C-50DA5ECB8446}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>22</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.96437369451697</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="22"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.96437369451697"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-73</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-28</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-28"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Creek, Forest 100m" ID="{2C932312-101F-46B0-B8E8-2F68CD744958}">
@@ -5541,11 +4831,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Valley, Creek, Forest 100m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="73434840"/>
+										<MediaID ID="425489016"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{50284038-3B5A-4BC4-9285-FB812965F9B3}">
@@ -5605,36 +4896,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Low_Forest_30m" ID="{94A8EEA3-6B1E-415B-BBFF-E99005AB7919}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.33969691035683</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.33969691035683"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-89</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Low, Forest 30m" ID="{4F05CB77-95EB-42A8-9B8B-BA9B49F5AE73}">
@@ -5647,7 +4923,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{7AD4241D-A1AE-4FA5-8896-05BE8F3F36A8}">
@@ -5707,36 +4984,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Low_Forest_50m" ID="{B8E4C2FA-2F36-4364-9BE2-95CAA47C6971}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.87532816579634</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.87532816579634"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Low, Forest 50m" ID="{4BBD377D-7D85-400D-8409-54170562BF6F}">
@@ -5749,7 +5011,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{9F491E4E-D14B-403B-B600-88AAA66ECEFE}">
@@ -5809,41 +5072,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Slope_30m" ID="{B93631BA-9012-407E-89C9-E41DB19FF28E}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>24</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.29108599869452</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="24"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.29108599869452"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-87</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-27</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-27"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Slope 30m" ID="{28CC110C-739C-4368-BAEA-29F3978EEF70}">
@@ -5856,7 +5100,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{DD5477DC-5636-4FB9-A80C-273FF7FF2990}">
@@ -5916,37 +5161,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Slope_50m" ID="{8FBDEBAD-5797-4072-97F1-79753ED43C0D}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
 								<Property Name="Color" Type="int16" Value="19"/>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.73896295691906</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.73896295691906"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Slope 50m" ID="{6B4BA13F-4A1C-446A-B6FE-875724ED91B6}">
@@ -5959,7 +5189,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{523A9E72-8621-439E-B33F-63F83A248712}">
@@ -6019,37 +5250,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Slope_80m" ID="{EAC572DE-53D4-4A3E-94AD-942223697C56}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
 								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.4042248694517</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.4042248694517"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-71</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Slope 80m" ID="{EAA3403F-D05C-4057-92EA-74DBD4B9DAA2}">
@@ -6062,7 +5278,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{10DDAA94-A513-43B9-BBBF-09A538E80F03}">
@@ -6122,36 +5339,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Wide_Forest_30m" ID="{8B0E5F69-7936-4315-A448-70090EBBE363}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.96145398172324</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.96145398172324"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-84</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Wide, Forest 30m" ID="{369EE629-192A-4103-80F0-7BE59687F385}">
@@ -6160,11 +5362,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Valley, Wide, Forest 30m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="256518122"/>
+										<MediaID ID="981603543"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{E40BA47D-1E94-4C16-9410-FC3BAACAA333}">
@@ -6224,36 +5427,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Valley_Wide_Forest_50m" ID="{3DDC59EB-FB90-454A-8B9E-0E52175B767D}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>4.53706347911227</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="4.53706347911227"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-74</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Wide, Forest 50m" ID="{A16B7A1C-645F-4B82-BA11-A10B2002B832}">
@@ -6262,11 +5450,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Valley, Wide, Forest 50m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="815275380"/>
+										<MediaID ID="910765063"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{4A359FFC-108F-458F-94FB-9F5480EB02ED}">
@@ -6326,36 +5515,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Zoomed_Designed_Responses_Hills_Long" ID="{2AE379BE-A827-479E-870C-8007E94BB1E3}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>7.22013577023502</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="7.22013577023502"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-72</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Long" ID="{62E0FE25-561F-4252-A39E-86A66C487E25}">
@@ -6364,11 +5538,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Hills, Long.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="713649149"/>
+										<MediaID ID="985920921"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{3B4A7471-1DB1-454C-8AF3-D6231B54369E}">
@@ -6428,41 +5603,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Zoomed_Designed_Responses_Mountains_distant" ID="{26B1896B-14F5-4E37-9560-E556EDC34FCD}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="ChannelConfigOverride" Type="int64">
-									<ValueList>
-										<Value>12546</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>6.28474918407311</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="ChannelConfigOverride" Type="int64" Value="12546"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="6.28474918407311"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-69</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Mountains, distant" ID="{2FFF7A8D-94C7-4F6B-BB4D-3C70A3C75252}">
@@ -6475,7 +5631,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{FE3F743A-7B7E-49EC-98CE-41793170960F}">
@@ -6535,36 +5692,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Zoomed_Designed_Responses_Urban_many_Echos" ID="{5E8B6C51-1CD2-45F6-A41C-66F1855F27E6}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.9172919386423</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.9172919386423"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-85</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, many Echos" ID="{CA603F3D-F823-413F-BD9F-A3151A3AD347}">
@@ -6573,11 +5715,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Urban, many Echos.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="580807488"/>
+										<MediaID ID="1041213772"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{A9BD4494-476F-4448-83F9-983A5768949D}">
@@ -6637,41 +5780,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Zoomed_Designed_Responses_Valley_Canyon_01" ID="{68385314-B74C-4A0C-8977-2A1035607D07}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>4.31309312445604</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="4.31309312445604"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Canyon 01" ID="{81389E3A-9834-4235-82CD-7472CC1936E7}">
@@ -6684,7 +5808,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{9AC70881-1EB2-4748-9E70-B1E82C60F666}">
@@ -6744,36 +5869,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Zoomed_Designed_Responses_Valley_Canyon_02" ID="{9985F698-FD27-46F7-9215-662F5BEBAA92}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.56751044386423</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.56751044386423"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-83</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Canyon 02" ID="{136B83A5-DD25-47C5-857B-1B9F4C061429}">
@@ -6786,7 +5896,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{C3365633-7E60-490B-8F37-C7DC964B016C}">
@@ -6846,7 +5957,8 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 					</ChildrenList>
 				</Folder>
@@ -6855,67 +5967,23 @@
 						<Effect Name="Center_Focused_Field_Narrow_Small_Hills_and_Forest_30m" ID="{9BCC9ED3-5C44-4D50-B04F-141F1EC4ED2A}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-3"/>
 								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-27</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>55</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.39751085182768</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-27"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="55"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.39751085182768"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevelAutomate" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRStretch" Type="Real32">
-									<ValueList>
-										<Value>200</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>129</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-28</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="IRLevelAutomate" Type="bool" Value="False"/>
+								<Property Name="IRStretch" Type="Real32" Value="200"/>
+								<Property Name="PreDelay" Type="Real32" Value="129"/>
+								<Property Name="RearLevel" Type="Real32" Value="-28"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Narrow, Small Hills and Forest 30m" ID="{72ED9AE6-B130-4704-9D4B-843BE6E56FC0}">
@@ -6924,11 +5992,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Field, Narrow, Small Hills and Forest 30m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="92344232"/>
+										<MediaID ID="633744599"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{5D036BEF-E877-497D-8735-9C3BABCAC2AF}">
@@ -6988,57 +6057,26 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Field_Narrow_Small_Hills_and_Forest_50m" ID="{58EA0F67-E91D-4D1E-AF94-D2C6AA8158E3}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="10"/>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>121</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.77593777197563</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-12"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="121"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.77593777197563"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevelAutomate" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>106</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-13</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="IRLevelAutomate" Type="bool" Value="False"/>
+								<Property Name="PreDelay" Type="Real32" Value="106"/>
+								<Property Name="RearLevel" Type="Real32" Value="-13"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Narrow, Small Hills and Forest 50m" ID="{C256F94D-D784-4DA3-AFBC-50D4C78FD632}">
@@ -7051,7 +6089,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{FF6FBC0E-026A-4A61-AA6A-FA437D223DBD}">
@@ -7111,56 +6150,25 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Field_Small_Holler_with_Forest_50m" ID="{9AB401C8-E6EA-41B9-AB59-87C3057C0108}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>97</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.4710932332463</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="FrontLevel" Type="Real32" Value="-3"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="97"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.4710932332463"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-72</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>34</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="PreDelay" Type="Real32" Value="34"/>
+								<Property Name="RearLevel" Type="Real32" Value="-9"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Small, Holler with Forest 50m" ID="{D50F4D05-A603-4EA7-9626-31B1604848D2}">
@@ -7173,7 +6181,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{C9189858-EB9F-4376-BFD0-F7425A5A53D1}">
@@ -7233,56 +6242,25 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Forest_Crater_Inside_50m" ID="{2647D64B-CCC0-4955-891D-D464A7F173BF}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>52</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.80730556462141</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-7"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="52"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.80730556462141"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-73</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>31</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
+								<Property Name="PreDelay" Type="Real32" Value="31"/>
+								<Property Name="RearLevel" Type="Real32" Value="-5"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Crater, Inside 50m" ID="{4C5E585D-6047-4F66-B7E2-78C9236E31B6}">
@@ -7295,7 +6273,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{72FDB486-09EF-45BB-9B04-C882E0C8E598}">
@@ -7380,56 +6359,25 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Field_Small_Holler_with_Forest_30m" ID="{67F6E4F1-36EC-4247-A22A-0B57BCE887F1}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>69</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>19</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.04446793407311</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-9"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="69"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="19"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.04446793407311"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-76</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>107</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-15</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="PreDelay" Type="Real32" Value="107"/>
+								<Property Name="RearLevel" Type="Real32" Value="-15"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Small, Holler with Forest 30m" ID="{047FEFD5-700D-491B-A1F5-83F3A7D880EC}">
@@ -7442,7 +6390,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{FFBFBDE7-223E-4852-B9C6-AE5DCAED2B5A}">
@@ -7502,36 +6451,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Field_Surround_by_Trees_50m" ID="{DD42E2A2-8335-407E-A5E5-090E134F499B}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.56017123585727</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.56017123585727"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-68</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Surround by Trees 50m" ID="{50CA361C-74F6-452F-A085-19F1F6878CBB}">
@@ -7540,11 +6474,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Field, Surround by Trees 50m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="473121408"/>
+										<MediaID ID="524026777"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{E0BE1D8A-1604-4FD5-82CF-12140FA3560C}">
@@ -7604,41 +6539,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Field_Wide_Small_Hills_and_Forest_100m" ID="{F60BD723-0513-469A-BA59-AC1444F0E2D8}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.19572302001741</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-7"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.19572302001741"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-77</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>2</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="PreDelay" Type="Real32" Value="2"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Field, Wide, Small Hills and Forest 100m" ID="{2B23B013-2900-46EC-9AFD-C13C5AC09A54}">
@@ -7651,7 +6567,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{67D7C6E7-B7A6-479D-87BC-695E7A67A2A7}">
@@ -7716,41 +6633,22 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Forest_Small_Trees_10m" ID="{5524A3B9-B646-468C-91FE-422292D337BB}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.16230221932115</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-3"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.16230221932115"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-93</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-32</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-32"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Small Trees 10m" ID="{E35AAFF7-6BC6-4BB8-AE76-090033244F07}">
@@ -7759,11 +6657,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Forest, Small Trees 10m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="44026793"/>
+										<MediaID ID="924548734"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{C08FE1B9-C2F7-415F-9569-AF1E7B9FE1C0}">
@@ -7823,51 +6722,24 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Forest_Hillside_50m" ID="{CDD88FE7-BFA8-49F3-8209-B62088D6778C}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.47637880765883</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-5"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.47637880765883"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-69</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>68</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="PreDelay" Type="Real32" Value="68"/>
+								<Property Name="RearLevel" Type="Real32" Value="-8"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Hillside 50m" ID="{5F20DBE6-A2AE-4B7D-BECE-A76FCB80A778}">
@@ -7880,7 +6752,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{9AF765C6-3654-4C97-9606-CB41376A4568}">
@@ -7940,51 +6813,24 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Forest_Small_Trees_Indirect_20m" ID="{68B185EF-6613-4701-ABCA-B54F0CA8A5E0}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>152</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.89157117553495</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-6"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="152"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.89157117553495"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-90</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-34</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>177</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-34"/>
+								<Property Name="PreDelay" Type="Real32" Value="177"/>
+								<Property Name="RearLevel" Type="Real32" Value="-9"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Small Trees, indirect 20m" ID="{50D2E035-01E7-4B65-85D4-BA4CF8592CB3}">
@@ -7997,7 +6843,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{45393134-1EDE-4FF2-8426-ECD093C43A2B}">
@@ -8057,41 +6904,18 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Hills_Creek_Forest_30m" ID="{FC726C70-8BC7-4ED1-9257-2EC5ADEC7D05}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.88448150565709</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>17</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-6"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.88448150565709"/>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
+								<Property Name="PreDelay" Type="Real32" Value="17"/>
+								<Property Name="RearLevel" Type="Real32" Value="-5"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Creek, Forest 30m" ID="{DA3A9C58-B012-4CDC-A5FE-7065C4E99CC9}">
@@ -8100,11 +6924,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Hills, Creek, Forest 30m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="127241420"/>
+										<MediaID ID="199104110"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{DF3865C6-A019-4B0A-9190-D5BCFB44460E}">
@@ -8164,56 +6989,25 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Hills_Creek_Forest_100m" ID="{E3E35EE0-0D52-41D0-A9C8-1FD8500E04E5}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>161</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>51</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>4.05247046344647</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-2"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="161"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="51"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="4.05247046344647"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-82</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-23</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>64</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-23"/>
+								<Property Name="PreDelay" Type="Real32" Value="64"/>
+								<Property Name="RearLevel" Type="Real32" Value="-5"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Creek, Forest 100m" ID="{C7F12EB9-C4F4-416D-A50E-FAFCFDA42B6C}">
@@ -8226,7 +7020,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{10E4EBFF-D2E9-4939-B603-2EAC653FE2C2}">
@@ -8286,51 +7081,24 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Forest_Hillside_30m" ID="{34439349-C275-42A2-93FE-5EC5260C1DAB}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.9289626305483</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-5"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.9289626305483"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-25</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>69</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-25"/>
+								<Property Name="PreDelay" Type="Real32" Value="69"/>
+								<Property Name="RearLevel" Type="Real32" Value="-8"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Hillside 30m" ID="{0B79EF5A-99B9-4284-8F61-099A5D9AC374}">
@@ -8343,7 +7111,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{8F90B8FE-679A-4A47-8B85-2211200D3D83}">
@@ -8403,31 +7172,20 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Forest_Plane_20m" ID="{AF9E3172-727F-48F7-BF4E-A09137951C19}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.78705458550914</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.78705458550914"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-66</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLPFAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-27</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLPFAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-27"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Plane 20m" ID="{7F063B2E-9976-46AB-A36D-2F40A818F432}">
@@ -8440,7 +7198,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{D7A80FD1-27C0-4FBE-A595-7B39F7E3A353}">
@@ -8500,46 +7259,23 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Forest_Small_Trees_20m" ID="{4A9B4ED5-2A82-4941-B41F-4DB2F5731CDB}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.39184562663185</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-6"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.39184562663185"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-85</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-34</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>122</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-34"/>
+								<Property Name="PreDelay" Type="Real32" Value="122"/>
+								<Property Name="RearLevel" Type="Real32" Value="-96"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Forest, Small Trees 20m" ID="{7D203E70-4C7B-4A00-A111-DCE85F0AE979}">
@@ -8548,11 +7284,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Forest, Small Trees 20m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="946865230"/>
+										<MediaID ID="988802438"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{BB413A73-937A-45E3-907E-D2021B4F90C5}">
@@ -8617,46 +7354,23 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Urban_Narrow_Street_Open_Back_30m" ID="{DE1F1322-D630-4813-8600-B3D5FE69F3BA}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>32</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.03446273933856</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-3"/>
+								<Property Name="FrontLevel" Type="Real32" Value="-7"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="32"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.03446273933856"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-83</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-38</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-38"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Narrow Street, Open Back 30m" ID="{C1A70268-9D6D-415E-8F99-91520763B51B}">
@@ -8665,11 +7379,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Urban, Narrow Street, Open Back 30m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="64981557"/>
+										<MediaID ID="884060180"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{60D7EE26-3BBE-4DEB-8404-DB7E7DC91CF8}">
@@ -8744,36 +7459,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Urban_Narrow_Street_Open_Front_30m" ID="{D633BB95-5A51-45B6-A249-AC8A067421CF}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>46</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.96296953872933</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="46"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.96296953872933"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-89</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-38</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-38"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Narrow Street, Open Front 30m" ID="{F1EBCB1B-A565-4976-A5BA-B81363B447D1}">
@@ -8786,7 +7486,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{77259BEF-BE7C-4B88-8659-FD343001317B}">
@@ -8846,61 +7547,26 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Urban_Two_Houses_50m" ID="{936F3913-E548-45BA-9CC1-D401AD7959D8}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-11</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>67</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.5037990100087</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-11"/>
+								<Property Name="FrontLevel" Type="Real32" Value="-3"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="67"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.5037990100087"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-73</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRStretch" Type="Real32">
-									<ValueList>
-										<Value>134</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>149</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
+								<Property Name="IRStretch" Type="Real32" Value="134"/>
+								<Property Name="PreDelay" Type="Real32" Value="149"/>
+								<Property Name="RearLevel" Type="Real32" Value="-4"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Two Houses 50m" ID="{48ED2207-0632-4363-9D0F-9571CBA2C036}">
@@ -8909,11 +7575,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Urban, Two Houses 50m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="29942252"/>
+										<MediaID ID="746799545"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{0FB826A8-194A-4345-A181-0D3C18C234CE}">
@@ -8978,46 +7645,23 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Zoomed_Designed_Responses_Hills_Long" ID="{F748DD7D-7EA8-4117-B861-A16E6E060AE5}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-96</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>200</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>7.22013577023502</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-96"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="200"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="7.22013577023502"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-72</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>200</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-22"/>
+								<Property Name="PreDelay" Type="Real32" Value="200"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Hills, Long" ID="{96DA2977-888E-48FD-9615-7851CED26798}">
@@ -9030,7 +7674,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{D2980D22-0DF5-4772-99DE-9C3D54CC86D3}">
@@ -9090,36 +7735,17 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Urban_Two_Houses_100m" ID="{603B5F74-A269-41CF-A0A4-1A4F5A21DC95}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>1.89924815056571</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>34</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-8"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="1.89924815056571"/>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
+								<Property Name="PreDelay" Type="Real32" Value="34"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, Two Houses 100m" ID="{2685D286-B4EB-41F4-8772-6B00F7C36688}">
@@ -9132,7 +7758,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{619E3BAF-F635-447F-978A-7199962F9A4A}">
@@ -9192,46 +7819,23 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Zoomed_Designed_Responses_Urban_many_Echos" ID="{4AFA03C4-AA19-43F6-9D73-DFFA50D8A989}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>136</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.9172919386423</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontRearDelay" Type="Real32" Value="136"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.9172919386423"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-85</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-26</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>69</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-26"/>
+								<Property Name="PreDelay" Type="Real32" Value="69"/>
+								<Property Name="RearLevel" Type="Real32" Value="-8"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Urban, many Echos" ID="{4870F8CA-B1CE-4549-B2BD-A07991D963A9}">
@@ -9244,7 +7848,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{737233F5-C711-462F-AB75-BE103288F5C6}">
@@ -9304,56 +7909,25 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Valley_Low_Forest_50m" ID="{AD146D2E-97FC-4707-98A7-B48143DEF465}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-								<Property Name="FrontRearDelay" Type="Real32">
-									<ValueList>
-										<Value>78</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>2.87532816579634</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-4"/>
+								<Property Name="FrontLevel" Type="Real32" Value="-4"/>
+								<Property Name="FrontRearDelay" Type="Real32" Value="78"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="2.87532816579634"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-81</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PreDelay" Type="Real32">
-									<ValueList>
-										<Value>28</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
+								<Property Name="PreDelay" Type="Real32" Value="28"/>
+								<Property Name="RearLevel" Type="Real32" Value="-2"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Low, Forest 50m" ID="{04A7D6E0-EB3B-4F5B-BC7C-AE7D18492D02}">
@@ -9362,11 +7936,12 @@
 										<Property Name="DataFileName" Type="string" Value="BOOM Library IR - Outdoor\Valley, Low, Forest 50m.wav"/>
 									</PropertyList>
 									<MediaIDList>
-										<MediaID ID="17971491"/>
+										<MediaID ID="591086540"/>
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{1D71CFA4-CEF1-4C70-AD0D-2AFFDE7FB5FF}">
@@ -9426,46 +8001,23 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Valley_Creek_Forest_100m" ID="{BBA824FC-CCF7-4317-A1D6-002357D3AD48}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="FrontLevel" Type="Real32">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionSmooth" Type="Real32">
-									<ValueList>
-										<Value>22</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.96437369451697</Value>
-									</ValueList>
-								</Property>
+								<Property Name="FrontLevel" Type="Real32" Value="-4"/>
+								<Property Name="IRConvolutionSmooth" Type="Real32" Value="22"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.96437369451697"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-73</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-28</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRStretch" Type="Real32">
-									<ValueList>
-										<Value>77</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RearLevel" Type="Real32">
-									<ValueList>
-										<Value>-10</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRLevel" Type="Real32" Value="-28"/>
+								<Property Name="IRStretch" Type="Real32" Value="77"/>
+								<Property Name="RearLevel" Type="Real32" Value="-10"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Creek, Forest 100m" ID="{4213EC26-06E3-4079-873D-89AA1E42ED20}">
@@ -9478,7 +8030,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{AFE92E1D-6E9E-48AC-A954-7608B6296A78}">
@@ -9538,36 +8091,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Valley_Wide_Forest_30m" ID="{239552F4-AD9A-4074-8496-1BF5A53F773D}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>3.96145398172324</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="3.96145398172324"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-84</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-24"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Wide, Forest 30m" ID="{41BA38A5-7F1B-436F-855B-99CA028DC935}">
@@ -9580,7 +8118,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{0094CC58-1ED3-40BB-AA63-BB96379C87F6}">
@@ -9640,36 +8179,21 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 						<Effect Name="Center_Focused_Valley_Wide_Forest_50m" ID="{7834B287-F74B-4FCF-B24F-4C3DC170008D}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
 							<Comment>Impulse response created by BOOM Library. © 2020 BOOM Library. All rights reserved.</Comment>
 							<PropertyList>
-								<Property Name="CenterLevel" Type="Real32">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRConvolutionStop" Type="Real64">
-									<ValueList>
-										<Value>4.53706347911227</Value>
-									</ValueList>
-								</Property>
+								<Property Name="CenterLevel" Type="Real32" Value="-12"/>
+								<Property Name="IRConvolutionStop" Type="Real64" Value="4.53706347911227"/>
 								<Property Name="IRConvolutionThreshold" Type="Real32">
 									<ValueList>
 										<Value>-74</Value>
 									</ValueList>
 								</Property>
-								<Property Name="IRGraphicEQAutomate" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IRLevel" Type="Real32">
-									<ValueList>
-										<Value>-20</Value>
-									</ValueList>
-								</Property>
+								<Property Name="IRGraphicEQAutomate" Type="bool" Value="True"/>
+								<Property Name="IRLevel" Type="Real32" Value="-20"/>
 							</PropertyList>
 							<ChildrenList>
 								<PluginMediaSource Name="Valley, Wide, Forest 50m" ID="{E443F117-4696-400F-A164-CDD8DB92225D}">
@@ -9682,7 +8206,8 @@
 									</MediaIDList>
 								</PluginMediaSource>
 							</ChildrenList>
-							<PluginData><ConvolutionData>
+							<PluginData>
+	<ConvolutionData>
 		<CurveList Version="1">
 			<CurveInfo Name="IRGraphicEQ">
 				<Curve Name="" ID="{BDCDC5D1-C612-44B7-A3EE-517858A6F0D6}">
@@ -9742,7 +8267,8 @@
 				</Curve>
 			</CurveInfo>
 		</CurveList>
-	</ConvolutionData></PluginData>
+	</ConvolutionData>
+</PluginData>
 						</Effect>
 					</ChildrenList>
 				</Folder>
