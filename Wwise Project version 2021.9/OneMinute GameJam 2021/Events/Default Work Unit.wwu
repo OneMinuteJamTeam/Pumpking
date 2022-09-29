@@ -3,12 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{919D356E-7550-42D2-B0C9-8C3E88DAEACE}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Explosion" ID="{6D5D0DFE-7B0B-40DB-AD39-E91028BA8073}">
+				<Event Name="ArrowShot" ID="{17C7958A-9BEB-4D7E-958A-A061B86899E1}">
 					<ChildrenList>
-						<Action Name="" ID="{2C014F81-F600-439B-85B6-E0D53112ACCB}" ShortID="820149970">
+						<Action Name="" ID="{AC157938-BE86-4E97-97F8-06788F847081}" ShortID="702460861">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Explosion" ID="{A11B3A5A-2AE1-4356-BD1A-D15441503F91}" WorkUnitID="{9268B127-ED8D-46C8-A8C4-0BE4C90BEAF6}"/>
+									<ObjectRef Name="Arrow" ID="{C5BD493E-A5EE-4912-BBF8-B0A85ACE1AFD}" WorkUnitID="{9268B127-ED8D-46C8-A8C4-0BE4C90BEAF6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -3,9 +3,9 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{103CAC6C-AF37-4761-99AE-ACF07E14E55F}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main" ID="{B0DA39AC-98B8-491A-A384-A9CAA22BAD84}">
+				<SoundBank Name="Main" ID="{ACC2A423-CC25-48B9-BA9F-22A63BFDE2F0}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Explosion" ID="{6D5D0DFE-7B0B-40DB-AD39-E91028BA8073}" WorkUnitID="{919D356E-7550-42D2-B0C9-8C3E88DAEACE}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ArrowShot" ID="{17C7958A-9BEB-4D7E-958A-A061B86899E1}" WorkUnitID="{919D356E-7550-42D2-B0C9-8C3E88DAEACE}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

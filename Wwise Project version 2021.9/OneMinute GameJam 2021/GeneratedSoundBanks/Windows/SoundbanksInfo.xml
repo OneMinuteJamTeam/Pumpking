@@ -16,16 +16,16 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="784036971">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2452733160">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="13776098" Name="Explosion" ObjectPath="\Events\Default Work Unit\Explosion">
+				<Event Id="845452308" Name="ArrowShot" ObjectPath="\Events\Default Work Unit\ArrowShot">
 					<IncludedMemoryFiles>
-						<File Id="359995607" Language="SFX">
-							<ShortName>Explosion Debris &amp; Fire 01.wav</ShortName>
-							<Path>SFX\Explosion Debris &amp; Fire 01_10C4C929.wem</Path>
+						<File Id="101266558" Language="SFX">
+							<ShortName>Arrow Into Wood 01.wav</ShortName>
+							<Path>SFX\Arrow Into Wood 01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
