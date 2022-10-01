@@ -21,9 +21,12 @@ MonoBehaviour:
     pairs:
     - iconToDraw: {fileID: 0}
       targetClasses: []
-    - iconToDraw: {fileID: 2800000, guid: 5ba8fe3b3e8b3664b9031e7e4aef4465, type: 3}
+    - iconToDraw: {fileID: 2800000, guid: 7e0c7eaf44c33bc48946474911046fd4, type: 3}
       targetClasses:
-      - {fileID: 11500000, guid: 05b14f255863c334bae5f3dba695c93f, type: 3}
+      - {fileID: 11500000, guid: 3ea80be84cb3da0469551a1bd6ecccc5, type: 3}
+    - iconToDraw: {fileID: 2800000, guid: 3560c551d9270a547aa62210e1ea7cf9, type: 3}
+      targetClasses:
+      - {fileID: 11500000, guid: 4eec3e62f5ea70343aa3c316c462a564, type: 3}
   prefabsData:
     enabled: 0
     prefabs: []
