@@ -18,9 +18,15 @@ public abstract class Player : MonoBehaviour
 
     private Rigidbody _rb;
 
+    private float originalMoveSpeed;
+
     protected virtual void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+    }
+
+    protected void Start() {
+        originalMoveSpeed = moveSpeed;
     }
 
     protected virtual void Update()
@@ -42,4 +48,20 @@ public abstract class Player : MonoBehaviour
             _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
         }
     }
+
+    private Coroutine endSpeedBoostRef;
+    public void BoostSpeed(float _boostAmmount, float _duration) {
+        if(moveSpeed == originalMoveSpeed)
+            moveSpeed += _boostAmmount;
+        if (endSpeedBoostRef != null) StopCoroutine(endSpeedBoostRef);
+        endSpeedBoostRef = StartCoroutine(endSpeedBoost(_duration));
+
+    }
+    private IEnumerator endSpeedBoost(float _duration) {
+        Debug.Log("boost speed picked, ending in "+_duration+" seconds");
+        yield return new WaitForSeconds(_duration);
+        moveSpeed = originalMoveSpeed;
+        Debug.Log("boost speed ended");
+    }
+    
 }

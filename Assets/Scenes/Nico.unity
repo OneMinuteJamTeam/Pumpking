@@ -870,7 +870,7 @@ GameObject:
   - component: {fileID: 1378813159}
   m_Layer: 0
   m_Name: Player1 (Pumpkin)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1058,6 +1058,10 @@ PrefabInstance:
     - target: {fileID: 4037611033962216993, guid: 4606e40a857fa624d95d6c687167bf09, type: 3}
       propertyPath: m_Name
       value: Pickable
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037611033962217004, guid: 4606e40a857fa624d95d6c687167bf09, type: 3}
+      propertyPath: boostAmmount
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4037611033962217005, guid: 4606e40a857fa624d95d6c687167bf09, type: 3}
       propertyPath: m_RootOrder
