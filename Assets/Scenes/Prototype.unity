@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 397009130}
   - component: {fileID: 397009133}
   - component: {fileID: 397009132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DummyModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,9 +431,9 @@ GameObject:
   - component: {fileID: 723808238}
   - component: {fileID: 723808239}
   - component: {fileID: 723808240}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player2 (Scarecrow)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -468,6 +468,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   playerNumber: 1
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  abilityRange: 3
 --- !u!54 &723808239
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -900,9 +904,9 @@ GameObject:
   - component: {fileID: 1378813157}
   - component: {fileID: 1378813158}
   - component: {fileID: 1378813159}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player1 (Pumpkin)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -977,7 +981,7 @@ GameObject:
   - component: {fileID: 1399559028}
   - component: {fileID: 1399559031}
   - component: {fileID: 1399559030}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DummyModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
