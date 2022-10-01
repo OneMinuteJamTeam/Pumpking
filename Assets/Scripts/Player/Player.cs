@@ -19,6 +19,8 @@ public abstract class Player : MonoBehaviour
     [SerializeField]
     protected PlayerNumber playerNumber;
 
+    protected bool readInput;
+    
     private Rigidbody _rb;
     private Vector3 lastSpeedDirection;
 
@@ -35,21 +37,21 @@ public abstract class Player : MonoBehaviour
 
     protected abstract void UseAbility();
 
-    private void HandleInput()
+    protected virtual void HandleInput()
     {
-        Debug.Log("handle input called");
-        if(playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1)
-        {
-            // Handle Input P1
-            _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
+        if (readInput) {
+            if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
+                // Handle Input P1
+                _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
 
-            lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x,0,InputManager.Instance.MoveDirectionPlayer1.y);
-        }
-        else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
-            // Handle Input P2
-            _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
+                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
+            }
+            else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
+                // Handle Input P2
+                _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
 
-            lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
+                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
+            }
         }
     }
 
