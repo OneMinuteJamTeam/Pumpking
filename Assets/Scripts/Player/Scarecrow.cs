@@ -75,8 +75,9 @@ public class Scarecrow : Player
         Vector3 dir = (_abilityTarget.transform.position - transform.position).normalized;
 
         _abilityTarget.CanReadInput = false;
+        _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
         _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
-        _abilityTarget.CanReadInput = true;
+        //  _abilityTarget.CanReadInput = true when??
     }
 
     private void PullAbility()
