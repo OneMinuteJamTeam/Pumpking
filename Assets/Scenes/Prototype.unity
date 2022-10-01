@@ -851,6 +851,38 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 4ddb8062-14e8-4e29-8f97-b282b989cd20
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1149956225}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: AbilityPressedPlayer1
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9f1577f0-8008-4587-a140-06debe882fb4
+    m_ActionName: Player/AbilityPlayer1[/Keyboard/e]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1149956225}
+        m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
+        m_MethodName: AbilityPressedPlayer2
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 5ad6e3f1-cf89-4a52-878b-30c2ab681bae
+    m_ActionName: Player/AbilityPlayer2[/Keyboard/o]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

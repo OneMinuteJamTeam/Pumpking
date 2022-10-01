@@ -8,9 +8,11 @@ public class InputManager : Singleton<InputManager>
 {
     public bool IsMovingPlayer1 { get; private set; }
     public Vector2 MoveDirectionPlayer1 { get; private set; }
+    public bool IsAbilityPlayer1Pressed { get; private set; } 
 
     public bool IsMovingPlayer2 { get; private set; }
     public Vector2 MoveDirectionPlayer2 { get; private set; }
+    public bool IsAbilityPlayer2Pressed { get; private set; }
 
     public void MovePressedPlayer1(InputAction.CallbackContext context)
     {
@@ -40,4 +42,27 @@ public class InputManager : Singleton<InputManager>
         }
     }
 
+    public void AbilityPressedPlayer2(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            IsAbilityPlayer2Pressed = true;
+        }
+        else if (context.canceled)
+        {
+            IsAbilityPlayer2Pressed = false;
+        }
+    }
+
+    public void AbilityPressedPlayer1(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            IsAbilityPlayer1Pressed = true;
+        }
+        else if (context.canceled)
+        {
+            IsAbilityPlayer1Pressed = false;
+        }
+    }
 }
