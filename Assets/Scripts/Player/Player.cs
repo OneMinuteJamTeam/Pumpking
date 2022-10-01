@@ -16,6 +16,13 @@ public abstract class Player : MonoBehaviour
     [SerializeField]
     protected PlayerNumber playerNumber;
 
+    private Rigidbody _rb;
+
+    protected virtual void Awake()
+    {
+        _rb = GetComponent<Rigidbody>();
+    }
+
     protected virtual void Update()
     {
         HandleInput();
@@ -26,11 +33,13 @@ public abstract class Player : MonoBehaviour
         if(playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1)
         {
             // Handle Input P1
+            _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
             
         }
         else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2)
         {
             // Handle Input P2
+            _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
         }
     }
 }
