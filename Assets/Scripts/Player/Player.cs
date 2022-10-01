@@ -33,6 +33,8 @@ public abstract class Player : MonoBehaviour
         HandleRotation();
     }
 
+    protected abstract void UseAbility();
+
     private void HandleInput()
     {
         Debug.Log("handle input called");

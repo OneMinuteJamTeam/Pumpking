@@ -551,8 +551,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  rotationSpeed: 300
+  rotationSpeed: 600
   playerNumber: 1
+  abilityRange: 3
 --- !u!54 &723808239
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1072,7 +1073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  rotationSpeed: 300
+  rotationSpeed: 600
   playerNumber: 0
 --- !u!54 &1378813158
 Rigidbody:
