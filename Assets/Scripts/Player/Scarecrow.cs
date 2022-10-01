@@ -43,7 +43,13 @@ public class Scarecrow : Player
 
     protected override void UseAbility()
     {
+        if(!HasTarget)
+        {
+            canUseAblity = true;
+            return;
+        }
         CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
+
         CanReadInput = false;
 
         // Choose Pull or Push
@@ -70,9 +76,6 @@ public class Scarecrow : Player
 
     private void PushAbility()
     {
-        if (!HasTarget)
-            return;
-
         Vector3 dir = (_abilityTarget.transform.position - transform.position).normalized;
 
         _abilityTarget.CanReadInput = false;
@@ -83,9 +86,6 @@ public class Scarecrow : Player
 
     private void PullAbility()
     {
-        if (!HasTarget)
-            return;
-
         Vector3 dir = (transform.position - _abilityTarget.transform.position).normalized;
 
         _abilityTarget.CanReadInput = false;

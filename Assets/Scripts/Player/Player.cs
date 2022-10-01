@@ -26,7 +26,6 @@ public abstract class Player : MonoBehaviour
     [SerializeField]
     protected PlayerNumber playerNumber;
 
-    
     protected bool canUseAblity = true;
 
     protected Rigidbody rb;
@@ -81,6 +80,8 @@ public abstract class Player : MonoBehaviour
     }
 
     private void HandleRotation() {
+        if (lastSpeedDirection == Vector3.zero)
+            return;
         Quaternion toRot = Quaternion.LookRotation(lastSpeedDirection, transform.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, toRot, rotationSpeed * Time.deltaTime);
     }
