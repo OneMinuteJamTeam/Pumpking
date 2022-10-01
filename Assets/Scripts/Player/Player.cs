@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum PlayerNumber
+    {
+        PlayerOne,
+        PlayerTwo,
+    }
+
+    [Header("Settings")]
+    [SerializeField]
+    private float moveSpeed = 5.0f;
+    [SerializeField]
+    private PlayerNumber playerNumber;
+
+    private void Update()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void HandleInput()
     {
-        
+        if(playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1)
+        {
+            // Handle Input P1
+        }
+        else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2)
+        {
+            // Handle Input P2
+        }
     }
 }
