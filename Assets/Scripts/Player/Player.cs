@@ -74,6 +74,7 @@ public abstract class Player : MonoBehaviour
 
                 lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
             }
+            else rb.velocity = Vector3.zero;
 
             HandleAbility();
         }
