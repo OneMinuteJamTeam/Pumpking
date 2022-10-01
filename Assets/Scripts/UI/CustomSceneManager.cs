@@ -10,7 +10,8 @@ public class CustomSceneManager : SingletonDontDest<CustomSceneManager>
     public delegate void LoadSceneDeleg();
 
     public void LoadScene(string sceneToLoad) {
-        if(FadePanel.Instance != null)
+        //Debug.Log("load scene called");
+        //if(FadePanel.Instance != null)
             StartCoroutine(FadePanel.Instance.fadeIn(() => { SceneManager.LoadScene(sceneToLoad); }));
     }
 }

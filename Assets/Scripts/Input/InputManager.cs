@@ -65,4 +65,8 @@ public class InputManager : Singleton<InputManager>
             IsAbilityPlayer1Pressed = false;
         }
     }
+
+    public void OnApplicationPause(InputAction.CallbackContext context) {
+        if (context.performed && GameController.Instance) GameController.Instance.Pause();
+    }
 }
