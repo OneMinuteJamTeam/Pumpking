@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public abstract class Player : MonoBehaviour
 {
     public enum PlayerNumber
     {
@@ -12,11 +12,11 @@ public class Player : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField]
-    private float moveSpeed = 5.0f;
+    protected float moveSpeed = 5.0f;
     [SerializeField]
-    private PlayerNumber playerNumber;
+    protected PlayerNumber playerNumber;
 
-    private void Update()
+    protected virtual void Update()
     {
         HandleInput();
     }
@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
         if(playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1)
         {
             // Handle Input P1
+            
         }
         else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2)
         {
