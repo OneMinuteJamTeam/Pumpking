@@ -42,7 +42,7 @@ public class Scarecrow : Player
     protected override void UseAbility()
     {
         CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
-        canReadInput = false;
+        CanReadInput = false;
 
         // Choose Pull or Push
         if (IsEscaping)
@@ -50,7 +50,7 @@ public class Scarecrow : Player
         else
             PullAbility();
 
-        canReadInput = true;
+        CanReadInput = true;
     }
 
     private void CheckAbilityRange()
@@ -73,9 +73,10 @@ public class Scarecrow : Player
             return;
 
         Vector3 dir = (_abilityTarget.transform.position - transform.position).normalized;
-        
-        _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
 
+        _abilityTarget.CanReadInput = false;
+        _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
+        _abilityTarget.CanReadInput = true;
     }
 
     private void PullAbility()

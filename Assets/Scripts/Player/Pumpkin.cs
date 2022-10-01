@@ -11,7 +11,7 @@ public class Pumpkin : Player {
     protected override void UseAbility() 
     {
         CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
-        canReadInput = false;
+        CanReadInput = false;
 
         rb.velocity = transform.forward * dashSpeed;
 
@@ -22,6 +22,6 @@ public class Pumpkin : Player {
     {
         yield return new WaitForSeconds(dashDuration);
 
-        canReadInput = true;
+        CanReadInput = true;
     }
 }

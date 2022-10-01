@@ -12,6 +12,7 @@ public abstract class Player : MonoBehaviour
     }
 
     public bool IsEscaping { get => isEscaping; }
+    public bool CanReadInput { get; set; }
 
     [Header("Settings")]
     [SerializeField]
@@ -25,9 +26,8 @@ public abstract class Player : MonoBehaviour
     [SerializeField]
     protected PlayerNumber playerNumber;
 
-    protected bool canReadInput = true;
+    
     protected bool canUseAblity = true;
-
 
     protected Rigidbody rb;
     protected Vector3 lastSpeedDirection;
@@ -42,6 +42,12 @@ public abstract class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    protected virtual void Start()
+    {
+        CanReadInput = true;
+        canUseAblity = true;
+    }
+
     protected virtual void Update()
     {
         HandleInput();
@@ -52,7 +58,7 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void HandleInput()
     {
-        if (canReadInput) {
+        if (CanReadInput) {
             if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
                 // Handle Input P1
                 rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
