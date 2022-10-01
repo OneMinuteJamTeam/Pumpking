@@ -41,7 +41,16 @@ public class Scarecrow : Player
 
     protected override void UseAbility()
     {
-        throw new System.NotImplementedException();
+        CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
+        canReadInput = false;
+
+        // Choose Pull or Push
+        if (IsEscaping)
+            PushAbility();
+        else
+            PullAbility();
+
+        canReadInput = true;
     }
 
     private void CheckAbilityRange()
@@ -49,7 +58,7 @@ public class Scarecrow : Player
         if(Vector3.Distance(_abilityTarget.transform.position, this.transform.position) < abilityRange)
         {
             _targetInRange = true;
-            CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target in range at Position " + _abilityTarget.transform.position);
+            CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target InRange");
         }
         else
         {

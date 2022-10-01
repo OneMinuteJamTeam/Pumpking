@@ -468,6 +468,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rotationSpeed: 100
+  abilityCooldown: 2
+  isEscaping: 1
   playerNumber: 1
   abilityRange: 3
   pushForce: 10
@@ -941,9 +943,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rotationSpeed: 100
+  abilityCooldown: 2
+  isEscaping: 0
   playerNumber: 0
-  dashSpeed: 0
-  dashDuration: 0
+  dashSpeed: 10
+  dashDuration: 0.1
 --- !u!54 &1378813158
 Rigidbody:
   m_ObjectHideFlags: 0

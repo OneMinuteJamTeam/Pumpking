@@ -11,23 +11,35 @@ public abstract class Player : MonoBehaviour
         PlayerTwo,
     }
 
+    public bool IsEscaping { get => isEscaping; }
+
     [Header("Settings")]
     [SerializeField]
     protected float moveSpeed = 5.0f;
     [SerializeField]
     protected float rotationSpeed = 100.0f;
     [SerializeField]
+    protected float abilityCooldown = 2.0f;
+    [SerializeField]
+    protected bool isEscaping = false;
+    [SerializeField]
     protected PlayerNumber playerNumber;
 
-    protected bool readInput = true;
-    
-    protected Rigidbody _rb;
-    protected Vector3 lastSpeedDirection;
+    protected bool canReadInput = true;
     protected bool canUseAblity = true;
+
+
+    protected Rigidbody rb;
+    protected Vector3 lastSpeedDirection;
+
+    public void SetIsEscaping(bool isEscaping)
+    {
+        this.isEscaping = isEscaping;
+    }
 
     protected virtual void Awake()
     {
-        _rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     protected virtual void Update()
@@ -40,24 +52,48 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void HandleInput()
     {
-        if (readInput) {
+        if (canReadInput) {
             if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
                 // Handle Input P1
-                _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
+                rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
 
                 lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
             }
             else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
                 // Handle Input P2
-                _rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
+                rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
 
                 lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
             }
+
+            HandleAbility();
         }
     }
 
     private void HandleRotation() {
         Quaternion toRot = Quaternion.LookRotation(lastSpeedDirection, transform.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, toRot, rotationSpeed * Time.deltaTime);
+    }
+
+    private void HandleAbility()
+    {
+        if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsAbilityPlayer1Pressed && canUseAblity) 
+        {
+            canUseAblity = false;
+            UseAbility();
+            StartCoroutine(COStartCooldown());
+        }
+        else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsAbilityPlayer2Pressed && canUseAblity)
+        {
+            canUseAblity = false;
+            UseAbility();
+            StartCoroutine(COStartCooldown());
+        }
+    }
+
+    private IEnumerator COStartCooldown()
+    {
+        yield return new WaitForSeconds(abilityCooldown);
+        canUseAblity = true;
     }
 }

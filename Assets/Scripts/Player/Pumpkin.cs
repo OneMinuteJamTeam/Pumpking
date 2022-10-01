@@ -8,20 +8,20 @@ public class Pumpkin : Player {
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 0.5f;
 
-    protected override void UseAbility() {
+    protected override void UseAbility() 
+    {
         CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
-        canUseAblity = false;
-        readInput = false;
+        canReadInput = false;
 
-        _rb.velocity = transform.forward * dashSpeed;
+        rb.velocity = transform.forward * dashSpeed;
 
         StartCoroutine(EndDash());
     }
 
-    private IEnumerator EndDash() {
+    private IEnumerator EndDash() 
+    {
         yield return new WaitForSeconds(dashDuration);
-        //_rb.velocity = Vector3.zero;
-        readInput = true;
-        canUseAblity = true;
+
+        canReadInput = true;
     }
 }
