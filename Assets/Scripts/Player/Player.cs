@@ -32,6 +32,8 @@ public abstract class Player : MonoBehaviour
     protected Rigidbody rb;
     protected Vector3 lastSpeedDirection;
 
+    private float originalMoveSpeed;
+
     public void SetIsEscaping(bool isEscaping)
     {
         this.isEscaping = isEscaping;
@@ -46,6 +48,7 @@ public abstract class Player : MonoBehaviour
     {
         CanReadInput = true;
         canUseAblity = true;
+        originalMoveSpeed = moveSpeed;
     }
 
     protected virtual void Update()
@@ -101,5 +104,22 @@ public abstract class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(abilityCooldown);
         canUseAblity = true;
+    }
+
+    //============================================================ speed boost handling
+
+    private Coroutine endSpeedBoostRef;
+    public void BoostSpeed(float _boostAmmount, float _duration) {
+        if (moveSpeed == originalMoveSpeed)
+            moveSpeed += _boostAmmount;
+        if (endSpeedBoostRef != null) StopCoroutine(endSpeedBoostRef);
+        endSpeedBoostRef = StartCoroutine(endSpeedBoost(_duration));
+
+    }
+    private IEnumerator endSpeedBoost(float _duration) {
+        Debug.Log("boost speed picked, ending in " + _duration + " seconds");
+        yield return new WaitForSeconds(_duration);
+        moveSpeed = originalMoveSpeed;
+        Debug.Log("boost speed ended");
     }
 }
