@@ -12,13 +12,18 @@ public class Scarecrow : Player
     [Header("Scarecrow Settings")]
     [SerializeField]
     private float abilityRange = 3.0f;
-    
+    [SerializeField]
+    private float pushForce = 5.0f;
+
     private Player _abilityTarget = null;
     private bool _targetInRange = false;
+
+    private bool _canPressAgain = true;
 
     protected override void Awake()
     {
         base.Awake();
+
         Player[] players = FindObjectsOfType<Player>();
         foreach (Player p in players)
         {
@@ -32,6 +37,17 @@ public class Scarecrow : Player
         base.Update();
         
         CheckAbilityRange();
+
+        if (InputManager.Instance.IsAbilityPlayer2Pressed && _canPressAgain)
+        {
+            PushAbility();
+            _canPressAgain = false;
+        }
+    }
+
+    protected override void UseAbility()
+    {
+        throw new System.NotImplementedException();
     }
 
     private void CheckAbilityRange()
@@ -46,5 +62,16 @@ public class Scarecrow : Player
             _targetInRange = false;
             CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target Loss");
         }
+    }
+
+    private void PushAbility()
+    {
+        if (!HasTarget)
+            return;
+
+        Vector3 dir = (_abilityTarget.transform.position - transform.position).normalized;
+        
+        _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
+
     }
 }
