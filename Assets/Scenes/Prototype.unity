@@ -467,11 +467,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  rotationSpeed: 100
   playerNumber: 1
-  playerLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
   abilityRange: 3
+  pushForce: 10
+  pullForce: 10
 --- !u!54 &723808239
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -940,7 +940,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  rotationSpeed: 100
   playerNumber: 0
+  dashSpeed: 0
+  dashDuration: 0
 --- !u!54 &1378813158
 Rigidbody:
   m_ObjectHideFlags: 0
