@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.AssetImporters;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public abstract class Player : MonoBehaviour
 {
@@ -63,6 +64,7 @@ public abstract class Player : MonoBehaviour
     {
         if (CanReadInput) {
             if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
+                //CustomSceneManager.Instance.LoadScene("MainMenu");
                 // Handle Input P1
                 rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
 
