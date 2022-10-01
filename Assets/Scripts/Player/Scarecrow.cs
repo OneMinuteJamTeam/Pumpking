@@ -16,6 +16,8 @@ public class Scarecrow : Player
     private float pushForce = 5.0f;
     [SerializeField]
     private float pullForce = 5.0f;
+    [SerializeField]
+    private float abilityDuration = 2.0f;
 
     private Player _abilityTarget = null;
     private bool _targetInRange = false;
@@ -50,7 +52,6 @@ public class Scarecrow : Player
         else
             PullAbility();
 
-        CanReadInput = true;
     }
 
     private void CheckAbilityRange()
@@ -77,7 +78,7 @@ public class Scarecrow : Player
         _abilityTarget.CanReadInput = false;
         _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
         _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
-        //  _abilityTarget.CanReadInput = true when??
+        StartCoroutine(COStartAbilityEffectTimer());
     }
 
     private void PullAbility()
@@ -87,8 +88,17 @@ public class Scarecrow : Player
 
         Vector3 dir = (transform.position - _abilityTarget.transform.position).normalized;
 
+        _abilityTarget.CanReadInput = false;
+        _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
         _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pullForce, ForceMode.Impulse);
+        StartCoroutine(COStartAbilityEffectTimer());
+    }
 
+    private IEnumerator COStartAbilityEffectTimer()
+    {
+        yield return new WaitForSeconds(abilityDuration);
+        _abilityTarget.CanReadInput = true;
+        CanReadInput = true;
     }
 }
 
