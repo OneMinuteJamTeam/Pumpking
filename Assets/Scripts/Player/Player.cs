@@ -23,6 +23,7 @@ public abstract class Player : MonoBehaviour
     
     protected Rigidbody _rb;
     protected Vector3 lastSpeedDirection;
+    protected bool canUseAblity = true;
 
     protected virtual void Awake()
     {
