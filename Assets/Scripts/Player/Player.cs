@@ -19,10 +19,10 @@ public abstract class Player : MonoBehaviour
     [SerializeField]
     protected PlayerNumber playerNumber;
 
-    protected bool readInput;
+    protected bool readInput = true;
     
-    private Rigidbody _rb;
-    private Vector3 lastSpeedDirection;
+    protected Rigidbody _rb;
+    protected Vector3 lastSpeedDirection;
 
     protected virtual void Awake()
     {
