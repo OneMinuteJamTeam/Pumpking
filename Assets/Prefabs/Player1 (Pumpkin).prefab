@@ -219,7 +219,7 @@ MonoBehaviour:
   abilityCooldown: 2
   isEscaping: 0
   playerNumber: 0
-  dashSpeed: 10
+  dashSpeed: 70
   dashDuration: 0.1
 --- !u!54 &477475240911130142
 Rigidbody:
