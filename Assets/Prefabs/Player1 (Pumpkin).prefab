@@ -216,7 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rotationSpeed: 600
-  abilityCooldown: 0
+  abilityCooldown: 2
   isEscaping: 0
   playerNumber: 0
   coolDownBarColor: {r: 1, g: 0.5472904, b: 0.015686274, a: 1}
