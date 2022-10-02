@@ -131,13 +131,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea80be84cb3da0469551a1bd6ecccc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 10
   rotationSpeed: 600
-  abilityCooldown: 2
+  abilityCooldown: 1.5
   isEscaping: 1
   playerNumber: 1
   coolDownBarColor: {r: 0, g: 0.98000383, b: 1, a: 1}
-  abilityRange: 3
+  abilityRange: 3.5
   pushForce: 10
   pullForce: 10
   abilityDuration: 1
