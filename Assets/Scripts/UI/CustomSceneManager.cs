@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class CustomSceneManager : SingletonDontDest<CustomSceneManager>
 {
-
     public delegate void LoadSceneDeleg();
 
-    public void LoadScene(string sceneToLoad) {
+    public void LoadScene(string sceneToLoad) 
+    {
         LoadSceneDeleg f = () => {
             SceneManager.LoadScene(sceneToLoad);
             GameController.Instance.UnpauseGame();
@@ -19,6 +19,5 @@ public class CustomSceneManager : SingletonDontDest<CustomSceneManager>
             StartCoroutine(FadePanel.Instance.fadeIn(f));
         else
             f();
-            
     }
 }

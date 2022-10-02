@@ -22,15 +22,18 @@ public class GameUIManager : Singleton<GameUIManager>
 
     #region Panels Handling
 
-    public void ShowPausePanel(bool active) {
+    public void ShowPausePanel(bool active) 
+    {
         Debug.Log("show pause panel called: "+active);
         pausePanel.SetActive(active);
     }
-    public void ShowGameOverPanel(bool active) {
+    public void ShowGameOverPanel(bool active) 
+    {
         gameOverPanel.SetActive(active);
     }
 
-    public void ShowGamePanel(bool active) {
+    public void ShowGamePanel(bool active) 
+    {
         gamePanel.SetActive(active);
     }
 
