@@ -34,6 +34,8 @@ public abstract class Player : MonoBehaviour
 
     private float originalMoveSpeed;
 
+    private MyUIBar coolDownBar;
+
     public void SetIsEscaping(bool isEscaping)
     {
         this.isEscaping = isEscaping;
@@ -42,6 +44,8 @@ public abstract class Player : MonoBehaviour
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        coolDownBar = GameUIManager.Instance.GetCooldownBar(playerNumber);
+        coolDownBar.SetMaxFill(abilityCooldown);
     }
 
     protected virtual void Start()
@@ -108,7 +112,14 @@ public abstract class Player : MonoBehaviour
 
     private IEnumerator COStartCooldown()
     {
-        yield return new WaitForSeconds(abilityCooldown);
+        float charge = 0;
+        float startTime = Time.time;
+        while (charge < abilityCooldown){
+            charge = Time.time - startTime;
+            coolDownBar.SetFill(charge);
+            yield return null;
+        }
+        //yield return new WaitForSeconds(abilityCooldown);
         canUseAblity = true;
     }
 
