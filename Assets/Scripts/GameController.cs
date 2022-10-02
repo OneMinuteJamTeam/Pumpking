@@ -96,9 +96,10 @@ public class GameController : Singleton<GameController>
     {
         CustomLog.Log(CustomLog.CustomLogType.GAMEPLAY, "ROLES SWAP");
         _rolesSwapped = true;
-        
-        timer.StopTimer();
+
         timer.StartTimerAt(30, true);
+        timer.StopTimer();
+        
 
         _pumpkin.CanReadInput = false;
         _scarecrow.CanReadInput = false;
@@ -106,9 +107,8 @@ public class GameController : Singleton<GameController>
         Destroy(_pumpkin.gameObject);
         Destroy(_scarecrow.gameObject);
 
+        GameUIManager.Instance.PlaySwapPanel(() => { timer.ResumeTimer(); });
         StartCoroutine(COSwap());
-
-        timer.ResumeTimer();
     }
 
     private void GivePointToEscapee()

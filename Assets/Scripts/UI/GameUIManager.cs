@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class GameUIManager : Singleton<GameUIManager>
 {
     [Header("References")]
@@ -10,7 +10,12 @@ public class GameUIManager : Singleton<GameUIManager>
     [SerializeField] GameObject gamePanel;
     [SerializeField] MyUIBar p1CooldownBar;
     [SerializeField] MyUIBar p2CooldownBar;
+    [SerializeField] SwapPanel swapPanel;
 
+    public void PlaySwapPanel(Action OnAnimationFinished)
+    {
+        swapPanel.Play(OnAnimationFinished);
+    }
     public void OnResumePressed() {
         GameController.Instance.UnpauseGame();
         GameController.Instance.SwitchPause();
