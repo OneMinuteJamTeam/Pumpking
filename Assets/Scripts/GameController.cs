@@ -8,6 +8,10 @@ public class GameController : SingletonDontDest<GameController>
     public int Player1Points { get; private set; } = 0;
     public int Player2Points { get; private set; } = 0;
 
+    [Header("References")]
+    [SerializeField]
+    private Timer timer;
+
     private bool _isPause = false;
     
     private int _round = 1;
@@ -18,6 +22,7 @@ public class GameController : SingletonDontDest<GameController>
     private void Start()
     {
         StartCoroutine(COGetPlayerRef());
+        timer.StartTimerAt(60, true);
     }
 
     private void Update()
