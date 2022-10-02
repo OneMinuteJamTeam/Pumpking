@@ -29,14 +29,14 @@ public class RoleSwapper : Singleton<RoleSwapper>
     {
         PlayerPrefs.DeleteAll();
         if (pumpkin == Role.Escapee)
-            PlayerPrefs.SetInt("PumpkinEscpaing", 1);
+            PlayerPrefs.SetInt("PumpkinEscaping", 1);
         else
-            PlayerPrefs.SetInt("PumpkinEscpaing", 0);
+            PlayerPrefs.SetInt("PumpkinEscaping", 0);
 
         if (scarecrow == Role.Escapee)
-            PlayerPrefs.SetInt("ScarecrowEscpaing", 1);
+            PlayerPrefs.SetInt("ScarecrowEscaping", 1);
         else
-            PlayerPrefs.SetInt("ScarecrowEscpaing", 0);
+            PlayerPrefs.SetInt("ScarecrowEscaping", 0);
 
         PumpkinRole = pumpkin;
         ScarecrowRole = scarecrow;

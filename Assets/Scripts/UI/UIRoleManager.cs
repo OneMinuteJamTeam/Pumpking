@@ -12,6 +12,11 @@ public class UIRoleManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI scarecrowText;
 
+    public void LoadScene(string sceneName)
+    {
+        CustomSceneManager.Instance.LoadScene(sceneName);
+    }
+
     public void SwapRoles()
     {
         RoleSwapper.Instance.SwapRoles();
