@@ -24,9 +24,7 @@ public class FadePanel : Singleton<FadePanel>
         panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, 0f);
         while (panel.color.a < 1) {
             panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, panel.color.a + 0.1f);
-            Debug.Log("a");
             yield return new WaitForSecondsRealtime(1 / fadePanelSpeed);
-            Debug.Log("b");
         }
         isActive = true;
         f();

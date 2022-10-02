@@ -16,9 +16,14 @@ public class GameUIManager : Singleton<GameUIManager>
         CustomSceneManager.Instance.LoadScene("MainMenu");
     }
 
+    public void DebugOnPlayerWins(int p) {
+        GameController.Instance.DebugPlayerWins(p);
+    }
+
     //============================================= panels handling
 
     public void ShowPausePanel(bool active) {
+        Debug.Log("show pause panel called: "+active);
         pausePanel.SetActive(active);
     }
     public void ShowGameOverPanel(bool active) {
@@ -28,5 +33,8 @@ public class GameUIManager : Singleton<GameUIManager>
     public void ShowGamePanel(bool active) {
         gamePanel.SetActive(active);
     }
+
+    //============================================= DebugButtons
+
 }
 
