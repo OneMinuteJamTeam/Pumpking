@@ -20,7 +20,8 @@ public class FadePanel : Singleton<FadePanel>
         }
     }
 
-    public IEnumerator fadeIn(CustomSceneManager.LoadSceneDeleg f) {
+    public IEnumerator fadeIn(CustomSceneManager.LoadSceneDeleg f) 
+    {
         panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, 0f);
         while (panel.color.a < 1) {
             panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, panel.color.a + 0.1f);
@@ -30,7 +31,8 @@ public class FadePanel : Singleton<FadePanel>
         f();
     }
 
-    private IEnumerator fadeOut() {
+    private IEnumerator fadeOut() 
+    {
         while (panel.color.a > 0) {
             panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, panel.color.a - 0.1f);
             yield return new WaitForSecondsRealtime(1 / fadePanelSpeed);

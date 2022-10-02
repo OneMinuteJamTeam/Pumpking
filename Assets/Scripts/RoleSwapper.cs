@@ -19,8 +19,9 @@ public class RoleSwapper : Singleton<RoleSwapper>
             SetRoles(Role.Chaser, Role.Escapee);
     }
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         SetRoles(Role.Chaser, Role.Escapee);
     }
 
