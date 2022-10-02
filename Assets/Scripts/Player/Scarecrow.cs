@@ -22,6 +22,12 @@ public class Scarecrow : Player
     private Player _abilityTarget = null;
     private bool _targetInRange = false;
 
+    public override void SetIsEscaping(bool isEscaping)
+    {
+        base.SetIsEscaping(isEscaping);
+        PlayerPrefs.SetInt("ScarecrowEscaping", isEscaping ? 1 : 0);
+    }
+
     protected override void Awake()
     {
         base.Awake();
@@ -62,6 +68,8 @@ public class Scarecrow : Player
 
     private void CheckAbilityRange()
     {
+        if (_abilityTarget == null)
+            return;
         if(Vector3.Distance(_abilityTarget.transform.position, this.transform.position) < abilityRange)
         {
             _targetInRange = true;

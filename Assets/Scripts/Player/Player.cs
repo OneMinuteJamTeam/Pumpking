@@ -34,7 +34,7 @@ public abstract class Player : MonoBehaviour
 
     private float originalMoveSpeed;
 
-    public void SetIsEscaping(bool isEscaping)
+    public virtual void SetIsEscaping(bool isEscaping)
     {
         this.isEscaping = isEscaping;
     }
@@ -110,6 +110,15 @@ public abstract class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(abilityCooldown);
         canUseAblity = true;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag.Equals("Player"))
+        {
+            if (!IsEscaping)
+                GameController.Instance.GivePoint(((int)playerNumber));
+        }
     }
 
     #region SpeedBoost Handling

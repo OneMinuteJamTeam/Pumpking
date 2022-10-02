@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using xPoke.CustomLog;
 
 public class GameController : SingletonDontDest<GameController>
 {
@@ -10,6 +11,14 @@ public class GameController : SingletonDontDest<GameController>
     private bool _isPause = false;
     
     private int _round = 1;
+
+    private Pumpkin _pumpkin;
+    private Scarecrow _scarecrow;
+
+    private void Start()
+    {
+        StartCoroutine(COGetPlayerRef());
+    }
 
     private void Update()
     {
@@ -62,6 +71,17 @@ public class GameController : SingletonDontDest<GameController>
     private void SwapRoles()
     {
         // TO-DO
+        CustomLog.Log(CustomLog.CustomLogType.GAMEPLAY, "ROLES SWAP");
+        _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
+        _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
+        SpawnManager.Instance.SpawnPlayers();
+    }
+
+    private IEnumerator COGetPlayerRef()
+    {
+        yield return new WaitForSeconds(0.1f);
+        _pumpkin = FindObjectOfType<Pumpkin>();
+        _scarecrow = FindObjectOfType<Scarecrow>();
     }
 
     #region Pause Handling
