@@ -72,12 +72,15 @@ public abstract class Player : MonoBehaviour
     protected virtual void HandleInput()
     {
         if (CanReadInput) {
+
             if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) 
             {
                 // Handle Input P1
                 rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
-
                 lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
+
+                RotateSpeedWithWalls();
+
             }
             else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2)
             {
@@ -85,6 +88,10 @@ public abstract class Player : MonoBehaviour
                 rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
 
                 lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
+
+                RotateSpeedWithWalls();
+
+
             }
             else rb.velocity = Vector3.zero;
 
@@ -142,6 +149,29 @@ public abstract class Player : MonoBehaviour
         }
     }
 
+    Vector3? hitWallNormal = null;
+    private void OnCollisionStay(Collision collision) {
+
+        if(collision.gameObject.tag == "Wall")
+            hitWallNormal = collision.contacts[0].normal;
+    }
+    private void OnCollisionExit(Collision collision) {
+        hitWallNormal = null;
+    }
+    private void RotateSpeedWithWalls() {
+        if (hitWallNormal != null) {
+
+            if(Vector3.Angle((Vector3)hitWallNormal, rb.velocity) > 90) {
+
+                float originalMagnitude = rb.velocity.magnitude;
+
+                lastSpeedDirection = Vector3.ProjectOnPlane(lastSpeedDirection, (Vector3)hitWallNormal);
+                rb.velocity = Vector3.ProjectOnPlane(rb.velocity, (Vector3)hitWallNormal);
+                rb.velocity = rb.velocity.normalized * originalMagnitude;
+            }
+        }
+    }
+
     #region SpeedBoost Handling
 
     private Coroutine endSpeedBoostRef;
@@ -161,4 +191,4 @@ public abstract class Player : MonoBehaviour
         Debug.Log("boost speed ended");
     }
     #endregion
-}
+} 
