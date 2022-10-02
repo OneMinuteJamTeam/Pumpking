@@ -56,6 +56,7 @@ public class GameController : SingletonDontDest<GameController>
     public void ResetPoints()
     {
         Player1Points = Player2Points = 0;
+        _round = 1;
     }
 
     private void SwapRoles()
