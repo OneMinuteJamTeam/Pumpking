@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using xPoke.CustomLog;
 
@@ -13,14 +14,11 @@ public class GameController : Singleton<GameController>
     [SerializeField]
     private Timer timer;
     [SerializeField]
-    private GameObject pickablesPrefab;
-    [SerializeField]
+    private GameObject pickablesGenerator;
+
     private GameObject pickablesContainer;
-
     private bool _isPause = false;
-    
     private int _round = 1;
-
     private Pumpkin _pumpkin;
     private Scarecrow _scarecrow;
     private bool _rolesSwapped = false;
@@ -31,6 +29,9 @@ public class GameController : Singleton<GameController>
         ResetPoints();
         StartCoroutine(COGetPlayerRef());
         timer.StartTimerAt(60, true);
+
+        pickablesContainer = Instantiate(pickablesGenerator);
+        pickablesGenerator.SetActive(false);
     }
 
     private void Update()
@@ -114,7 +115,8 @@ public class GameController : Singleton<GameController>
 
         GameUIManager.Instance.PlaySwapPanel(() => { timer.ResumeTimer(); });
         StartCoroutine(COSwap());
-        pickablesContainer = Instantiate(pickablesPrefab);
+        pickablesContainer = Instantiate(pickablesGenerator);
+        pickablesContainer.SetActive(true);
     }
 
     private void GivePointToEscapee()

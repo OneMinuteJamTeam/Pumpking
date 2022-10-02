@@ -2234,6 +2234,10 @@ PrefabInstance:
       propertyPath: pickablesContainer
       value: 
       objectReference: {fileID: 1936071907}
+    - target: {fileID: 5981631881289303509, guid: 68b721920b2dbef46a01116cd3b2ddc8, type: 3}
+      propertyPath: pickablesGenerator
+      value: 
+      objectReference: {fileID: 1936071907}
     - target: {fileID: 5981631881289303514, guid: 68b721920b2dbef46a01116cd3b2ddc8, type: 3}
       propertyPath: m_RootOrder
       value: 20
