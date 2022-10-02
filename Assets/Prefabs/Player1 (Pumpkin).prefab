@@ -214,13 +214,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eec3e62f5ea70343aa3c316c462a564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   rotationSpeed: 600
   abilityCooldown: 2
   isEscaping: 0
   playerNumber: 0
   coolDownBarColor: {r: 1, g: 0.5472904, b: 0.015686274, a: 1}
-  dashSpeed: 70
+  dashSpeed: 40
   dashDuration: 0.1
 --- !u!54 &477475240911130142
 Rigidbody:
