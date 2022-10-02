@@ -26,6 +26,8 @@ public abstract class Player : MonoBehaviour
     protected bool isEscaping = false;
     [SerializeField]
     protected PlayerNumber playerNumber;
+    [SerializeField]
+    protected Color coolDownBarColor;
 
     protected bool canUseAblity = true;
 
@@ -34,7 +36,7 @@ public abstract class Player : MonoBehaviour
 
     private float originalMoveSpeed;
 
-    private MyUIBar coolDownBar;
+    protected MyUIBar coolDownBar;
 
     public void SetIsEscaping(bool isEscaping)
     {
@@ -46,6 +48,7 @@ public abstract class Player : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         coolDownBar = GameUIManager.Instance.GetCooldownBar(playerNumber);
         coolDownBar.SetMaxFill(abilityCooldown);
+        coolDownBar.SetColor(coolDownBarColor);
     }
 
     protected virtual void Start()

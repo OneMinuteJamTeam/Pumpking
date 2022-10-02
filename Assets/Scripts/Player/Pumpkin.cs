@@ -8,6 +8,11 @@ public class Pumpkin : Player {
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 0.5f;
 
+    protected override void Start() {
+        base.Start();
+        coolDownBar.SetColor(coolDownBarColor);
+    }
+
     protected override void UseAbility() 
     {
         CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MyUIBar : MonoBehaviour
 {
-
+    [SerializeField] RawImage barFill;
     private Slider slider;
 
     private void Awake()
@@ -23,5 +23,8 @@ public class MyUIBar : MonoBehaviour
     {
         if (_newFill < 0) _newFill = 0;
         slider.value = _newFill;
+    }
+    public void SetColor(Color _color) {
+        barFill.color = _color;
     }
 }
