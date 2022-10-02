@@ -139,7 +139,6 @@ public abstract class Player : MonoBehaviour
                 Debug.Log("POINT GIVEN FROM COLLISION");
                 GameController.Instance.GivePoint(((int)playerNumber));
             }
-                
         }
     }
 

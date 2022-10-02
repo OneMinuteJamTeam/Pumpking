@@ -106,13 +106,7 @@ public class GameController : Singleton<GameController>
         Destroy(_pumpkin.gameObject);
         Destroy(_scarecrow.gameObject);
 
-        _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
-        _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
-
-        SpawnManager.Instance.SpawnPlayers();
-
-        _pumpkin = FindObjectOfType<Pumpkin>();
-        _scarecrow = FindObjectOfType<Scarecrow>();
+        StartCoroutine(COSwap());
 
         timer.ResumeTimer();
     }
@@ -128,6 +122,19 @@ public class GameController : Singleton<GameController>
     private IEnumerator COGetPlayerRef()
     {
         yield return new WaitForSeconds(0.1f);
+        _pumpkin = FindObjectOfType<Pumpkin>();
+        _scarecrow = FindObjectOfType<Scarecrow>();
+    }
+
+    private IEnumerator COSwap()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
+        _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
+
+        SpawnManager.Instance.SpawnPlayers();
+
         _pumpkin = FindObjectOfType<Pumpkin>();
         _scarecrow = FindObjectOfType<Scarecrow>();
     }
