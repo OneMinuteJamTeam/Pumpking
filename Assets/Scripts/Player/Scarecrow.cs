@@ -18,6 +18,8 @@ public class Scarecrow : Player
     private float pullForce = 5.0f;
     [SerializeField]
     private float abilityDuration = 2.0f;
+    [SerializeField]
+    private LayerMask obastaclesLayer;
 
     private Player _abilityTarget = null;
     private bool _targetInRange = false;
@@ -70,13 +72,21 @@ public class Scarecrow : Player
             
         if(Vector3.Distance(_abilityTarget.transform.position, this.transform.position) < abilityRange)
         {
+            RaycastHit hit;
+            Vector3 origin = new Vector3(transform.position.x, 0.0f, transform.position.z);
+            Debug.DrawRay(origin, (_abilityTarget.transform.position - origin) * Vector3.Distance(_abilityTarget.transform.position, this.transform.position), Color.red);
+            if (Physics.Raycast(origin, (_abilityTarget.transform.position - origin), out hit, Vector3.Distance(_abilityTarget.transform.position, this.transform.position), obastaclesLayer))
+            {
+                Debug.Log(hit.collider.gameObject);
+                return;
+            }
             _targetInRange = true;
             CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target InRange");
         }
         else
         {
             _targetInRange = false;
-            CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target Loss");
+            CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target Not InRange");
         }
     }
 

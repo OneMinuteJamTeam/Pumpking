@@ -141,6 +141,9 @@ MonoBehaviour:
   pushForce: 10
   pullForce: 10
   abilityDuration: 1
+  obastaclesLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!54 &7388373762313411123
 Rigidbody:
   m_ObjectHideFlags: 0
