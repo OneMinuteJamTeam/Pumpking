@@ -8,6 +8,8 @@ public class GameUIManager : Singleton<GameUIManager>
     [SerializeField] GameObject pausePanel;
     [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject gamePanel;
+    [SerializeField] MyUIBar p1CooldownBar;
+    [SerializeField] MyUIBar p2CooldownBar;
 
     public void OnResumePressed() {
         GameController.Instance.UnpauseGame();
@@ -20,6 +22,11 @@ public class GameUIManager : Singleton<GameUIManager>
 
     public void DebugOnPlayerWins(int p) {
         GameController.Instance.DebugPlayerWins(p);
+    }
+
+    public MyUIBar GetCooldownBar(Player.PlayerNumber p) {
+        if (p == Player.PlayerNumber.PlayerOne) return p1CooldownBar;
+        else return p2CooldownBar;
     }
 
     #region Panels Handling

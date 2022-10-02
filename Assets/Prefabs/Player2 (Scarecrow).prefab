@@ -136,6 +136,7 @@ MonoBehaviour:
   abilityCooldown: 2
   isEscaping: 1
   playerNumber: 1
+  coolDownBarColor: {r: 0, g: 0.98000383, b: 1, a: 1}
   abilityRange: 3
   pushForce: 10
   pullForce: 10
