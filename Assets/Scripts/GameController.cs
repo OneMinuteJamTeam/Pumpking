@@ -12,6 +12,10 @@ public class GameController : Singleton<GameController>
     [Header("References")]
     [SerializeField]
     private Timer timer;
+    [SerializeField]
+    private GameObject pickablesPrefab;
+    [SerializeField]
+    private GameObject pickablesContainer;
 
     private bool _isPause = false;
     
@@ -106,9 +110,11 @@ public class GameController : Singleton<GameController>
 
         Destroy(_pumpkin.gameObject);
         Destroy(_scarecrow.gameObject);
+        Destroy(pickablesContainer);
 
         GameUIManager.Instance.PlaySwapPanel(() => { timer.ResumeTimer(); });
         StartCoroutine(COSwap());
+        pickablesContainer = Instantiate(pickablesPrefab);
     }
 
     private void GivePointToEscapee()
