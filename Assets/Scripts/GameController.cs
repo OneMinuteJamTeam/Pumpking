@@ -13,8 +13,8 @@ public class GameController : SingletonDontDest<GameController>
 
     private void Update()
     {
-        if(InputManager.Instance.GetApplicationPausePressed() && !_isPause)
-            PauseGame();
+        if(InputManager.Instance.GetApplicationPausePressed())
+            SwitchPause();
     }
 
     public void GivePoint(int _player) 
