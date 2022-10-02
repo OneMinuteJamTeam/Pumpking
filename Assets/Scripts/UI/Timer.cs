@@ -12,7 +12,6 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textMesh;
 
-
     private float _timer;
     private bool _stop = false;
     public void StartTimerAt(float seconds)
