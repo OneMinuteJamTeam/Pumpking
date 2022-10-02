@@ -98,6 +98,7 @@ public class GameController : Singleton<GameController>
         _rolesSwapped = true;
         
         timer.StopTimer();
+        timer.StartTimerAt(30, true);
 
         _pumpkin.CanReadInput = false;
         _scarecrow.CanReadInput = false;

@@ -39,7 +39,7 @@ public abstract class Player : MonoBehaviour
 
     protected MyUIBar coolDownBar;
 
-    public void SetIsEscaping(bool isEscaping)
+    public virtual void SetIsEscaping(bool isEscaping)
     {
         this.isEscaping = isEscaping;
     }
