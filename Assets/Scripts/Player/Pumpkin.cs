@@ -8,9 +8,10 @@ public class Pumpkin : Player {
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 0.5f;
 
-    protected override void Start() {
-        base.Start();
-        coolDownBar.SetColor(coolDownBarColor);
+    public override void SetIsEscaping(bool isEscaping)
+    {
+        base.SetIsEscaping(isEscaping);
+        PlayerPrefs.SetInt("PumpkinEscaping", isEscaping ? 1 : 0);
     }
 
     protected override void UseAbility() 

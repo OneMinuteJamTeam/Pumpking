@@ -12,7 +12,6 @@ public class CustomSceneManager : SingletonDontDest<CustomSceneManager>
     {
         LoadSceneDeleg f = () => {
             SceneManager.LoadScene(sceneToLoad);
-            GameController.Instance.UnpauseGame();
         };
 
         if(FadePanel.Instance != null)

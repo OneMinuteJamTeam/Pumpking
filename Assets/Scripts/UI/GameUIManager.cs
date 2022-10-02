@@ -12,9 +12,11 @@ public class GameUIManager : Singleton<GameUIManager>
     [SerializeField] MyUIBar p2CooldownBar;
 
     public void OnResumePressed() {
+        GameController.Instance.UnpauseGame();
         GameController.Instance.SwitchPause();
     }
     public void OnReturnToMainMenuPressed() {
+        GameController.Instance.UnpauseGame();
         CustomSceneManager.Instance.LoadScene("MainMenu");
     }
 
