@@ -23,7 +23,7 @@ public class ResultsManager : Singleton<ResultsManager>
         rot = new Vector3(rot.x, rot.y + 180, rot.z);
         p1.transform.rotation = p2.transform.rotation = Quaternion.Euler(rot);
 
-        if (GameController.Instance.Player1Points > GameController.Instance.Player2Points) 
+        if (PlayerPrefs.GetInt("P1Points") > PlayerPrefs.GetInt("P2Points")) 
         {
             winText.text = "Player 1 wins!";
             StartCoroutine(winAnimation(p1));
@@ -34,7 +34,7 @@ public class ResultsManager : Singleton<ResultsManager>
             r = new Vector3(r.x, r.y, r.z + 90);
             p2.transform.rotation = p2.transform.rotation = Quaternion.Euler(r);
         }
-        else if (GameController.Instance.Player1Points < GameController.Instance.Player2Points) 
+        else if (PlayerPrefs.GetInt("P1Points") < PlayerPrefs.GetInt("P2Points")) 
         {
             winText.text = "Player 2 wins!";
             StartCoroutine(winAnimation(p2));
@@ -49,7 +49,7 @@ public class ResultsManager : Singleton<ResultsManager>
             winText.text = "Draw!";
             p1.GetComponent<Rigidbody>().useGravity = p2.GetComponent<Rigidbody>().useGravity = false;
         }
-        GameController.Instance.ResetPoints();
+       
     }
 
     private IEnumerator winAnimation(GameObject obj) 

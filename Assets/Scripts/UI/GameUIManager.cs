@@ -10,9 +10,11 @@ public class GameUIManager : Singleton<GameUIManager>
     [SerializeField] GameObject gamePanel;
 
     public void OnResumePressed() {
+        GameController.Instance.UnpauseGame();
         GameController.Instance.SwitchPause();
     }
     public void OnReturnToMainMenuPressed() {
+        GameController.Instance.UnpauseGame();
         CustomSceneManager.Instance.LoadScene("MainMenu");
     }
 

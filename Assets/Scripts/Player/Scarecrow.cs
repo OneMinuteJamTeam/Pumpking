@@ -32,12 +32,7 @@ public class Scarecrow : Player
     {
         base.Awake();
 
-        Player[] players = FindObjectsOfType<Player>();
-        foreach (Player p in players)
-        {
-            if(!this.Equals(p))
-                _abilityTarget = p;
-        }
+        FindTarget();
     }
 
     protected override void Update()
@@ -69,7 +64,10 @@ public class Scarecrow : Player
     private void CheckAbilityRange()
     {
         if (_abilityTarget == null)
-            return;
+        {
+            FindTarget();
+        }
+            
         if(Vector3.Distance(_abilityTarget.transform.position, this.transform.position) < abilityRange)
         {
             _targetInRange = true;
@@ -107,6 +105,16 @@ public class Scarecrow : Player
         yield return new WaitForSeconds(abilityDuration);
         _abilityTarget.CanReadInput = true;
         CanReadInput = true;
+    }
+
+    private void FindTarget()
+    {
+        Player[] players = FindObjectsOfType<Player>();
+        foreach (Player p in players)
+        {
+            if (!this.Equals(p))
+                _abilityTarget = p;
+        }
     }
 }
 

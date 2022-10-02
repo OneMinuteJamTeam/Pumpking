@@ -32,12 +32,15 @@ public abstract class Player : MonoBehaviour
     protected Rigidbody rb;
     protected Vector3 lastSpeedDirection;
 
-    private float originalMoveSpeed;
+    private float _originalMoveSpeed;
+    private bool _collideOnce = false;
 
     public virtual void SetIsEscaping(bool isEscaping)
     {
         this.isEscaping = isEscaping;
     }
+
+    public PlayerNumber GetPlayerNumber() => playerNumber;
 
     protected virtual void Awake()
     {
@@ -48,7 +51,7 @@ public abstract class Player : MonoBehaviour
     {
         CanReadInput = true;
         canUseAblity = true;
-        originalMoveSpeed = moveSpeed;
+        _originalMoveSpeed = moveSpeed;
     }
 
     protected virtual void Update()
@@ -114,10 +117,15 @@ public abstract class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag.Equals("Player"))
+        if (collision.collider.tag.Equals("Player") && !_collideOnce)
         {
+            _collideOnce = true;
             if (!IsEscaping)
+            {
+                Debug.Log("POINT GIVEN FROM COLLISION");
                 GameController.Instance.GivePoint(((int)playerNumber));
+            }
+                
         }
     }
 
@@ -126,7 +134,7 @@ public abstract class Player : MonoBehaviour
     private Coroutine endSpeedBoostRef;
     public void BoostSpeed(float _boostAmmount, float _duration) 
     {
-        if (moveSpeed == originalMoveSpeed)
+        if (moveSpeed == _originalMoveSpeed)
             moveSpeed += _boostAmmount;
         if (endSpeedBoostRef != null) StopCoroutine(endSpeedBoostRef);
         endSpeedBoostRef = StartCoroutine(endSpeedBoost(_duration));
@@ -136,7 +144,7 @@ public abstract class Player : MonoBehaviour
     {
         Debug.Log("boost speed picked, ending in " + _duration + " seconds");
         yield return new WaitForSeconds(_duration);
-        moveSpeed = originalMoveSpeed;
+        moveSpeed = _originalMoveSpeed;
         Debug.Log("boost speed ended");
     }
     #endregion
