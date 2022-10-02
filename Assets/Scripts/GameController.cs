@@ -17,8 +17,8 @@ public class GameController : Singleton<GameController>
     
     private int _round = 1;
 
-    private Pumpkin _pumpkin;
-    private Scarecrow _scarecrow;
+    private Player _p1Obj;
+    private Player _p2Obj;
     private bool _rolesSwapped = false;
     private bool _roundOver = false;
 
@@ -100,11 +100,11 @@ public class GameController : Singleton<GameController>
         timer.StopTimer();
         timer.StartTimerAt(30, true);
 
-        _pumpkin.CanReadInput = false;
-        _scarecrow.CanReadInput = false;
+        _p1Obj.CanReadInput = false;
+        _p2Obj.CanReadInput = false;
 
-        Destroy(_pumpkin.gameObject);
-        Destroy(_scarecrow.gameObject);
+        Destroy(_p1Obj.gameObject);
+        Destroy(_p2Obj.gameObject);
 
         StartCoroutine(COSwap());
 
@@ -113,30 +113,42 @@ public class GameController : Singleton<GameController>
 
     private void GivePointToEscapee()
     {
-        if (_pumpkin.IsEscaping)
-            GivePoint((int)_pumpkin.GetPlayerNumber());
-        else if (_scarecrow.IsEscaping)
-            GivePoint((int)_scarecrow.GetPlayerNumber());
+        if (_p1Obj.IsEscaping)
+            GivePoint((int)_p1Obj.GetPlayerNumber());
+        else if (_p2Obj.IsEscaping)
+            GivePoint((int)_p2Obj.GetPlayerNumber());
     }
 
     private IEnumerator COGetPlayerRef()
     {
         yield return new WaitForSeconds(0.1f);
-        _pumpkin = FindObjectOfType<Pumpkin>();
-        _scarecrow = FindObjectOfType<Scarecrow>();
+        FindPlayersReferences();
+
+        
+    }
+
+    private void FindPlayersReferences() {
+        Player[] players = FindObjectsOfType<Player>();
+        if (players[0].GetPlayerNumber() == Player.PlayerNumber.PlayerOne) {
+            _p1Obj = players[0];
+            _p2Obj = players[1];
+        }
+        else {
+            _p1Obj = players[1];
+            _p2Obj = players[0];
+        }
     }
 
     private IEnumerator COSwap()
     {
         yield return new WaitForSeconds(1.0f);
 
-        _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
-        _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
+        _p1Obj.SetIsEscaping(!_p1Obj.IsEscaping);
+        _p2Obj.SetIsEscaping(!_p2Obj.IsEscaping);
 
         SpawnManager.Instance.SpawnPlayers();
 
-        _pumpkin = FindObjectOfType<Pumpkin>();
-        _scarecrow = FindObjectOfType<Scarecrow>();
+        FindPlayersReferences();
     }
 
     #region Pause Handling

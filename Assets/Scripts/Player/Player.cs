@@ -12,7 +12,7 @@ public abstract class Player : MonoBehaviour
         PlayerTwo,
     }
 
-    public bool IsEscaping { get => isEscaping; }
+    public bool IsEscaping { get; private set; }
     public bool CanReadInput { get; set; }
 
     [Header("Settings")]
@@ -22,8 +22,6 @@ public abstract class Player : MonoBehaviour
     protected float rotationSpeed = 100.0f;
     [SerializeField]
     protected float abilityCooldown = 2.0f;
-    [SerializeField]
-    protected bool isEscaping = false;
     [SerializeField]
     protected PlayerNumber playerNumber;
     [SerializeField]
@@ -38,11 +36,6 @@ public abstract class Player : MonoBehaviour
     private bool _collideOnce = false;
 
     protected MyUIBar coolDownBar;
-
-    public virtual void SetIsEscaping(bool isEscaping)
-    {
-        this.isEscaping = isEscaping;
-    }
 
     public PlayerNumber GetPlayerNumber() => playerNumber;
 
@@ -140,6 +133,15 @@ public abstract class Player : MonoBehaviour
                 GameController.Instance.GivePoint(((int)playerNumber));
             }
         }
+    }
+
+    public void SetIsEscaping(bool isEscaping) {
+        //Debug.Log("is escaping called with: " + isEscaping);
+        //IsEscaping = isEscaping;
+        //if(playerNumber == PlayerNumber.PlayerOne)
+        //    PlayerPrefs.SetInt("P1Escaping", isEscaping ? 1 : 0);
+        //else
+        //    PlayerPrefs.SetInt("P2Escaping", isEscaping ? 1 : 0);
     }
 
     #region SpeedBoost Handling
