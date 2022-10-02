@@ -34,7 +34,7 @@ public class SpawnManager : MonoBehaviour
         if (isScarecrowEscpaing)
             scarecrowObj = Instantiate(scarecrowPrefab, new Vector3(escapeeSpawnPoint.position.x, scarecrowPrefab.transform.position.y, escapeeSpawnPoint.transform.position.z), Quaternion.identity);
         else
-            scarecrowObj = Instantiate(scarecrowPrefab, new Vector3(chaserSpawnPoint.position.x, pumpkinPrefab.transform.position.y, chaserSpawnPoint.transform.position.z), Quaternion.identity);
+            scarecrowObj = Instantiate(scarecrowPrefab, new Vector3(chaserSpawnPoint.position.x, scarecrowPrefab.transform.position.y, chaserSpawnPoint.transform.position.z), Quaternion.identity);
 
         // Escaping set
         pumpkinObj.GetComponent<Pumpkin>().SetIsEscaping(isPumpkinEscpaing);
