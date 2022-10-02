@@ -6,18 +6,24 @@ public class GameController : SingletonDontDest<GameController>
 {
 
     private bool isPause = false;
-    public void Pause() {
+
+    public void SwitchPause() {
         if (GameUIManager.Instance) {
-            if (isPause) {
-                Time.timeScale = 1f;
-                GameUIManager.Instance.ShowPausePanel(false);
-                isPause = false;
-            }
-            else {
-                Time.timeScale = 0;
-                GameUIManager.Instance.ShowPausePanel(true);
-                isPause = true;
-            }
+            if (isPause)
+                UnpauseGame();
+            else
+                PauseGame();
         }
+    }
+
+    public void UnpauseGame() {
+        Time.timeScale = 1f;
+        GameUIManager.Instance.ShowPausePanel(false);
+        isPause = false;
+    }
+    public void PauseGame() {
+        Time.timeScale = 0;
+        GameUIManager.Instance.ShowPausePanel(true);
+        isPause = true;
     }
 }
