@@ -14,6 +14,8 @@ public class InputManager : Singleton<InputManager>
     public Vector2 MoveDirectionPlayer2 { get; private set; }
     public bool IsAbilityPlayer2Pressed { get; private set; }
 
+    private bool _isPausePressed = false;
+
     public void MovePressedPlayer1(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -66,7 +68,22 @@ public class InputManager : Singleton<InputManager>
         }
     }
 
-    public void OnApplicationPause(InputAction.CallbackContext context) {
-        if (context.performed && GameController.Instance) GameController.Instance.SwitchPause();
+    public void ApplicationPause(InputAction.CallbackContext context) {
+        if (context.performed)
+        {
+            _isPausePressed = true;
+        }
+        else if (context.canceled)
+        {
+            _isPausePressed = false;
+        }
+    }
+
+    // For ButtonDown only
+    public bool GetApplicationPausePressed()
+    {
+        bool result = _isPausePressed;
+        _isPausePressed = false;
+        return result;
     }
 }

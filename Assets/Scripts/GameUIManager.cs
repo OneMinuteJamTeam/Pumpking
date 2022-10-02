@@ -20,7 +20,7 @@ public class GameUIManager : Singleton<GameUIManager>
         GameController.Instance.DebugPlayerWins(p);
     }
 
-    //============================================= panels handling
+    #region Panels Handling
 
     public void ShowPausePanel(bool active) {
         Debug.Log("show pause panel called: "+active);
@@ -34,7 +34,7 @@ public class GameUIManager : Singleton<GameUIManager>
         gamePanel.SetActive(active);
     }
 
-    //============================================= DebugButtons
+    #endregion
 
 }
 

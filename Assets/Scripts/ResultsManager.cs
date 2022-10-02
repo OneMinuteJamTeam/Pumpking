@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 
 public class ResultsManager : Singleton<ResultsManager>
 {
+    [Header("References")]
     [SerializeField] TextMeshProUGUI winText;
     [SerializeField] Transform P1position;
     [SerializeField] Transform P2position;
@@ -22,7 +23,8 @@ public class ResultsManager : Singleton<ResultsManager>
         rot = new Vector3(rot.x, rot.y + 180, rot.z);
         p1.transform.rotation = p2.transform.rotation = Quaternion.Euler(rot);
 
-        if (GameController.Instance.Player1Points > GameController.Instance.Player2Points) {
+        if (GameController.Instance.Player1Points > GameController.Instance.Player2Points) 
+        {
             winText.text = "Player 1 wins!";
             StartCoroutine(winAnimation(p1));
 
@@ -32,7 +34,8 @@ public class ResultsManager : Singleton<ResultsManager>
             r = new Vector3(r.x, r.y, r.z + 90);
             p2.transform.rotation = p2.transform.rotation = Quaternion.Euler(r);
         }
-        else if (GameController.Instance.Player1Points < GameController.Instance.Player2Points) {
+        else if (GameController.Instance.Player1Points < GameController.Instance.Player2Points) 
+        {
             winText.text = "Player 2 wins!";
             StartCoroutine(winAnimation(p2));
 
@@ -41,16 +44,19 @@ public class ResultsManager : Singleton<ResultsManager>
             r = new Vector3(r.x, r.y, r.z +90);
             p1.transform.rotation = p1.transform.rotation = Quaternion.Euler(r);
         }
-        else {
+        else 
+        {
             winText.text = "Draw!";
             p1.GetComponent<Rigidbody>().useGravity = p2.GetComponent<Rigidbody>().useGravity = false;
         }
         GameController.Instance.ResetPoints();
     }
 
-    private IEnumerator winAnimation(GameObject obj) {
+    private IEnumerator winAnimation(GameObject obj) 
+    {
         float originalY = obj.transform.position.y;
-        while (true) {
+        while (true) 
+        {
             if (obj.transform.position.y < originalY) obj.GetComponent<Rigidbody>().velocity = new Vector3(0, 6, 0);
             yield return new WaitForSeconds(0.2f);
         }
