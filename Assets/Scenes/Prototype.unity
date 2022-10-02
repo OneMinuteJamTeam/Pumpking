@@ -2230,6 +2230,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1749868904}
+    - target: {fileID: 5981631881289303509, guid: 68b721920b2dbef46a01116cd3b2ddc8, type: 3}
+      propertyPath: pickablesGenerator
+      value: 
+      objectReference: {fileID: 1635820078}
     - target: {fileID: 5981631881289303514, guid: 68b721920b2dbef46a01116cd3b2ddc8, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -3374,6 +3378,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429157763}
   m_CullTransparentMesh: 1
+--- !u!1001 &1635820077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806393, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182229984551806398, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+      propertyPath: m_Name
+      value: Pickables
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+--- !u!1 &1635820078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1182229984551806398, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
+  m_PrefabInstance: {fileID: 1635820077}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1717090213
 GameObject:
   m_ObjectHideFlags: 0
