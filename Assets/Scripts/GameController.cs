@@ -19,9 +19,9 @@ public class GameController : SingletonDontDest<GameController>
 
     public void GivePoint(int _player) 
     {
-        if (_player == 1)
+        if (_player == 0)
             Player1Points++;
-        else if (_player == 2)
+        else if (_player == 1)
             Player2Points++;
         else 
             Debug.LogError("GameController: assigned point to player " + _player + ", that doesn't exist");
