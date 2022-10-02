@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textMesh;
 
+
     private float _timer;
     private bool _stop = false;
     public void StartTimerAt(float seconds)
@@ -60,18 +61,18 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        if (_stop)
-            return;
+        //if (_stop)
+        //    return;
 
-        if (!IsDecreasing)
-            _timer += Time.deltaTime;
-        else if(_timer > 0 && IsDecreasing)
-            _timer -= Time.deltaTime;
+        //if (!IsDecreasing)
+        //    _timer += Time.deltaTime;
+        //else if(_timer > 0 && IsDecreasing)
+        //    _timer -= Time.deltaTime;
 
-        if (IsDecreasing && _timer <= 0)
-            return;
+        //if (IsDecreasing && _timer <= 0)
+        //    return;
 
-        UpdateTimerDisplay(_timer);
+        //UpdateTimerDisplay(_timer);
     }
 
     private void ResetTimer()

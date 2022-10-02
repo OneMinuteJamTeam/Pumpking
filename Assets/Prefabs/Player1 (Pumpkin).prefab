@@ -216,7 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rotationSpeed: 600
-  abilityCooldown: 2
+  abilityCooldown: 0
   isEscaping: 0
   playerNumber: 0
   coolDownBarColor: {r: 1, g: 0.5472904, b: 0.015686274, a: 1}
@@ -237,7 +237,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!135 &477475240911130143
 SphereCollider:
   m_ObjectHideFlags: 0
