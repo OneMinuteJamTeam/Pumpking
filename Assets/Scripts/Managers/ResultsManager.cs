@@ -13,6 +13,7 @@ public class ResultsManager : Singleton<ResultsManager>
     [SerializeField] Transform P2position;
     [SerializeField] GameObject PumpkinPrefab;
     [SerializeField] GameObject ScareCrowPrefab;
+    [SerializeField] TextMeshProUGUI resultScoreText;
 
     private void Start() {
 
@@ -23,7 +24,12 @@ public class ResultsManager : Singleton<ResultsManager>
         rot = new Vector3(rot.x, rot.y + 180, rot.z);
         p1.transform.rotation = p2.transform.rotation = Quaternion.Euler(rot);
 
-        if (PlayerPrefs.GetInt("P1Points") > PlayerPrefs.GetInt("P2Points")) 
+        int p1Points = PlayerPrefs.GetInt("P1Points");
+        int p2Points = PlayerPrefs.GetInt("P2Points");
+
+        resultScoreText.text = p1Points.ToString() + " - " + p2Points.ToString();
+
+        if (p1Points > p2Points) 
         {
             winText.text = "Player 1 wins!";
             StartCoroutine(winAnimation(p1));
