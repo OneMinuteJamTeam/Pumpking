@@ -34,6 +34,7 @@ public class GameController : Singleton<GameController>
     private void Start()
     {
         ResetPoints();
+        InitPlayersRoles();
         timer.StartTimerAt(60, true);
         crownsTrapsSpawner.Spawn();
         EnablePlayersMovement();
@@ -168,6 +169,13 @@ public class GameController : Singleton<GameController>
 
     public void ResumeTimer() {
         timer.ResumeTimer();
+    }
+
+    private void InitPlayersRoles() {
+        bool isPumpkinEscaping = PlayerPrefs.GetInt("PumpkinEscaping") == 1 ? true : false;
+        bool isScarecrowEscpaing = PlayerPrefs.GetInt("ScarecrowEscaping") == 1 ? true : false;
+        _scarecrow.SetIsEscaping(isScarecrowEscpaing);
+        _pumpkin.SetIsEscaping(isPumpkinEscaping);
     }
 
     #endregion
