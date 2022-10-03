@@ -4,10 +4,17 @@ using UnityEngine;
 using xPoke.CustomLog;
 
 public class Pumpkin : Player {
-
+    [Header("Dash settings")]
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 0.5f;
+    [SerializeField] bool disapearOnDash = true;    
+
+    [Header("References")]
     [SerializeField] TrailRenderer trailRenderer;
+    [SerializeField] GameObject model;
+
+
+    private bool dashActive = false;
 
     protected override void Awake() {
         base.Awake();
@@ -23,19 +30,32 @@ public class Pumpkin : Player {
     protected override void UseAbility() 
     {
         if (CanMove) {
+            dashActive = true;
             trailRenderer.emitting = true;
+            if(disapearOnDash)model.SetActive(false);
             CanReadInput = false;
 
             rb.velocity = transform.forward * dashSpeed;
 
-            StartCoroutine(EndDash());
+            StartCoroutine(EndDashCor());
         }
     }
 
-    private IEnumerator EndDash() 
+    private IEnumerator EndDashCor() 
     {
         yield return new WaitForSeconds(dashDuration);
-        CanReadInput = true;
-        trailRenderer.emitting = false;
+        EndDash();
+    }
+    private void EndDash() {
+        if (dashActive) {
+            if(disapearOnDash)model.SetActive(true);
+            CanReadInput = true;
+            trailRenderer.emitting = false;
+        }
+    }
+
+    protected override void OnCollisionEnter(Collision collision) {
+        EndDash();
+        base.OnCollisionEnter(collision);
     }
 }

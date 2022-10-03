@@ -140,7 +140,7 @@ public abstract class Player : MonoBehaviour
         canUseAbility = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    protected virtual void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag.Equals("Player") && !_collideOnce)
         {

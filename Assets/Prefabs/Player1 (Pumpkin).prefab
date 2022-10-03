@@ -57,7 +57,9 @@ MonoBehaviour:
   coolDownBarColor: {r: 1, g: 0.5472904, b: 0.015686274, a: 1}
   dashSpeed: 40
   dashDuration: 0.1
+  disapearOnDash: 0
   trailRenderer: {fileID: 8028672763728826487}
+  model: {fileID: 8744794801580649169}
 --- !u!54 &477475240911130142
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -425,5 +427,10 @@ Transform:
 --- !u!4 &8219087079092908139 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6ea544337446ced49b5c07e94fdd4c15, type: 3}
+  m_PrefabInstance: {fileID: 8474271859874502528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8744794801580649169 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6ea544337446ced49b5c07e94fdd4c15, type: 3}
   m_PrefabInstance: {fileID: 8474271859874502528}
   m_PrefabAsset: {fileID: 0}
