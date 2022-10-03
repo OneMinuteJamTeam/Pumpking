@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F1D6C3A7-A908-443C-85D8-C4675310337E}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{F1D6C3A7-A908-443C-85D8-C4675310337E}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="timer" ID="{93BF253C-D052-4042-A4EA-BA6C7C9DAE57}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
