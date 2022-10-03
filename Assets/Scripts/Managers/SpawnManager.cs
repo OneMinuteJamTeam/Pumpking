@@ -12,9 +12,9 @@ public class SpawnManager : Singleton<SpawnManager>
 
     [Header("Spawn Points")]
     [SerializeField]
-    private Transform escapeeSpawnPoint;
+    private Transform P1SpawnPos;
     [SerializeField]
-    private Transform chaserSpawnPoint;
+    private Transform P2SpawnPos;
 
     private GameObject _pumpkinObj = null;
     private GameObject _scarecrowObj = null;
@@ -32,15 +32,8 @@ public class SpawnManager : Singleton<SpawnManager>
         bool isScarecrowEscpaing = PlayerPrefs.GetInt("ScarecrowEscaping") == 1 ? true : false;
 
         // Spawn
-        if (isPumpkinEscpaing)
-            _pumpkinObj = Instantiate(pumpkinPrefab, new Vector3(escapeeSpawnPoint.position.x,pumpkinPrefab.transform.position.y, escapeeSpawnPoint.transform.position.z), Quaternion.identity);
-        else
-            _pumpkinObj = Instantiate(pumpkinPrefab, new Vector3(chaserSpawnPoint.position.x, pumpkinPrefab.transform.position.y, chaserSpawnPoint.transform.position.z), Quaternion.identity);
-
-        if (isScarecrowEscpaing)
-            _scarecrowObj = Instantiate(scarecrowPrefab, new Vector3(escapeeSpawnPoint.position.x, scarecrowPrefab.transform.position.y, escapeeSpawnPoint.transform.position.z), Quaternion.identity);
-        else
-            _scarecrowObj = Instantiate(scarecrowPrefab, new Vector3(chaserSpawnPoint.position.x, scarecrowPrefab.transform.position.y, chaserSpawnPoint.transform.position.z), Quaternion.identity);
+        _pumpkinObj = Instantiate(pumpkinPrefab, new Vector3(P1SpawnPos.position.x, pumpkinPrefab.transform.position.y, P1SpawnPos.transform.position.z), Quaternion.identity);
+        _scarecrowObj = Instantiate(scarecrowPrefab, new Vector3(P2SpawnPos.position.x, scarecrowPrefab.transform.position.y, P2SpawnPos.position.z), Quaternion.identity);
 
         // Escaping set
         _pumpkinObj.GetComponent<Pumpkin>().SetIsEscaping(isPumpkinEscpaing);

@@ -670,7 +670,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127527080}
   m_Layer: 0
-  m_Name: ChaserSpawn
+  m_Name: P1SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1206,7 +1206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 225687052}
   m_Layer: 0
-  m_Name: EscapeeSpawn
+  m_Name: P2SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4706,8 +4706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pumpkinPrefab: {fileID: 477475240911130139, guid: a9b748b84b631084493191921ddbf80a, type: 3}
   scarecrowPrefab: {fileID: 7388373762313411120, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
-  escapeeSpawnPoint: {fileID: 225687052}
-  chaserSpawnPoint: {fileID: 127527080}
+  P1SpawnPos: {fileID: 127527080}
+  P2SpawnPos: {fileID: 225687052}
 --- !u!1001 &802989956
 PrefabInstance:
   m_ObjectHideFlags: 0
