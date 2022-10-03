@@ -29,7 +29,6 @@ public class GameController : Singleton<GameController>
         ResetPoints();
         StartCoroutine(COGetPlayerRef());
         timer.StartTimerAt(60, true);
-
         crownsTrapsSpawner.Spawn();
     }
 
@@ -132,6 +131,7 @@ public class GameController : Singleton<GameController>
         yield return new WaitForSeconds(0.1f);
         _pumpkin = FindObjectOfType<Pumpkin>();
         _scarecrow = FindObjectOfType<Scarecrow>();
+        EnablePlayersMovement();
     }
 
     private IEnumerator COSwap()
@@ -145,6 +145,8 @@ public class GameController : Singleton<GameController>
 
         _pumpkin = FindObjectOfType<Pumpkin>();
         _scarecrow = FindObjectOfType<Scarecrow>();
+
+        Debug.Log("movement enabled");
     }
 
     #region Pause Handling
@@ -170,6 +172,11 @@ public class GameController : Singleton<GameController>
             GameUIManager.Instance.ShowPausePanel(true);
             _isPause = true;
         }
+    }
+
+    public void EnablePlayersMovement() {
+        _pumpkin.CanReadInput = true;
+        _scarecrow.CanReadInput = true;
     }
     #endregion
 }

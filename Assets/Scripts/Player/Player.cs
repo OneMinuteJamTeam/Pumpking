@@ -60,7 +60,7 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void Start()
     {
-        CanReadInput = true;
+        CanReadInput = false;
         canUseAbility = true;
         CanMove = true;
         _originalMoveSpeed = moveSpeed;

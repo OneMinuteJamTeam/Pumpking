@@ -36,4 +36,7 @@ public class SwapPanel : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         callback?.Invoke();
     }
+    public void EnablePlayersMovement() {
+        GameController.Instance.EnablePlayersMovement();
+    }
 }
