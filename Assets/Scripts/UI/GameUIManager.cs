@@ -13,9 +13,11 @@ public class GameUIManager : Singleton<GameUIManager>
     [SerializeField] MyUIBar p2CooldownBar;
     [SerializeField] SwapPanel swapPanel;
     [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI swapScoreText;
 
     public void PlaySwapPanel(Action OnAnimationFinished)
     {
+        swapPanel.gameObject.SetActive(true);
         swapPanel.Play(OnAnimationFinished);
     }
     public void OnResumePressed() {
@@ -51,6 +53,7 @@ public class GameUIManager : Singleton<GameUIManager>
 
     public void SetScoreText(int p1Score,int p2Score) {
         scoreText.text = p1Score.ToString()+" - "+p2Score.ToString();
+        swapScoreText.text = p1Score.ToString() + " - " + p2Score.ToString();
     }
 
     #endregion
