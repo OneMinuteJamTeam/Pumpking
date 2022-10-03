@@ -52,18 +52,18 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void Awake()
     {
+        CanReadInput = false;
+        canUseAbility = true;
+        CanMove = true;
         rb = GetComponent<Rigidbody>();
         coolDownBar = GameUIManager.Instance.GetCooldownBar(playerNumber);
-        coolDownBar.SetMaxFill(abilityCooldown);
-        coolDownBar.SetColor(coolDownBarColor);
     }
 
     protected virtual void Start()
     {
-        CanReadInput = false;
-        canUseAbility = true;
-        CanMove = true;
         _originalMoveSpeed = moveSpeed;
+        coolDownBar.SetMaxFill(abilityCooldown);
+        coolDownBar.SetColor(coolDownBarColor);
     }
 
     protected virtual void Update()
@@ -137,19 +137,6 @@ public abstract class Player : MonoBehaviour
         }
         //yield return new WaitForSeconds(abilityCooldown);
         canUseAbility = true;
-    }
-
-    protected virtual void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.tag.Equals("Player") && !_collideOnce)
-        {
-            _collideOnce = true;
-            if (!IsEscaping)
-            {
-                Debug.Log("POINT GIVEN FROM COLLISION");
-                GameController.Instance.GivePoint(((int)playerNumber));
-            }
-        }
     }
 
     Vector3? hitWallNormal = null;

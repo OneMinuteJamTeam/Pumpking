@@ -51,8 +51,14 @@ public class Pumpkin : Player {
         }
     }
 
-    protected override void OnCollisionEnter(Collision collision) {
-        EndDash();
-        base.OnCollisionEnter(collision);
+
+    private void OnCollisionEnter(Collision collision) {
+    EndDash();
+    if (collision.collider.tag.Equals("Player")) {
+            if (!IsEscaping)
+                GameController.Instance.GivePoint(((int)PlayerNumber.PlayerOne));
+            else
+                GameController.Instance.GivePoint((int)PlayerNumber.PlayerTwo);
     }
+}
 }
