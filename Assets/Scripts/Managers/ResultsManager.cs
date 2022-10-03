@@ -16,8 +16,8 @@ public class ResultsManager : Singleton<ResultsManager>
 
     private void Start() {
 
-        GameObject p1 = Instantiate(ScareCrowPrefab, P1position.position, Quaternion.identity);
-        GameObject p2 = Instantiate(PumpkinPrefab, P2position.position, Quaternion.identity);
+        GameObject p1 = Instantiate(PumpkinPrefab, P1position.position, Quaternion.identity);
+        GameObject p2 = Instantiate(ScareCrowPrefab, P2position.position, Quaternion.identity);
 
         Vector3 rot = p1.transform.rotation.eulerAngles;
         rot = new Vector3(rot.x, rot.y + 180, rot.z);
