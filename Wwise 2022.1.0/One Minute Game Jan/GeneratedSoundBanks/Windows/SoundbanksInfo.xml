@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D10CD12A-FF6E-3210-BC00-9D4BF7650C89}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FB56D0DF-A4B1-B735-4B04-7F54E400D0AA}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -35,6 +35,7 @@
 				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
 				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
 				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
+				<GameParameter Id="3920142940" Name="timer"/>
 				<GameParameter Id="4160247818" Name="SS_Air_Turbulence"/>
 			</GameParameters>
 			<AcousticTextures>
@@ -152,7 +153,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{CA12E48D-AD5A-89DB-C0CA-AF2D535049D9}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{09F4D319-6990-2E2C-95CA-9985E18EB220}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -160,15 +161,23 @@
 					<ShortName>Bullet Whiz By 02.wav</ShortName>
 					<CachePath>SFX/Bullet Whiz By 02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="315691479" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Heartbeat.wav</ShortName>
+					<CachePath>SFX/Heartbeat_674CBFD6.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
-				<Event Id="1256513485" Name="Bullet" DurationType="OneShot" DurationMin="0.4702041" DurationMax="0.4702041">
+				<Event Id="1256513485" Name="Bullet" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="105588453"/>
+						<MediaRef Id="315691479"/>
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3920142940" Name="timer"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{00ED6964-76F5-4B0B-D518-3F48F87382A9}</FileHash>
+	<FileHash>{EA54677D-A989-D926-3437-6C6E8DE1B665}</FileHash>
 </SoundBanksInfo>

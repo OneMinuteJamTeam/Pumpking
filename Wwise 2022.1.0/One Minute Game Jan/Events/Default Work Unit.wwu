@@ -12,6 +12,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{261511ED-BF54-42E7-B476-E3D7FD4554BA}" ShortID="111975543">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hearthbeat" ID="{9CFF0A3A-E28C-41D6-A2A0-284047ADB838}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

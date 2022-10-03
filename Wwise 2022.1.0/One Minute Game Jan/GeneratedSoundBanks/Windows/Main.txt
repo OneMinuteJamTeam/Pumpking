@@ -1,6 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1256513485	Bullet			\Default Work Unit\Bullet	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3920142940	timer			\Default Work Unit\timer	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	105588453	Bullet	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Bullet Whiz By 02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bullet		41568
+	105588453	Bullet	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Bullet Whiz By 02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bullet		41568
+	315691479	hearthbeat	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Heartbeat_674CBFD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\hearthbeat		4594976
 
