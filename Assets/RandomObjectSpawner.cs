@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class RandomObjectSpawner : MonoBehaviour
 {
-    [SerializeField] List<GameObject> possibleObjects;
-
     private int chosenId;
     private GameObject generatedObject;
      
     private void Start() {
 
-        foreach(GameObject obj in possibleObjects) {
-            obj.SetActive(false);
+        for (int i = 0; i < transform.childCount; i++) {
+            transform.GetChild(i).gameObject.SetActive(false);
         }
-        chosenId = Random.Range(0, possibleObjects.Count);
+        chosenId = Random.Range(0, transform.childCount);
     }
 
     public void Spawn() {
         if(generatedObject)Destroy(generatedObject);
-        generatedObject = Instantiate(possibleObjects[chosenId]);
+        generatedObject = Instantiate(transform.GetChild(chosenId).gameObject);
         generatedObject.SetActive(true);
     }
 }
