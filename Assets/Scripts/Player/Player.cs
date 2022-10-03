@@ -13,8 +13,9 @@ public abstract class Player : MonoBehaviour
     }
 
     public bool IsEscaping { get => isEscaping; }
-    public bool CanReadInput { get; set; }
-    public bool CanMove { get; set; }
+    public bool CanReadInput { get; set; } = true;
+    public bool CanMove { get; set; } = true;
+    public float SlowAmmount { get; set; } = 0;
 
     [Header("Settings")]
     [SerializeField]
@@ -87,6 +88,7 @@ public abstract class Player : MonoBehaviour
                 else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
                     // Handle Input P2
                     rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
+                    rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
 
                     lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
 
@@ -97,6 +99,7 @@ public abstract class Player : MonoBehaviour
             else rb.velocity = Vector3.zero;
             HandleAbility();
         }
+        HandleSlow();
     }
 
     private void HandleRotation()
@@ -105,6 +108,13 @@ public abstract class Player : MonoBehaviour
             return;
         Quaternion toRot = Quaternion.LookRotation(lastSpeedDirection, transform.up);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, toRot, rotationSpeed * Time.deltaTime);
+    }
+    protected void HandleSlow() {
+        Debug.Log(SlowAmmount);
+        if(SlowAmmount != 0) {
+            float newMag = rb.velocity.magnitude / SlowAmmount;
+            rb.velocity = rb.velocity.normalized * newMag;
+        }
     }
 
     private void HandleAbility()
