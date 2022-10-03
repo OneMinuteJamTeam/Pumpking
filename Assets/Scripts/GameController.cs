@@ -58,7 +58,9 @@ public class GameController : Singleton<GameController>
         PlayerPrefs.SetInt("P1Points",Player1Points);
         PlayerPrefs.SetInt("P2Points",Player2Points);
 
-        Debug.Log("P1 "+Player1Points + " - P2 " + Player2Points);
+        //Debug.Log("P1 "+Player1Points + " - P2 " + Player2Points);
+
+        GameUIManager.Instance.SetScoreText(Player1Points,Player2Points);
 
         if (_round == 1) 
         {

@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
+
 public class GameUIManager : Singleton<GameUIManager>
 {
     [Header("References")]
     [SerializeField] GameObject pausePanel;
-    [SerializeField] GameObject gameOverPanel;
     [SerializeField] GameObject gamePanel;
     [SerializeField] MyUIBar p1CooldownBar;
     [SerializeField] MyUIBar p2CooldownBar;
     [SerializeField] SwapPanel swapPanel;
+    [SerializeField] TextMeshProUGUI scoreText;
 
     public void PlaySwapPanel(Action OnAnimationFinished)
     {
@@ -41,14 +43,14 @@ public class GameUIManager : Singleton<GameUIManager>
         Debug.Log("show pause panel called: "+active);
         pausePanel.SetActive(active);
     }
-    public void ShowGameOverPanel(bool active) 
-    {
-        gameOverPanel.SetActive(active);
-    }
 
     public void ShowGamePanel(bool active) 
     {
         gamePanel.SetActive(active);
+    }
+
+    public void SetScoreText(int p1Score,int p2Score) {
+        scoreText.text = p1Score.ToString()+" - "+p2Score.ToString();
     }
 
     #endregion
