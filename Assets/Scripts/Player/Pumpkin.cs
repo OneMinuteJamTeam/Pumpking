@@ -16,12 +16,14 @@ public class Pumpkin : Player {
 
     protected override void UseAbility() 
     {
-        CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
-        CanReadInput = false;
+        if (CanMove) {
+            CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
+            CanReadInput = false;
 
-        rb.velocity = transform.forward * dashSpeed;
+            rb.velocity = transform.forward * dashSpeed;
 
-        StartCoroutine(EndDash());
+            StartCoroutine(EndDash());
+        }
     }
 
     private IEnumerator EndDash() 

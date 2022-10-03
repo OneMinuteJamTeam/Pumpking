@@ -14,6 +14,7 @@ public abstract class Player : MonoBehaviour
 
     public bool IsEscaping { get => isEscaping; }
     public bool CanReadInput { get; set; }
+    public bool CanMove { get; set; }
 
     [Header("Settings")]
     [SerializeField]
@@ -29,7 +30,7 @@ public abstract class Player : MonoBehaviour
     [SerializeField]
     protected Color coolDownBarColor;
 
-    protected bool canUseAblity = true;
+    protected bool canUseAbility = true;
 
     protected Rigidbody rb;
     protected Vector3 lastSpeedDirection;
@@ -57,7 +58,8 @@ public abstract class Player : MonoBehaviour
     protected virtual void Start()
     {
         CanReadInput = true;
-        canUseAblity = true;
+        canUseAbility = true;
+        CanMove = true;
         _originalMoveSpeed = moveSpeed;
     }
 
@@ -73,28 +75,26 @@ public abstract class Player : MonoBehaviour
     {
         if (CanReadInput) {
 
-            if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) 
-            {
-                // Handle Input P1
-                rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
-                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
+            if (CanMove) {
+                if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
+                    // Handle Input P1
+                    rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
+                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
 
-                RotateSpeedWithWalls();
+                    RotateSpeedWithWalls();
 
-            }
-            else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2)
-            {
-                // Handle Input P2
-                rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
+                }
+                else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
+                    // Handle Input P2
+                    rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
 
-                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
+                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
 
-                RotateSpeedWithWalls();
-
-
+                    RotateSpeedWithWalls();
+                }
+                else rb.velocity = Vector3.zero;
             }
             else rb.velocity = Vector3.zero;
-
             HandleAbility();
         }
     }
@@ -109,15 +109,15 @@ public abstract class Player : MonoBehaviour
 
     private void HandleAbility()
     {
-        if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsAbilityPlayer1Pressed && canUseAblity) 
+        if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsAbilityPlayer1Pressed && canUseAbility) 
         {
-            canUseAblity = false;
+            canUseAbility = false;
             UseAbility();
             StartCoroutine(COStartCooldown());
         }
-        else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsAbilityPlayer2Pressed && canUseAblity)
+        else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsAbilityPlayer2Pressed && canUseAbility)
         {
-            canUseAblity = false;
+            canUseAbility = false;
             UseAbility();
             StartCoroutine(COStartCooldown());
         }
@@ -133,7 +133,7 @@ public abstract class Player : MonoBehaviour
             yield return null;
         }
         //yield return new WaitForSeconds(abilityCooldown);
-        canUseAblity = true;
+        canUseAbility = true;
     }
 
     private void OnCollisionEnter(Collision collision)

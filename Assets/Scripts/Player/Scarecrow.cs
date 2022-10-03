@@ -48,7 +48,7 @@ public class Scarecrow : Player
     {
         if(!HasTarget)
         {
-            canUseAblity = true;
+            canUseAbility = true;
             return;
         }
         CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
