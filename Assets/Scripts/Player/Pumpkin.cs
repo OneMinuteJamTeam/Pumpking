@@ -7,12 +7,6 @@ public class Pumpkin : Player {
 
     [SerializeField] float dashSpeed = 100f;
     [SerializeField] float dashDuration = 0.5f;
-    [SerializeField] TrailRenderer trailRenderer;
-
-    protected override void Awake() {
-        base.Awake();
-        trailRenderer.emitting = false;
-    }
 
     public override void SetIsEscaping(bool isEscaping)
     {
@@ -23,7 +17,7 @@ public class Pumpkin : Player {
     protected override void UseAbility() 
     {
         if (CanMove) {
-            trailRenderer.emitting = true;
+            CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
             CanReadInput = false;
 
             rb.velocity = transform.forward * dashSpeed;
@@ -35,7 +29,7 @@ public class Pumpkin : Player {
     private IEnumerator EndDash() 
     {
         yield return new WaitForSeconds(dashDuration);
+
         CanReadInput = true;
-        trailRenderer.emitting = false;
     }
 }
