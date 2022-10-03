@@ -14,9 +14,7 @@ public class GameController : Singleton<GameController>
     [SerializeField]
     private Timer timer;
     [SerializeField]
-    private RandomObjectSpawner pickablesSpawner;
-    [SerializeField]
-    private RandomObjectSpawner trapsSpawner;
+    private RandomObjectSpawner crownsTrapsSpawner;
 
     private GameObject pickablesContainer;
     private bool _isPause = false;
@@ -32,8 +30,7 @@ public class GameController : Singleton<GameController>
         StartCoroutine(COGetPlayerRef());
         timer.StartTimerAt(60, true);
 
-        pickablesSpawner.Spawn();
-        trapsSpawner.Spawn();
+        crownsTrapsSpawner.Spawn();
     }
 
     private void Update()
@@ -119,8 +116,7 @@ public class GameController : Singleton<GameController>
 
         GameUIManager.Instance.PlaySwapPanel(() => { timer.ResumeTimer(); });
         StartCoroutine(COSwap());
-        pickablesSpawner.Spawn();
-        trapsSpawner.Spawn();
+        crownsTrapsSpawner.Spawn();
     }
 
     private void GivePointToEscapee()
