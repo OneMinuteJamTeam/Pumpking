@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eec3e62f5ea70343aa3c316c462a564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crownObj: {fileID: 1911635314867583251}
   moveSpeed: 10
   rotationSpeed: 600
   abilityCooldown: 2

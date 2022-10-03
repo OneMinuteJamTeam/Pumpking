@@ -16,6 +16,10 @@ public abstract class Player : MonoBehaviour
     public bool CanReadInput { get; set; }
     public bool CanMove { get; set; }
 
+    [Header("References")]
+    [SerializeField]
+    private GameObject crownObj;
+
     [Header("Settings")]
     [SerializeField]
     protected float moveSpeed = 5.0f;
@@ -177,6 +181,7 @@ public abstract class Player : MonoBehaviour
     private Coroutine endSpeedBoostRef;
     public void BoostSpeed(float _boostAmmount, float _duration) 
     {
+        crownObj.SetActive(true);
         if (moveSpeed == _originalMoveSpeed)
             moveSpeed += _boostAmmount;
         if (endSpeedBoostRef != null) StopCoroutine(endSpeedBoostRef);
@@ -188,6 +193,7 @@ public abstract class Player : MonoBehaviour
         Debug.Log("boost speed picked, ending in " + _duration + " seconds");
         yield return new WaitForSeconds(_duration);
         moveSpeed = _originalMoveSpeed;
+        crownObj.SetActive(false);
         Debug.Log("boost speed ended");
     }
     #endregion

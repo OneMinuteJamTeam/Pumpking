@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea80be84cb3da0469551a1bd6ecccc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crownObj: {fileID: 7289996612271733661}
   moveSpeed: 10
   rotationSpeed: 600
   abilityCooldown: 1.5
@@ -261,6 +262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fc1092bb5e50d644abc2a626401007c, type: 3}
+--- !u!1 &7289996612271733661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1050979734190312596, guid: 9fc1092bb5e50d644abc2a626401007c, type: 3}
+  m_PrefabInstance: {fileID: 7763802462352160521}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7953521765113766183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 422780720918566446, guid: 9fc1092bb5e50d644abc2a626401007c, type: 3}
