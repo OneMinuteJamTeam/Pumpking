@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Bullet" ID="{BB9B31AA-8DA3-4D3D-8B7E-38025AA96C56}" ShortID="880782183">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Bullet Whiz By 02" ID="{A3BC621E-6A5C-42E6-B3EC-A29B485DED9D}">
+							<Language>SFX</Language>
+							<AudioFile>Bullet Whiz By 02.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="105588453"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Bullet Whiz By 02" ID="{A3BC621E-6A5C-42E6-B3EC-A29B485DED9D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
