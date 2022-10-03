@@ -117,7 +117,7 @@ public class GameController : Singleton<GameController>
 
         Destroy(pickablesContainer);
 
-        GameUIManager.Instance.PlaySwapPanel(() => { timer.ResumeTimer(); });
+        GameUIManager.Instance.PlaySwapPanel();
 
         _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
         _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
@@ -165,5 +165,10 @@ public class GameController : Singleton<GameController>
         _pumpkin.CanReadInput = true;
         _scarecrow.CanReadInput = true;
     }
+
+    public void ResumeTimer() {
+        timer.ResumeTimer();
+    }
+
     #endregion
 }

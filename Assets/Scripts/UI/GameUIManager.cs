@@ -15,10 +15,10 @@ public class GameUIManager : Singleton<GameUIManager>
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI swapScoreText;
 
-    public void PlaySwapPanel(Action OnAnimationFinished)
+    public void PlaySwapPanel()
     {
         swapPanel.gameObject.SetActive(true);
-        swapPanel.Play(OnAnimationFinished);
+        swapPanel.Play();
     }
     public void OnResumePressed() {
         GameController.Instance.UnpauseGame();

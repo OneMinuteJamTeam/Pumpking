@@ -14,14 +14,13 @@ public class SwapPanel : MonoBehaviour
 
     private bool _animationPlayed = false;
     
-    public void Play(Action OnAnimationFinished)
+    public void Play()
     {
         if (_animationPlayed)
             return;
         
         _animationPlayed = true;
         _animator.SetTrigger("Enter");
-        StartCoroutine(COWaitForAnim(4.5f,OnAnimationFinished));
     }
 
     private void Awake()
@@ -31,14 +30,9 @@ public class SwapPanel : MonoBehaviour
         backgroundImg.color = new Color(backgroundImg.color.r, backgroundImg.color.g, backgroundImg.color.b, 0);
     }
 
-    private IEnumerator COWaitForAnim(float seconds, Action callback)
-    {
-        yield return new WaitForSeconds(seconds);
-        callback?.Invoke();
-    }
-
     public void OnSwapAnimationComplete() {
         GameController.Instance.EnablePlayersMovement();
+        GameController.Instance.ResumeTimer();
         gameObject.SetActive(false);
     }
 }
