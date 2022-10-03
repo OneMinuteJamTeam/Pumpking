@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7388373762313411121}
   - component: {fileID: 7388373762313411122}
   - component: {fileID: 7388373762313411123}
-  - component: {fileID: 3970014535928358320}
+  - component: {fileID: 3756931084716327539}
   m_Layer: 7
   m_Name: Player2 (Scarecrow)
   m_TagString: Player
@@ -77,8 +77,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!65 &3970014535928358320
-BoxCollider:
+--- !u!136 &3756931084716327539
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -87,9 +87,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.7229131, y: 2.2790146, z: 0.7037724}
-  m_Center: {x: 0.023838073, y: 1.1751208, z: 0.00096845627}
+  m_Radius: 0.44193196
+  m_Height: 2.540312
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.2575022, z: -0.0020023584}
 --- !u!1 &8033736199254935836
 GameObject:
   m_ObjectHideFlags: 0
