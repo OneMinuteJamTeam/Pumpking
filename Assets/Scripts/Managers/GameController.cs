@@ -115,12 +115,10 @@ public class GameController : Singleton<GameController>
         _pumpkin.CanReadInput = false;
         _scarecrow.CanReadInput = false;
 
-        //Destroy(_pumpkin.gameObject);
-        //Destroy(_scarecrow.gameObject);
         Destroy(pickablesContainer);
 
         GameUIManager.Instance.PlaySwapPanel(() => { timer.ResumeTimer(); });
-        //StartCoroutine(COSwap());
+
         _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
         _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
 
@@ -136,36 +134,6 @@ public class GameController : Singleton<GameController>
             GivePoint((int)_pumpkin.GetPlayerNumber());
         else if (_scarecrow.IsEscaping)
             GivePoint((int)_scarecrow.GetPlayerNumber());
-    }
-    private IEnumerator COSwap()
-    {
-        yield return new WaitForSeconds(1.0f);
-
-        _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
-        _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
-
-        _pumpkin.transform.position = P1SpawnPos.position;
-        _scarecrow.transform.position = P2SpawnPos.position;
-
-        //SpawnManager.Instance.SpawnPlayers();
-        // Destroy prev players if any
-        //if (_pumpkinObj != null)
-        //    Destroy(_pumpkinObj);
-        //if (_scarecrowObj != null)
-        //    Destroy(_scarecrowObj);
-
-        // Read who is escaping
-        //bool isPumpkinEscpaing = PlayerPrefs.GetInt("PumpkinEscaping") == 1 ? true : false;
-        //bool isScarecrowEscpaing = PlayerPrefs.GetInt("ScarecrowEscaping") == 1 ? true : false;
-
-        // Spawn
-        //_pumpkinObj = Instantiate(pumpkinPrefab, new Vector3(P1SpawnPos.position.x, pumpkinPrefab.transform.position.y, P1SpawnPos.transform.position.z), Quaternion.identity);
-        //_scarecrowObj = Instantiate(scarecrowPrefab, new Vector3(P2SpawnPos.position.x, scarecrowPrefab.transform.position.y, P2SpawnPos.position.z), Quaternion.identity);
-
-        // Escaping set
-        //_pumpkinObj.GetComponent<Pumpkin>().SetIsEscaping(isPumpkinEscpaing);
-        //_scarecrowObj.GetComponent<Scarecrow>().SetIsEscaping(isScarecrowEscpaing);
-
     }
 
     #region Pause Handling
