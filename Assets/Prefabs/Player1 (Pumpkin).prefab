@@ -57,7 +57,7 @@ MonoBehaviour:
   coolDownBarColor: {r: 1, g: 0.5472904, b: 0.015686274, a: 1}
   dashSpeed: 40
   dashDuration: 0.1
-  disapearOnDash: 0
+  disapearOnDash: 1
   trailRenderer: {fileID: 8028672763728826487}
   model: {fileID: 8744794801580649169}
 --- !u!54 &477475240911130142
@@ -164,7 +164,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.4
+  m_Time: 0.1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1

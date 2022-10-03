@@ -21,7 +21,13 @@ public class Plant : MonoBehaviour
         meshRenderer.material = activeMaterial;
     }
 
-    private void OnTriggerStay(Collider other) {
+    private void Update() {
+        if(rootedPlayer && isActive) {
+            rootedPlayer.transform.position = Vector3.MoveTowards(rootedPlayer.transform.position, transform.position, 40 * Time.deltaTime);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
         if(other.gameObject.tag == "Player" && rootedPlayer == null && isActive) {
             Player otherPlayer = other.gameObject.GetComponent<Player>();
             rootedPlayer = otherPlayer;
