@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.28098103, g: 0.25430596, b: 0.265277, a: 1}
+  m_IndirectSpecularColor: {r: 0.28101304, g: 0.25429946, b: 0.2652818, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -68822,6 +68822,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2181265289535360928, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6121412529290138602, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7388373762313411120, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
       propertyPath: m_Name
       value: Player2 (Scarecrow)
