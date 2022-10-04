@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontSize
-      value: 81.45
+      value: 69.15
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_margin.w
@@ -146,6 +146,10 @@ PrefabInstance:
       propertyPath: m_margin.y
       value: 6.9586906
       objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 218c7a7e6702aef42b1906e580bc8d71, type: 2}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontColor.b
       value: 0
@@ -158,6 +162,10 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2177176860252042282, guid: 218c7a7e6702aef42b1906e580bc8d71, type: 2}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
@@ -361,8 +369,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0 - 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 218c7a7e6702aef42b1906e580bc8d71, type: 2}
+  m_sharedMaterial: {fileID: 2177176860252042282, guid: 218c7a7e6702aef42b1906e580bc8d71, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -386,7 +394,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 145.05
+  m_fontSize: 123.15
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1541,8 +1549,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: PLAYER - WINS!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 218c7a7e6702aef42b1906e580bc8d71, type: 2}
+  m_sharedMaterial: {fileID: 2177176860252042282, guid: 218c7a7e6702aef42b1906e580bc8d71, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1566,7 +1574,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 145.05
+  m_fontSize: 123.15
   m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1754,7 +1762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontSize
-      value: 79
+      value: 67.05
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_margin.w
@@ -1764,6 +1772,10 @@ PrefabInstance:
       propertyPath: m_margin.y
       value: 8.350437
       objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 218c7a7e6702aef42b1906e580bc8d71, type: 2}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontColor.b
       value: 0
@@ -1776,6 +1788,10 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2177176860252042282, guid: 218c7a7e6702aef42b1906e580bc8d71, type: 2}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
