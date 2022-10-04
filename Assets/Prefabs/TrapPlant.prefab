@@ -115,6 +115,7 @@ MonoBehaviour:
   reactivateTime: 0.5
   activeMaterial: {fileID: 2100000, guid: 31ac3b15791d2da4eaa66ecd63a3d965, type: 2}
   unactiveMaterial: {fileID: 2100000, guid: 2a178753eebcc294ea1ba6cbd331e61e, type: 2}
+  animator: {fileID: 1476527526019819234}
 --- !u!1001 &3710801468293683115
 PrefabInstance:
   m_ObjectHideFlags: 0

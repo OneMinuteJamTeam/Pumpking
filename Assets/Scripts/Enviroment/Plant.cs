@@ -10,6 +10,8 @@ public class Plant : MonoBehaviour {
     [SerializeField] Material activeMaterial;
     [SerializeField] Material unactiveMaterial;
 
+    [SerializeField] private Animator animator;
+
     private Player rootedPlayer = null;
     private bool isActive = true;
 
@@ -31,12 +33,16 @@ public class Plant : MonoBehaviour {
             Player otherPlayer = other.gameObject.GetComponent<Player>();
             rootedPlayer = otherPlayer;
             otherPlayer.CanMove = false;
+            animator.SetBool("Enter", true);
             StartCoroutine(freePlayer());
         }
     }
 
     private IEnumerator freePlayer() {
-        yield return new WaitForSeconds(rootTime);
+        yield return new WaitForSeconds(rootTime / 2.0f);
+        animator.SetBool("Enter", false);
+        yield return new WaitForSeconds(rootTime / 2.0f);
+        //animator.SetBool("Enter", false);
         isActive = false;
         meshRenderer.material = unactiveMaterial;
         rootedPlayer.CanMove = true;
