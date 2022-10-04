@@ -29438,6 +29438,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 477475240911130141, guid: a9b748b84b631084493191921ddbf80a, type: 3}
+      propertyPath: coolDownBarColor.b
+      value: 0.21226418
+      objectReference: {fileID: 0}
+    - target: {fileID: 477475240911130141, guid: a9b748b84b631084493191921ddbf80a, type: 3}
+      propertyPath: coolDownBarColor.g
+      value: 0.6390852
+      objectReference: {fileID: 0}
+    - target: {fileID: 477475240911130141, guid: a9b748b84b631084493191921ddbf80a, type: 3}
+      propertyPath: coolDownBarColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132147661178880, guid: a9b748b84b631084493191921ddbf80a, type: 3}
       propertyPath: m_Name
       value: Pumpking
@@ -31733,7 +31745,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.79818803, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.7799357, b: 0, a: 1}
   m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
@@ -68857,6 +68869,18 @@ PrefabInstance:
     - target: {fileID: 7388373762313411121, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388373762313411122, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: coolDownBarColor.b
+      value: 0.21568626
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388373762313411122, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: coolDownBarColor.g
+      value: 0.31834385
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388373762313411122, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: coolDownBarColor.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
