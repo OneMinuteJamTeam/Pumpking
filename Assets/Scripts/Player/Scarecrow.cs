@@ -41,11 +41,11 @@ public class Scarecrow : Player
         PlayerPrefs.SetInt("ScarecrowEscaping", isEscaping ? 1 : 0);
         if (isEscaping) {
             lanternMeshRend.material = escapeeMaterial;
-            // set circle color
+            abilityVisual.GetComponent<SpriteRenderer>().color = ColorsManager.Instance.EscapeeLightColor;
         }
         else {
             lanternMeshRend.material = chaserMaterial;
-            // set circle color
+            abilityVisual.GetComponent<SpriteRenderer>().color = ColorsManager.Instance.ChaserLightColor;
         };
     }
 

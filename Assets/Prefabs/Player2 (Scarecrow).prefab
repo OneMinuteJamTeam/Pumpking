@@ -152,7 +152,7 @@ Transform:
   m_GameObject: {fileID: 3900061731749676791}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.01, z: 0}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
+  m_LocalScale: {x: 0.16674028, y: 0.16674028, z: 0.16674028}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7388373762313411121}
@@ -199,8 +199,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 31e5bbcaf6da86a41ba0bb6457173b5c, type: 3}
-  m_Color: {r: 0.042452812, g: 1, b: 0.92663854, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f4941e9b96a72594da7b3337bd537f1a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crownObj: {fileID: 2576719945891477987}
-  playerLight: {fileID: 0}
+  playerLight: {fileID: 1313598551}
   moveSpeed: 10
   rotationSpeed: 600
   abilityCooldown: 1.5
@@ -267,6 +267,9 @@ MonoBehaviour:
   playerNumber: 1
   model: {fileID: 919132148407433455}
   abilityVisual: {fileID: 3900061731749676791}
+  lanternMeshRend: {fileID: 140329102513931290}
+  escapeeMaterial: {fileID: 2100000, guid: 23b918aedad9c4140ac0e50126bc8247, type: 2}
+  chaserMaterial: {fileID: 2100000, guid: 608d8f26824fce648bb87264568c4286, type: 2}
   abilityRange: 3.75
   pushForce: 7.5
   pullForce: 7.5
@@ -562,6 +565,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 23b918aedad9c4140ac0e50126bc8247, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a191595050987504a9a79d76f78f2ce7, type: 3}
+--- !u!23 &140329102513931290 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6421265373838982369, guid: a191595050987504a9a79d76f78f2ce7, type: 3}
+  m_PrefabInstance: {fileID: 6408171767722817787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2181265289535360928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5092180829013751643, guid: a191595050987504a9a79d76f78f2ce7, type: 3}
