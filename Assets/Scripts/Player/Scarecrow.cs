@@ -9,6 +9,10 @@ public class Scarecrow : Player
     public bool HasTarget { get=> _targetInRange; }
     public Player AbilityTarget { get=> _abilityTarget; }
 
+    [Header("Scarecrow reference")]
+    [SerializeField]
+    private GameObject abilityVisual;
+
     [Header("Scarecrow Settings")]
     [SerializeField]
     private float abilityRange = 3.0f;
@@ -20,6 +24,7 @@ public class Scarecrow : Player
     private float abilityDuration = 2.0f;
     [SerializeField]
     private LayerMask obastaclesLayer;
+
 
     private Player _abilityTarget = null;
     private bool _targetInRange = false;
@@ -35,6 +40,7 @@ public class Scarecrow : Player
         base.Awake();
 
         FindTarget();
+        abilityVisual.SetActive(false);
     }
 
     protected override void Update()
@@ -81,11 +87,13 @@ public class Scarecrow : Player
                 return;
             }
             _targetInRange = true;
+            abilityVisual.SetActive(true);
             CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target InRange");
         }
         else
         {
-            _targetInRange = false;
+            _targetInRange = false; 
+            abilityVisual.SetActive(false);
             CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target Not InRange");
         }
     }
