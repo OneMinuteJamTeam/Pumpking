@@ -41,7 +41,7 @@ public class Timer : MonoBehaviour
 
         string currentTime = string.Format("{00:00}{1:00}", minutes, seconds);
         string timeFormatted = "";
-        timeFormatted = timeFormatted + currentTime[0] + currentTime[1] + ":" + currentTime[2] + currentTime[3];
+        timeFormatted = timeFormatted + currentTime[2] + currentTime[3];
 
         return timeFormatted;
     }
@@ -53,7 +53,7 @@ public class Timer : MonoBehaviour
 
         string currentTime = string.Format("{00:00}{1:00}", minutes, seconds);
         string timeFormatted = "";
-        timeFormatted = timeFormatted + currentTime[0] + currentTime[1] + ":" + currentTime[2] + currentTime[3];
+        timeFormatted = timeFormatted + currentTime[2] + currentTime[3];
 
         return timeFormatted;
     }
@@ -86,7 +86,7 @@ public class Timer : MonoBehaviour
 
         string currentTime = string.Format("{00:00}{1:00}", minutes, seconds);
         string timeFormatted = "";
-        timeFormatted = timeFormatted + currentTime[0] + currentTime[1] + ":" + currentTime[2] + currentTime[3];
+        timeFormatted = timeFormatted + currentTime[2] + currentTime[3];
 
         // TODO: Update TextMesh Here 
         textMesh.text = timeFormatted;
