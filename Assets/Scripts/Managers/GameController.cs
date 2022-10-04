@@ -78,7 +78,7 @@ public class GameController : Singleton<GameController>
         _scarecrow.CanReadInput = false;
 
         float waitTime;
-        if (_wait) waitTime = 2f;
+        if (_wait) waitTime = 0.5f;
         else waitTime = 0f;
         StartCoroutine(givePointCor(waitTime));
     }
