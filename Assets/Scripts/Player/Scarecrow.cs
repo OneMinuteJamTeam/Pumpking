@@ -102,6 +102,7 @@ public class Scarecrow : Player
     {
         Vector3 dir = (_abilityTarget.transform.position - transform.position).normalized;
 
+        animator.SetTrigger("Push");
         _abilityTarget.CanReadInput = false;
         _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
         _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
@@ -112,6 +113,7 @@ public class Scarecrow : Player
     {
         Vector3 dir = (transform.position - _abilityTarget.transform.position).normalized;
 
+        animator.SetTrigger("Pull");
         _abilityTarget.CanReadInput = false;
         _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
         _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pullForce, ForceMode.Impulse);
