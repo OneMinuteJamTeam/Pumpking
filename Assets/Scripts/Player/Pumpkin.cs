@@ -12,7 +12,8 @@ public class Pumpkin : Player {
     [Header("References")]
     [SerializeField] TrailRenderer trailRenderer;
     [SerializeField] GameObject model;
-
+    [SerializeField] GameObject pumpkinRagdollPref;
+    [SerializeField] GameObject scarecrowRagdollPref;
 
     private bool dashActive = false;
 
@@ -55,10 +56,15 @@ public class Pumpkin : Player {
     private void OnCollisionEnter(Collision collision) {
     EndDash();
     if (collision.collider.tag.Equals("Player")) {
-            if (!IsEscaping)
+            if (!IsEscaping) {
                 GameController.Instance.GivePoint(((int)PlayerNumber.PlayerOne));
-            else
+                //collision.gameObject.SetActive(false);
+                //Instantiate(scarecrowRagdollPref, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            }
+            else {
                 GameController.Instance.GivePoint((int)PlayerNumber.PlayerTwo);
+                //Instantiate(pumpkinRagdollPref, transform.position, transform.rotation);
+            }   
     }
 }
 }

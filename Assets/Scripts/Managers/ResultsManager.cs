@@ -9,8 +9,6 @@ public class ResultsManager : Singleton<ResultsManager>
 {
     [Header("References")]
     [SerializeField] TextMeshProUGUI winText;
-    [SerializeField] Transform P1position;
-    [SerializeField] Transform P2position;
     [SerializeField] GameObject pumpkinRagdoll;
     [SerializeField] GameObject scareCrowRagdoll;
     [SerializeField] GameObject pumpkinRagdollDead;

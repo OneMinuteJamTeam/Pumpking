@@ -63,9 +63,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1858609712450269579, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
       propertyPath: m_Name
       value: P1RagdollLevels
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}

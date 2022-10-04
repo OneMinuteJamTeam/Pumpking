@@ -60,6 +60,8 @@ MonoBehaviour:
   disapearOnDash: 1
   trailRenderer: {fileID: 6757339910050243568}
   model: {fileID: 8744794801580649169}
+  pumpkinRagdollPref: {fileID: 6121427034608591733, guid: 33198703f1e3ad142b96ee0b309dc985, type: 3}
+  scarecrowRagdollPref: {fileID: 792296854035660116, guid: 35781ff58600fa2488f827bc64d0d911, type: 3}
 --- !u!54 &477475240911130142
 Rigidbody:
   m_ObjectHideFlags: 0

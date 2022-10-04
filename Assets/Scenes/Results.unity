@@ -1101,7 +1101,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
       propertyPath: m_Name
-      value: P2 ragdoll (1)
+      value: P2 dead ragdoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2914810054283311323, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
       propertyPath: m_RootOrder
@@ -1149,6 +1153,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+--- !u!1 &987021062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+  m_PrefabInstance: {fileID: 987021061}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1076639259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1194,12 +1203,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: {fileID: 1503043478}
-  P1position: {fileID: 0}
-  P2position: {fileID: 0}
-  pumpkinRagdoll: {fileID: 0}
-  scareCrowRagdoll: {fileID: 0}
-  pumpkinRagdollDead: {fileID: 0}
-  scareCrowRagdollDead: {fileID: 0}
+  pumpkinRagdoll: {fileID: 1791017140}
+  scareCrowRagdoll: {fileID: 1414650584}
+  pumpkinRagdollDead: {fileID: 1377505639}
+  scareCrowRagdollDead: {fileID: 987021062}
   resultScoreText: {fileID: 129366693}
 --- !u!1001 &1377022778
 PrefabInstance:
@@ -1362,8 +1369,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: P1 dead ragdoll
       objectReference: {fileID: 0}
+    - target: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+--- !u!1 &1377505639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+  m_PrefabInstance: {fileID: 1377505638}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1414650583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1374,6 +1390,10 @@ PrefabInstance:
     - target: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
       propertyPath: m_Name
       value: P2 ragdoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2914810054283311323, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
       propertyPath: m_RootOrder
@@ -1421,6 +1441,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+--- !u!1 &1414650584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+  m_PrefabInstance: {fileID: 1414650583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1501241034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,8 +1667,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: P1 ragdoll
       objectReference: {fileID: 0}
+    - target: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+--- !u!1 &1791017140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+  m_PrefabInstance: {fileID: 1791017139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1990573960033271543
 PrefabInstance:
   m_ObjectHideFlags: 0
