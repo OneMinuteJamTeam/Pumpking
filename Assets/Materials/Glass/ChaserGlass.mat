@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glass
+  m_Name: ChaserGlass
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
   - _EMISSION
@@ -76,6 +76,6 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0.77412665, b: 0, a: 0.36078432}
-    - _EmissionColor: {r: 2, g: 1.427451, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.05583453, b: 0, a: 0.36078432}
+    - _EmissionColor: {r: 2.270603, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

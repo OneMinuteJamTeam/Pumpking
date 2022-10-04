@@ -68688,6 +68688,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 140329102513931290, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 23b918aedad9c4140ac0e50126bc8247, type: 2}
     - target: {fileID: 1517354177512428826, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -68696,9 +68700,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3216356223478251619, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7388373762313411120, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
       propertyPath: m_Name
       value: Player2 (Scarecrow)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7388373762313411120, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7388373762313411121, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
       propertyPath: m_RootOrder
@@ -68748,6 +68760,18 @@ PrefabInstance:
       propertyPath: playerLight
       value: 
       objectReference: {fileID: 2072093695}
+    - target: {fileID: 7388373762313411122, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: chaserMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 608d8f26824fce648bb87264568c4286, type: 2}
+    - target: {fileID: 7388373762313411122, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: escapeeMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 23b918aedad9c4140ac0e50126bc8247, type: 2}
+    - target: {fileID: 7388373762313411122, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: lanternMeshRend
+      value: 
+      objectReference: {fileID: 2072093696}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
 --- !u!114 &2072093694 stripped
@@ -68764,6 +68788,11 @@ MonoBehaviour:
 --- !u!108 &2072093695 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 1313598551, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+  m_PrefabInstance: {fileID: 2072093693}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2072093696 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 140329102513931290, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
   m_PrefabInstance: {fileID: 2072093693}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2072175837

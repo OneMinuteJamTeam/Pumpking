@@ -12,6 +12,12 @@ public class Scarecrow : Player
     [Header("Scarecrow reference")]
     [SerializeField]
     private GameObject abilityVisual;
+    [SerializeField]
+    private MeshRenderer lanternMeshRend;
+    [SerializeField]
+    private Material escapeeMaterial;
+    [SerializeField]
+    private Material chaserMaterial;
 
     [Header("Scarecrow Settings")]
     [SerializeField]
@@ -33,6 +39,14 @@ public class Scarecrow : Player
     {
         base.SetIsEscaping(isEscaping);
         PlayerPrefs.SetInt("ScarecrowEscaping", isEscaping ? 1 : 0);
+        if (isEscaping) {
+            lanternMeshRend.material = escapeeMaterial;
+            // set circle color
+        }
+        else {
+            lanternMeshRend.material = chaserMaterial;
+            // set circle color
+        };
     }
 
     protected override void Awake()
