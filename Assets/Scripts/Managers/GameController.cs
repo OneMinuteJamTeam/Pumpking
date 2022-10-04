@@ -179,6 +179,8 @@ public class GameController : Singleton<GameController>
     public void EnablePlayersMovement() {
         _pumpkin.CanReadInput = true;
         _scarecrow.CanReadInput = true;
+        _pumpkin.CanMove = true;
+        _scarecrow.CanMove = true;
     }
 
     public void ResumeTimer() {
