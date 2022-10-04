@@ -56,7 +56,7 @@ public abstract class Player : MonoBehaviour
         else
         {
             playerLight.color = ColorsManager.Instance.ChaserLightColor;
-            coolDownBar.SetColor(ColorsManager.Instance.ChaserLightColor);
+            coolDownBar.SetColor(ColorsManager.Instance.ChaserUiColor);
         }
     }
 
@@ -76,7 +76,6 @@ public abstract class Player : MonoBehaviour
     {
         _originalMoveSpeed = moveSpeed;
         coolDownBar.SetMaxFill(abilityCooldown);
-        //coolDownBar.SetColor(coolDownBarColor);
     }
 
     protected virtual void Update()

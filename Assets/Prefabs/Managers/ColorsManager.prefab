@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95cccef6a45f0e44957ef7498ea2ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chaserUiColor: {r: 1, g: 0.34568715, b: 0.29019606, a: 0}
-  escapeeUiColor: {r: 1, g: 0.71581376, b: 0.28773582, a: 0}
-  chaserLightColor: {r: 1, g: 0, b: 0, a: 0}
-  escapeeLightColor: {r: 1, g: 0.6010101, b: 0, a: 0}
+  chaserUiColor: {r: 1, g: 0.34568715, b: 0.29019606, a: 1}
+  escapeeUiColor: {r: 1, g: 0.71581376, b: 0.28773582, a: 1}
+  chaserLightColor: {r: 1, g: 0, b: 0, a: 1}
+  escapeeLightColor: {r: 1, g: 0.6010101, b: 0, a: 1}
