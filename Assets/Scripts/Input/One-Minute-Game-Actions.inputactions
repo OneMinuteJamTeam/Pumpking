@@ -175,8 +175,30 @@
                 },
                 {
                     "name": "",
+                    "id": "49d5f1c6-679a-4e67-9f00-b0c9566575f6",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityPlayer1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "9b61b4f6-2ee3-4b53-8eb4-8b7b4050fb86",
                     "path": "<Keyboard>/o",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AbilityPlayer2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c429d771-dd57-4a48-966a-a83ae70d9016",
+                    "path": "<Keyboard>/u",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

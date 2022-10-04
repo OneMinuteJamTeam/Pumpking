@@ -54,9 +54,9 @@ MonoBehaviour:
   isEscaping: 1
   playerNumber: 1
   coolDownBarColor: {r: 0, g: 0.98000383, b: 1, a: 1}
-  abilityRange: 3.5
-  pushForce: 10
-  pullForce: 10
+  abilityRange: 3.75
+  pushForce: 7.5
+  pullForce: 7.5
   abilityDuration: 1
   obastaclesLayer:
     serializedVersion: 2
