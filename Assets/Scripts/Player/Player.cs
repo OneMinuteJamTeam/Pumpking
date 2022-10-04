@@ -32,6 +32,8 @@ public abstract class Player : MonoBehaviour
     protected PlayerNumber playerNumber;
     [SerializeField]
     protected Color coolDownBarColor;
+    [SerializeField] 
+    protected GameObject model;
 
     protected bool canUseAbility = true;
 
@@ -42,6 +44,8 @@ public abstract class Player : MonoBehaviour
     private bool _collideOnce = false;
 
     protected MyUIBar coolDownBar;
+
+    protected Animator animator;
 
     public virtual void SetIsEscaping(bool isEscaping)
     {
@@ -57,6 +61,7 @@ public abstract class Player : MonoBehaviour
         CanMove = true;
         rb = GetComponent<Rigidbody>();
         coolDownBar = GameUIManager.Instance.GetCooldownBar(playerNumber);
+        animator = model.GetComponent<Animator>();
     }
 
     protected virtual void Start()
@@ -106,30 +111,46 @@ public abstract class Player : MonoBehaviour
     
     // PLAYER CAN ROTATE WHEN TRAPPED
     protected virtual void HandleInput() {
-        if (CanReadInput) {
+        if (CanReadInput) 
+        {
 
-                // Handle Input P1
-                if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
-
-                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
-                    if (CanMove) {
-                        rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
-                        RotateSpeedWithWalls();
-                    }
-                    else rb.velocity = Vector3.zero;
-
+            // Handle Input P1
+            if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1)
+            {
+                animator.SetBool("Moving", true);
+                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
+                if (CanMove)
+                {
+                    rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
+                    RotateSpeedWithWalls();
                 }
-                // Handle Input P2
-                else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
-                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
-
-                    if (CanMove) {
-                        rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
-                        RotateSpeedWithWalls();
-                    }
-                    else rb.velocity = Vector3.zero;
+                else
+                {
+                    rb.velocity = Vector3.zero;
+                    animator.SetBool("Moving", false);
                 }
-                else rb.velocity = Vector3.zero;
+            }
+            // Handle Input P2
+            else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2)
+            {
+                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
+                animator.SetBool("Moving", true);
+                if (CanMove)
+                {
+                    rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
+                    RotateSpeedWithWalls();
+                }
+                else
+                {
+                    animator.SetBool("Moving", false);
+                    rb.velocity = Vector3.zero;
+                }
+            }
+            else
+            {
+                rb.velocity = Vector3.zero;
+                animator.SetBool("Moving", false);
+            }
             HandleAbility();
         }
     }

@@ -171,6 +171,7 @@ MonoBehaviour:
   isEscaping: 1
   playerNumber: 1
   coolDownBarColor: {r: 0, g: 0.98000383, b: 1, a: 1}
+  model: {fileID: 919132148407433455}
   abilityVisual: {fileID: 3900061731749676791}
   abilityRange: 3.75
   pushForce: 7.5

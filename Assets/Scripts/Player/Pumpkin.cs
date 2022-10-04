@@ -11,15 +11,14 @@ public class Pumpkin : Player {
 
     [Header("References")]
     [SerializeField] TrailRenderer trailRenderer;
-    [SerializeField] GameObject model;
     [SerializeField] GameObject pumpkinRagdollPref;
     [SerializeField] GameObject scarecrowRagdollPref;
 
     private bool dashActive = false;
-
     protected override void Awake() {
         base.Awake();
         trailRenderer.emitting = false;
+        
     }
 
     public override void SetIsEscaping(bool isEscaping) {
