@@ -80,6 +80,9 @@ public class GameController : Singleton<GameController>
         StartCoroutine(givePointCor(SwapEndGameDelayTime));
     }
     private IEnumerator givePointCor(float _waitTime) {
+        _rolesSwapped = true;
+        if (_round == 2)
+            _roundOver = true;
         yield return new WaitForSeconds(_waitTime);
         if (_round == 1) {
             _round++;
