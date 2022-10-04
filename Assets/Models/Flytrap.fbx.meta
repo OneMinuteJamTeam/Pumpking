@@ -1,32 +1,68 @@
 fileFormatVersion: 2
-guid: 0c1cb13461c779f4c8efd51417719218
+guid: 0d58ee52685683f4995fcb11a0d5ceaa
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: 4890988605539220938
-    second: Cylinder.005|Cube.006Action
+      74: -1737848470241951487
+    second: Flytrap_R|Cube.006Action
   - first:
-      74: -3314574890883444739
-    second: Cylinder.005|Cylinder.003Action
+      74: -8782186426555877405
+    second: Flytrap_R|Cylinder.003Action
   - first:
-      74: 8263777003831402119
-    second: Cylinder.005|Cylinder.005Action
+      74: -6607429641450635139
+    second: Flytrap_R|Cylinder.005Action
   - first:
-      74: 302854352485520516
-    second: Cylinder.005|Cylinder.005Action.001
+      74: -5374872787918286225
+    second: Flytrap_R|Cylinder.005Action.001
   - first:
-      74: 7093980679538145332
-    second: Cylinder.006|Cube.006Action
+      74: -6438668791041856676
+    second: Flytrap_R|Plane.002Action
   - first:
-      74: -4852717849234354910
-    second: Cylinder.006|Cylinder.003Action
+      74: -6598982571140267024
+    second: Flytrap_R|Plane.002Action.001
   - first:
-      74: -9030733858237037353
-    second: Cylinder.006|Cylinder.005Action
+      74: 2644210104322425287
+    second: Flytrap_L|Cube.006Action
   - first:
-      74: -99188952101363799
-    second: Cylinder.006|Cylinder.005Action.001
+      74: 3890365610548863614
+    second: Flytrap_L|Cylinder.003Action
+  - first:
+      74: 2513146581823158811
+    second: Flytrap_L|Cylinder.005Action
+  - first:
+      74: -1345978886553631659
+    second: Flytrap_L|Cylinder.005Action.001
+  - first:
+      74: 8465717008103589005
+    second: Flytrap_L|Plane.002Action
+  - first:
+      74: -2519031509126522252
+    second: Flytrap_L|Plane.002Action.001
+  - first:
+      74: 3915886213407205331
+    second: Flytrap_R|Plane.002Action.002
+  - first:
+      74: 5297914401590358080
+    second: Flytrap_R.001|Cube.006Action
+  - first:
+      74: -4924530594135563195
+    second: Flytrap_R.001|Cylinder.003Action
+  - first:
+      74: 1888613018984862195
+    second: Flytrap_R.001|Cylinder.005Action
+  - first:
+      74: 3246764087041739925
+    second: Flytrap_R.001|Cylinder.005Action.001
+  - first:
+      74: 6816722902206300681
+    second: Flytrap_R.001|Plane.002Action
+  - first:
+      74: 6734587399662120180
+    second: Flytrap_R.001|Plane.002Action.001
+  - first:
+      74: -623077989725822891
+    second: Flytrap_R.001|Plane.002Action.002
   externalObjects: {}
   materials:
     materialImportMode: 2
