@@ -10,6 +10,8 @@ public class GameController : Singleton<GameController>
     public int Player1Points { get; private set; } = 0;
     public int Player2Points { get; private set; } = 0;
 
+    [Header("Settings")]
+    [SerializeField] float SwapEndGameDelayTime = 0.5f;
     [Header("References")]
     [SerializeField]
     private Timer timer;
@@ -52,29 +54,38 @@ public class GameController : Singleton<GameController>
             GivePointToEscapee();
     }
 
-    public void GivePoint(int _player) 
-    {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="_player"></param>
+    /// <param name="_wait">waits some time before swap</param>
+    public void GivePoint(int _player) {
         if (_player == 0)
             Player1Points++;
         else if (_player == 1)
             Player2Points++;
-        else 
+        else
             Debug.LogError("GameController: assigned point to player " + _player + ", that doesn't exist");
 
-        PlayerPrefs.SetInt("P1Points",Player1Points);
-        PlayerPrefs.SetInt("P2Points",Player2Points);
+        PlayerPrefs.SetInt("P1Points", Player1Points);
+        PlayerPrefs.SetInt("P2Points", Player2Points);
 
         //Debug.Log("P1 "+Player1Points + " - P2 " + Player2Points);
 
-        GameUIManager.Instance.SetScoreText(Player1Points,Player2Points);
+        GameUIManager.Instance.SetScoreText(Player1Points, Player2Points);
 
-        if (_round == 1) 
-        {
+        _pumpkin.CanReadInput = false;
+        _scarecrow.CanReadInput = false;
+
+        StartCoroutine(givePointCor(SwapEndGameDelayTime));
+    }
+    private IEnumerator givePointCor(float _waitTime) {
+        yield return new WaitForSeconds(_waitTime);
+        if (_round == 1) {
             _round++;
             SwapRoles();
         }
-        else if (_round == 2) 
-        {
+        else if (_round == 2) {
             _roundOver = true;
             CustomSceneManager.Instance.LoadScene("Results");
         }

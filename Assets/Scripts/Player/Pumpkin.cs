@@ -56,15 +56,11 @@ public class Pumpkin : Player {
     private void OnCollisionEnter(Collision collision) {
     EndDash();
     if (collision.collider.tag.Equals("Player")) {
-            if (!IsEscaping) {
+            if (!IsEscaping)
                 GameController.Instance.GivePoint(((int)PlayerNumber.PlayerOne));
-                //collision.gameObject.SetActive(false);
-                //Instantiate(scarecrowRagdollPref, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
-            }
-            else {
+            else
                 GameController.Instance.GivePoint((int)PlayerNumber.PlayerTwo);
-                //Instantiate(pumpkinRagdollPref, transform.position, transform.rotation);
-            }   
+  
     }
 }
 }
