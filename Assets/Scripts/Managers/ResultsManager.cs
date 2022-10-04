@@ -11,18 +11,13 @@ public class ResultsManager : Singleton<ResultsManager>
     [SerializeField] TextMeshProUGUI winText;
     [SerializeField] Transform P1position;
     [SerializeField] Transform P2position;
-    [SerializeField] GameObject PumpkinPrefab;
-    [SerializeField] GameObject ScareCrowPrefab;
+    [SerializeField] GameObject pumpkinRagdoll;
+    [SerializeField] GameObject scareCrowRagdoll;
+    [SerializeField] GameObject pumpkinRagdollDead;
+    [SerializeField] GameObject scareCrowRagdollDead;
     [SerializeField] TextMeshProUGUI resultScoreText;
 
     private void Start() {
-
-        GameObject p1 = Instantiate(PumpkinPrefab, P1position.position, Quaternion.identity);
-        GameObject p2 = Instantiate(ScareCrowPrefab, P2position.position, Quaternion.identity);
-
-        Vector3 rot = p1.transform.rotation.eulerAngles;
-        rot = new Vector3(rot.x, rot.y + 180, rot.z);
-        p1.transform.rotation = p2.transform.rotation = Quaternion.Euler(rot);
 
         int p1Points = PlayerPrefs.GetInt("P1Points");
         int p2Points = PlayerPrefs.GetInt("P2Points");
@@ -31,38 +26,37 @@ public class ResultsManager : Singleton<ResultsManager>
 
         if (p1Points > p2Points) 
         {
+            pumpkinRagdoll.SetActive(true);
+            StartCoroutine(winAnimation(pumpkinRagdoll));
+            scareCrowRagdollDead.SetActive(true);
+            
             winText.text = "Player 1 wins!";
-            StartCoroutine(winAnimation(p1));
-
-            p2.GetComponent<Rigidbody>().useGravity = false;
-
-            Vector3 r = p2.transform.rotation.eulerAngles;
-            r = new Vector3(r.x, r.y, r.z + 90);
-            p2.transform.rotation = p2.transform.rotation = Quaternion.Euler(r);
         }
         else if (PlayerPrefs.GetInt("P1Points") < PlayerPrefs.GetInt("P2Points")) 
         {
-            winText.text = "Player 2 wins!";
-            StartCoroutine(winAnimation(p2));
+            scareCrowRagdoll.SetActive(true);
+            StartCoroutine(winAnimation(scareCrowRagdoll));
+            pumpkinRagdollDead.SetActive(true);
 
-            p1.GetComponent<Rigidbody>().useGravity = false;
-            Vector3 r = p1.transform.rotation.eulerAngles;
-            r = new Vector3(r.x, r.y, r.z +90);
-            p1.transform.rotation = p1.transform.rotation = Quaternion.Euler(r);
+            winText.text = "Player 2 wins!";
         }
         else 
         {
             winText.text = "Draw!";
-            p1.GetComponent<Rigidbody>().useGravity = p2.GetComponent<Rigidbody>().useGravity = false;
+            scareCrowRagdoll.SetActive(true);
+            pumpkinRagdoll.SetActive(true);
         }
        
     }
 
     private IEnumerator winAnimation(GameObject obj) 
     {
+        Debug.Log("coroutine started");
+        obj.GetComponent<Rigidbody>().useGravity = true;
         float originalY = obj.transform.position.y;
         while (true) 
         {
+            Debug.Log("loop running");
             if (obj.transform.position.y < originalY) obj.GetComponent<Rigidbody>().velocity = new Vector3(0, 6, 0);
             yield return new WaitForSeconds(0.2f);
         }
