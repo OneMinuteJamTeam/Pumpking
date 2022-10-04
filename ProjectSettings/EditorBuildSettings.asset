@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RoleSelection.unity
     guid: edf2eff3ba8688d4fa60a1c4e285ff09
+  - enabled: 1
+    path: Assets/Scenes/Final Scene.unity
+    guid: 9006ef7054701e147adac5b0b68e9f83
   m_configObjects: {}
