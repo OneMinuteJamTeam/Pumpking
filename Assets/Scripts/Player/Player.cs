@@ -150,7 +150,6 @@ public abstract class Player : MonoBehaviour
     }
     private void RotateSpeedWithWalls() {
         if (hitWallNormal != null) {
-
             if(Vector3.Angle((Vector3)hitWallNormal, rb.velocity) > 90) {
 
                 float originalMagnitude = rb.velocity.magnitude;

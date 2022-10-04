@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1869899358321764105}
   - component: {fileID: 4474256714680439747}
   - component: {fileID: 2383447133346751842}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pumpkin Hay Bale
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2672671660389216790}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 5.605071, y: -0.0010467108, z: -3.6328278}
-  m_LocalScale: {x: 215.42023, y: 215.42023, z: 218.91002}
+  m_LocalScale: {x: 215.42023, y: 215.42023, z: 218.91005}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5276258986458168071}
@@ -39,7 +39,7 @@ Transform:
   - {fileID: 5276258985325965145}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &1869899358321764105
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -170,6 +170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
 --- !u!4 &5276258986813217738 stripped
@@ -243,6 +247,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
       propertyPath: m_Name
       value: Pumpkin
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
@@ -318,6 +326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
 --- !u!4 &5276258985533020894 stripped
@@ -391,6 +403,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
       propertyPath: m_Name
       value: Pumpkin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
@@ -466,6 +482,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
 --- !u!4 &5276258985325965145 stripped
@@ -539,6 +559,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
       propertyPath: m_Name
       value: Pumpkin (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fadaa2addc2d1234fb258129806fae1b, type: 3}

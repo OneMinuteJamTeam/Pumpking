@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 594788388286352654}
   - component: {fileID: 3433409409039284676}
   - component: {fileID: 7569263441937760338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fence
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

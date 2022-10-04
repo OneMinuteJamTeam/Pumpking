@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5816031709367232515}
   - component: {fileID: 7515316692264960342}
   - component: {fileID: 4061589078234003882}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1296465987944636537}
   - component: {fileID: 3730857591507717993}
   - component: {fileID: 4824134476498749032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shrub.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,9 +176,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1492984176351084039}
   - component: {fileID: 1761623300304749642}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CornClusterFenced
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 8226127031927101872}
   - component: {fileID: 5701886369499518722}
   - component: {fileID: 2085714486492755062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shrub.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 2455054602029092420}
   - component: {fileID: 4085199930144799126}
   - component: {fileID: 8163007766512028740}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Shrub.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}

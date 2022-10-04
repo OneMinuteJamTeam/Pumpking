@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6287173950591134050}
   - component: {fileID: 8116735763850337704}
   - component: {fileID: 8043433747672165129}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HayBale
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7756478786927705213}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 227.07278, y: 227.07278, z: 230.75134}
+  m_LocalScale: {x: 139.85086, y: 204.7085, z: 160.62439}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &6287173950591134050
 MeshFilter:
   m_ObjectHideFlags: 0
