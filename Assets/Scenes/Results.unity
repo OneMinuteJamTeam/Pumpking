@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_text
-      value: Exit
+      value: Main Menu
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontSize
@@ -268,7 +268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -280,11 +280,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: LoadLevel
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MainMenuUIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: MainMenu
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1902,7 +1906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Final Scene
+      value: RoleSelection
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
