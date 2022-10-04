@@ -14,6 +14,13 @@ public class GameUIManager : Singleton<GameUIManager>
     [SerializeField] SwapPanel swapPanel;
     [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI swapScoreText;
+    [SerializeField] TextMeshProUGUI pumpkinRoleText;
+    [SerializeField] TextMeshProUGUI scarecrowRoleText;
+
+    private void Start()
+    {
+        UpdateRolesText();
+    }
 
     public void PlaySwapPanel()
     {
@@ -36,6 +43,21 @@ public class GameUIManager : Singleton<GameUIManager>
     public MyUIBar GetCooldownBar(Player.PlayerNumber p) {
         if (p == Player.PlayerNumber.PlayerOne) return p1CooldownBar;
         else return p2CooldownBar;
+    }
+
+    public void UpdateRolesText()
+    {
+        Pumpkin p = FindObjectOfType<Pumpkin>();
+        if (p.IsEscaping)
+        {
+            pumpkinRoleText.text = "Escapee";
+            scarecrowRoleText.text = "Chaser";
+        }
+        else
+        {
+            pumpkinRoleText.text = "Chaser";
+            scarecrowRoleText.text = "Escapee";
+        }
     }
 
     #region Panels Handling

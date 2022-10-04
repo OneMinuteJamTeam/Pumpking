@@ -137,6 +137,8 @@ public class GameController : Singleton<GameController>
         _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
         _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
 
+        GameUIManager.Instance.UpdateRolesText();
+
         _pumpkin.transform.position = P1SpawnPos.position;
         _scarecrow.transform.position = P2SpawnPos.position;
 
