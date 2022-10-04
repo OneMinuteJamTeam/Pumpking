@@ -33,6 +33,11 @@ public abstract class Player : MonoBehaviour
     [SerializeField]
     protected Color coolDownBarColor;
 
+    [Header("Dependencies")]
+    [SerializeField] 
+    Animator anim;
+
+
     protected bool canUseAbility = true;
 
     protected Rigidbody rb;
@@ -110,6 +115,7 @@ public abstract class Player : MonoBehaviour
 
                 // Handle Input P1
                 if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
+<<<<<<< Updated upstream
 
                     lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
                     if (CanMove) {
@@ -117,6 +123,13 @@ public abstract class Player : MonoBehaviour
                         RotateSpeedWithWalls();
                     }
                     else rb.velocity = Vector3.zero;
+=======
+                    // Handle Input P1
+                    rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
+                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
+                    
+                    RotateSpeedWithWalls();
+>>>>>>> Stashed changes
 
                 }
                 // Handle Input P2
