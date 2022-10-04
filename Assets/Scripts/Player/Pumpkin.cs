@@ -60,13 +60,15 @@ public class Pumpkin : Player {
                 GameController.Instance.GivePoint(((int)PlayerNumber.PlayerOne),true);
                 
                 GameObject ragdoll = Instantiate(scarecrowRagdollPref, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
-                ragdoll.GetComponent<Rigidbody>().AddForce(collision.contacts[0].normal * -10,ForceMode.Impulse);
+                ragdoll.GetComponent<Rigidbody>().AddForce(collision.contacts[0].normal * -15,ForceMode.Impulse);
+                GameController.Instance.RegisterRagdoll(ragdoll);
                 collision.gameObject.SetActive(false);
             }
             else {
                 GameController.Instance.GivePoint((int)PlayerNumber.PlayerTwo,true);
                 GameObject ragdoll = Instantiate(pumpkinRagdollPref, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
-                ragdoll.GetComponent<Rigidbody>().AddForce(collision.contacts[0].normal * -10, ForceMode.Impulse);
+                ragdoll.GetComponent<Rigidbody>().AddForce(collision.contacts[0].normal * 15, ForceMode.Impulse);
+                GameController.Instance.RegisterRagdoll(ragdoll);
                 gameObject.SetActive(false);
             }   
     }

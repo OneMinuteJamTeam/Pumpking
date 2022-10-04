@@ -30,6 +30,7 @@ public class GameController : Singleton<GameController>
     private int _round = 1;
     private bool _startedSwap = false;
     private bool _roundOver = false;
+    private List<GameObject> ragdolls;
 
     private void Start()
     {
@@ -38,6 +39,7 @@ public class GameController : Singleton<GameController>
         timer.StartTimerAt(60, true);
         crownsTrapsSpawner.Spawn();
         EnablePlayersMovement();
+        ragdolls = new List<GameObject>();  
     }
 
     private void Update()
@@ -72,13 +74,21 @@ public class GameController : Singleton<GameController>
 
         GameUIManager.Instance.SetScoreText(Player1Points,Player2Points);
 
-        if (_round == 1) 
-        {
+        _pumpkin.CanReadInput = false;
+        _scarecrow.CanReadInput = false;
+
+        float waitTime;
+        if (_wait) waitTime = 2f;
+        else waitTime = 0f;
+        StartCoroutine(givePointCor(waitTime));
+    }
+    private IEnumerator givePointCor(float _waitTime) {
+        yield return new WaitForSeconds(_waitTime);
+        if (_round == 1) {
             _round++;
-            SwapRoles(_wait);
+            SwapRoles();
         }
-        else if (_round == 2) 
-        {
+        else if (_round == 2) {
             _roundOver = true;
             CustomSceneManager.Instance.LoadScene("Results");
         }
@@ -109,26 +119,18 @@ public class GameController : Singleton<GameController>
         _roundOver = false;
     }
 
-    private void SwapRoles(bool _wait)
+    private void SwapRoles()
     {
-        _pumpkin.CanReadInput = false;
-        _scarecrow.CanReadInput = false;
         _startedSwap = true;
 
-        float waitTime;
-        if (_wait) waitTime = 2f;
-        else waitTime = 0f;
-        StartCoroutine(swapRolesCor(waitTime));
-    }
-
-    private IEnumerator swapRolesCor(float _waitTime) {
-        yield return new WaitForSeconds(_waitTime);
         timer.StartTimerAt(30, true);
         timer.StopTimer();
 
         Destroy(pickablesContainer);
 
         GameUIManager.Instance.PlaySwapPanel();
+
+        for (int i = 0; i < ragdolls.Count; i++) Destroy(ragdolls[i]);
 
         _pumpkin.gameObject.SetActive(true);
         _scarecrow.gameObject.SetActive(true);
@@ -189,6 +191,10 @@ public class GameController : Singleton<GameController>
         bool isScarecrowEscpaing = PlayerPrefs.GetInt("ScarecrowEscaping") == 1 ? true : false;
         _scarecrow.SetIsEscaping(isScarecrowEscpaing);
         _pumpkin.SetIsEscaping(isPumpkinEscaping);
+    }
+
+    public void RegisterRagdoll(GameObject _ragdoll) {
+        ragdolls.Add(_ragdoll);
     }
 
     #endregion
