@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
 
 public class GrassHeightRandomizerEditor : EditorWindow
 {
     [SerializeField] float randomizeHeight;
-    [SerializeField] List<GrassRandomizer> grassRandomizers = new List<GrassRandomizer>();
 
     private SerializedObject serializedObject;
     private SerializedProperty serializedRandomizedHeight;
-    private SerializedProperty serializedGrassRandomizers;
+    //private SerializedProperty serializedGrassRandomizers;
 
     [MenuItem("Tools/Grass height")]
     public static void StartEditor() {
@@ -21,11 +21,12 @@ public class GrassHeightRandomizerEditor : EditorWindow
     private void OnEnable() {
         serializedObject = new SerializedObject(this);
         serializedRandomizedHeight = serializedObject.FindProperty("randomizeHeight");
-        serializedGrassRandomizers = serializedObject.FindProperty("grassRandomizers");
+        //serializedGrassRandomizers = serializedObject.FindProperty("grassRandomizers");
     }
 
     private void randomize() {
-        foreach(GrassRandomizer grassRandomizer in grassRandomizers) {
+        List<GrassRandomizer> grassRandomizers = FindObjectsOfType<GrassRandomizer>().ToList();
+        foreach (GrassRandomizer grassRandomizer in grassRandomizers) {
             grassRandomizer.RandomizeHeight(randomizeHeight);
         }
     }
@@ -40,8 +41,8 @@ public class GrassHeightRandomizerEditor : EditorWindow
         GUILayout.Label("randomizeHeight");
         EditorGUILayout.PropertyField(serializedRandomizedHeight,true);
 
-        GUILayout.Label("grass lines");
-        EditorGUILayout.PropertyField(serializedGrassRandomizers, true);
+        //GUILayout.Label("grass lines");
+        //EditorGUILayout.PropertyField(serializedGrassRandomizers, true);
 
         EditorGUILayout.Space();
 
