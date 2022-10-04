@@ -44,6 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8eed8bed1cf58418fc95844fe1354b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SwapEndGameDelayTime: 0.2
   timer: {fileID: 0}
-  pickablesPrefab: {fileID: 1182229984551806398, guid: a89f409e65688d349abe2d69b512a5ba, type: 3}
-  pickablesContainer: {fileID: 0}
+  crownsTrapsSpawner: {fileID: 0}
+  _pumpkin: {fileID: 0}
+  _scarecrow: {fileID: 0}
+  P1SpawnPos: {fileID: 0}
+  P2SpawnPos: {fileID: 0}
