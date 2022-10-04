@@ -18,6 +18,8 @@ public abstract class Player : MonoBehaviour
     [Header("References")]
     [SerializeField]
     private GameObject crownObj;
+    [SerializeField]
+    private Light playerLight;
 
     [Header("Settings")]
     [SerializeField]
@@ -30,8 +32,6 @@ public abstract class Player : MonoBehaviour
     protected bool isEscaping = false;
     [SerializeField]
     protected PlayerNumber playerNumber;
-    [SerializeField]
-    protected Color coolDownBarColor;
     [SerializeField] 
     protected GameObject model;
 
@@ -41,7 +41,6 @@ public abstract class Player : MonoBehaviour
     protected Vector3 lastSpeedDirection;
 
     private float _originalMoveSpeed;
-    private bool _collideOnce = false;
 
     protected MyUIBar coolDownBar;
 
@@ -50,6 +49,15 @@ public abstract class Player : MonoBehaviour
     public virtual void SetIsEscaping(bool isEscaping)
     {
         this.isEscaping = isEscaping;
+        if (isEscaping) {
+            playerLight.color = ColorsManager.Instance.EscapeeLightColor;
+            coolDownBar.SetColor(ColorsManager.Instance.EscapeeUiColor);
+        }
+        else
+        {
+            playerLight.color = ColorsManager.Instance.ChaserLightColor;
+            coolDownBar.SetColor(ColorsManager.Instance.ChaserLightColor);
+        }
     }
 
     public PlayerNumber GetPlayerNumber() => playerNumber;
@@ -68,7 +76,7 @@ public abstract class Player : MonoBehaviour
     {
         _originalMoveSpeed = moveSpeed;
         coolDownBar.SetMaxFill(abilityCooldown);
-        coolDownBar.SetColor(coolDownBarColor);
+        //coolDownBar.SetColor(coolDownBarColor);
     }
 
     protected virtual void Update()
