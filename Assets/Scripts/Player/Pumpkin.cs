@@ -10,20 +10,26 @@ public class Pumpkin : Player {
     [SerializeField] bool disapearOnDash = true;
 
     [Header("References")]
-    [SerializeField] TrailRenderer trailRenderer;
+    [SerializeField] TrailRenderer chaserTrailRenderer;
+    [SerializeField] TrailRenderer escapeeTrailRenderer;
     [SerializeField] GameObject pumpkinRagdollPref;
     [SerializeField] GameObject scarecrowRagdollPref;
+
+    TrailRenderer trailRenderer;
 
     private bool dashActive = false;
     protected override void Awake() {
         base.Awake();
-        trailRenderer.emitting = false;
-        
+        chaserTrailRenderer.emitting = escapeeTrailRenderer.emitting = false;
     }
 
     public override void SetIsEscaping(bool isEscaping) {
         base.SetIsEscaping(isEscaping);
         PlayerPrefs.SetInt("PumpkinEscaping", isEscaping ? 1 : 0);
+        if (isEscaping)
+            trailRenderer = escapeeTrailRenderer;
+        else
+            trailRenderer = chaserTrailRenderer;
     }
 
     protected override void UseAbility() {

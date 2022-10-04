@@ -187,7 +187,8 @@ MonoBehaviour:
   dashSpeed: 40
   dashDuration: 0.1
   disapearOnDash: 1
-  trailRenderer: {fileID: 6757339910050243568}
+  chaserTrailRenderer: {fileID: 6757339910050243568}
+  escapeeTrailRenderer: {fileID: 3973773541264925452}
   pumpkinRagdollPref: {fileID: 6121427034608591733, guid: 33198703f1e3ad142b96ee0b309dc985, type: 3}
   scarecrowRagdollPref: {fileID: 792296854035660116, guid: 35781ff58600fa2488f827bc64d0d911, type: 3}
 --- !u!54 &477475240911130142
@@ -231,12 +232,12 @@ GameObject:
   - component: {fileID: 8738983804706718505}
   - component: {fileID: 3973773541264925452}
   m_Layer: 7
-  m_Name: escapeeTrailRenderer
+  m_Name: EscapeeTrailRenderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8738983804706718505
 Transform:
   m_ObjectHideFlags: 0
