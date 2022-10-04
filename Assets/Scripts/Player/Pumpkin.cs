@@ -57,13 +57,17 @@ public class Pumpkin : Player {
     EndDash();
     if (collision.collider.tag.Equals("Player")) {
             if (!IsEscaping) {
-                GameController.Instance.GivePoint(((int)PlayerNumber.PlayerOne));
-                //collision.gameObject.SetActive(false);
-                //Instantiate(scarecrowRagdollPref, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+                GameController.Instance.GivePoint(((int)PlayerNumber.PlayerOne),true);
+                
+                GameObject ragdoll = Instantiate(scarecrowRagdollPref, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+                ragdoll.GetComponent<Rigidbody>().AddForce(collision.contacts[0].normal * -10,ForceMode.Impulse);
+                collision.gameObject.SetActive(false);
             }
             else {
-                GameController.Instance.GivePoint((int)PlayerNumber.PlayerTwo);
-                //Instantiate(pumpkinRagdollPref, transform.position, transform.rotation);
+                GameController.Instance.GivePoint((int)PlayerNumber.PlayerTwo,true);
+                GameObject ragdoll = Instantiate(pumpkinRagdollPref, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+                ragdoll.GetComponent<Rigidbody>().AddForce(collision.contacts[0].normal * -10, ForceMode.Impulse);
+                gameObject.SetActive(false);
             }   
     }
 }

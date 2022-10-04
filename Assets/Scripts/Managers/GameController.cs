@@ -28,7 +28,7 @@ public class GameController : Singleton<GameController>
     private GameObject pickablesContainer;
     private bool _isPause = false;
     private int _round = 1;
-    private bool _rolesSwapped = false;
+    private bool _startedSwap = false;
     private bool _roundOver = false;
 
     private void Start()
@@ -45,14 +45,18 @@ public class GameController : Singleton<GameController>
         if(InputManager.Instance.GetApplicationPausePressed())
             SwitchPause();
 
-        if(timer.CurrentTimer >=30 && timer.CurrentTimer < 31 && !_rolesSwapped)
+        if(timer.CurrentTimer >=30 && timer.CurrentTimer < 31 && !_startedSwap)
             GivePointToEscapee();
         
         if(timer.CurrentTimer <= 0 && !_roundOver)
             GivePointToEscapee();
     }
-
-    public void GivePoint(int _player) 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="_player"></param>
+    /// <param name="_wait">waits some time before swap</param>
+    public void GivePoint(int _player,bool _wait = false) 
     {
         if (_player == 0)
             Player1Points++;
@@ -71,7 +75,7 @@ public class GameController : Singleton<GameController>
         if (_round == 1) 
         {
             _round++;
-            SwapRoles();
+            SwapRoles(_wait);
         }
         else if (_round == 2) 
         {
@@ -105,20 +109,29 @@ public class GameController : Singleton<GameController>
         _roundOver = false;
     }
 
-    private void SwapRoles()
+    private void SwapRoles(bool _wait)
     {
-        CustomLog.Log(CustomLog.CustomLogType.GAMEPLAY, "ROLES SWAP");
-        _rolesSwapped = true;
-
-        timer.StartTimerAt(30, true);
-        timer.StopTimer();
-
         _pumpkin.CanReadInput = false;
         _scarecrow.CanReadInput = false;
+        _startedSwap = true;
+
+        float waitTime;
+        if (_wait) waitTime = 2f;
+        else waitTime = 0f;
+        StartCoroutine(swapRolesCor(waitTime));
+    }
+
+    private IEnumerator swapRolesCor(float _waitTime) {
+        yield return new WaitForSeconds(_waitTime);
+        timer.StartTimerAt(30, true);
+        timer.StopTimer();
 
         Destroy(pickablesContainer);
 
         GameUIManager.Instance.PlaySwapPanel();
+
+        _pumpkin.gameObject.SetActive(true);
+        _scarecrow.gameObject.SetActive(true);
 
         _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
         _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
