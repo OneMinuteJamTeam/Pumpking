@@ -74,30 +74,62 @@ public abstract class Player : MonoBehaviour
 
     protected abstract void UseAbility();
 
-    protected virtual void HandleInput()
-    {
+
+    // PLAYER CANNOT ROTATE WHEN TRAPPED
+    //protected virtual void HandleInput()
+    //{
+    //    if (CanReadInput) {
+
+    //        if (CanMove) {
+    //            if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
+    //                // Handle Input P1
+    //                rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
+    //                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
+
+    //                RotateSpeedWithWalls();
+
+    //            }
+    //            else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
+    //                // Handle Input P2
+    //                rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
+
+    //                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
+
+    //                RotateSpeedWithWalls();
+    //            }
+    //            else rb.velocity = Vector3.zero;
+    //        }
+    //        else rb.velocity = Vector3.zero;
+    //        HandleAbility();
+    //    }
+    //}
+    
+    // PLAYER CAN ROTATE WHEN TRAPPED
+    protected virtual void HandleInput() {
         if (CanReadInput) {
 
-            if (CanMove) {
+                // Handle Input P1
                 if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
-                    // Handle Input P1
-                    rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
-                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
 
-                    RotateSpeedWithWalls();
+                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
+                    if (CanMove) {
+                        rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
+                        RotateSpeedWithWalls();
+                    }
+                    else rb.velocity = Vector3.zero;
 
                 }
+                // Handle Input P2
                 else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
-                    // Handle Input P2
-                    rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
-
                     lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
 
-                    RotateSpeedWithWalls();
+                    if (CanMove) {
+                        rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
+                        RotateSpeedWithWalls();
+                    }
+                    else rb.velocity = Vector3.zero;
                 }
                 else rb.velocity = Vector3.zero;
-            }
-            else rb.velocity = Vector3.zero;
             HandleAbility();
         }
     }
