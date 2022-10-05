@@ -14,6 +14,10 @@ public class UIRoleManager : MonoBehaviour
     [SerializeField]
     PumpkinRagdoll pumpkinRagdoll;
     [SerializeField]
+    private TextMeshProUGUI P1Text;
+    [SerializeField]
+    private TextMeshProUGUI P2Text;
+    [SerializeField]
     ScarecrowRagdoll scarecrowRagdoll;
 
 
@@ -45,12 +49,16 @@ public class UIRoleManager : MonoBehaviour
         scarecrowText.text = srole.ToString();
 
         if (prole == Player.eRole.Chaser) {
-            pumpkinText.color = Color.red;
+            pumpkinText.color = ColorsManager.Instance.ChaserUiColor; ;
+            P1Text.color = ColorsManager.Instance.ChaserUiColor; ;
             scarecrowText.color = ColorsManager.Instance.EscapeeUiColor;
+            P2Text.color = ColorsManager.Instance.EscapeeUiColor;
         }
         else {
             pumpkinText.color = ColorsManager.Instance.EscapeeUiColor;
-            scarecrowText.color = Color.red;
+            P1Text.color = ColorsManager.Instance.EscapeeUiColor;
+            scarecrowText.color = ColorsManager.Instance.ChaserUiColor;
+            P2Text.color = ColorsManager.Instance.ChaserUiColor;
         }
     }
 }
