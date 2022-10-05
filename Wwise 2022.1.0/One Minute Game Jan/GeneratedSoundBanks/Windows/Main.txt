@@ -1,10 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1256513485	Bullet			\Default Work Unit\Bullet	
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	3920142940	timer			\Default Work Unit\timer	
+	524425647	MainThemeStart			\Default Work Unit\Music\MainThemeStart	
+	1096413557	RoleChange			\Default Work Unit\SFX\RoleChange	
+	3332225442	WinnerLoop			\Default Work Unit\Music\WinnerLoop	
+	3826150991	MainThemeStart2			\Default Work Unit\Music\MainThemeStart2	
+	4008519529	IntroLoopStart			\Default Work Unit\Music\IntroLoopStart	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	105588453	Bullet	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Bullet Whiz By 02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bullet		41568
-	315691479	hearthbeat	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Heartbeat_674CBFD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\hearthbeat		4594976
+	15425480	Winners Loop	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Winner Loop V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Winners Loop		6773856
+	263289546	Main Theme 2	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Main Theme Variation V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Main Theme 2		5376732
+	324168328	Intro Loop	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Intro Loop V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Intro Loop		6773856
+	443042347	Role Change	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Role Change V1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Role Change		506024
+	1028424601	Main Theme	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Main Theme V3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Main Theme		5464112
 

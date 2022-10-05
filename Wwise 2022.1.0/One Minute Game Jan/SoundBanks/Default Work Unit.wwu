@@ -5,7 +5,11 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{BB27849F-A680-4C61-8AA4-D696AFD28BEE}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Bullet" ID="{E911714F-B569-48A6-84DE-F8AE6AEE2DB4}" WorkUnitID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="WinnerLoop" ID="{8FBAE7DF-6C6D-41FA-AC4C-492B2C63B560}" WorkUnitID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MainThemeStart2" ID="{FBAA710C-4F15-42D6-BEE7-900A39D040C9}" WorkUnitID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MainThemeStart" ID="{F4EFF712-DA8C-4530-9403-3F34A9BFB827}" WorkUnitID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="IntroLoopStart" ID="{F080137A-AE47-4BCC-A5B9-C25B2C2AF33F}" WorkUnitID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RoleChange" ID="{8B840E6A-821B-4E8A-9908-5DA9C7B96933}" WorkUnitID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

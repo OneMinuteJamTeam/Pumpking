@@ -153,31 +153,59 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{09F4D319-6990-2E2C-95CA-9985E18EB220}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{654E46E0-718D-7576-141B-340878CA6F55}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
-				<File Id="105588453" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Bullet Whiz By 02.wav</ShortName>
-					<CachePath>SFX/Bullet Whiz By 02_10C4C929.wem</CachePath>
+				<File Id="15425480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Winner Loop V2.wav</ShortName>
+					<CachePath>SFX/Winner Loop V2_10C4C929.wem</CachePath>
 				</File>
-				<File Id="315691479" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Heartbeat.wav</ShortName>
-					<CachePath>SFX/Heartbeat_674CBFD6.wem</CachePath>
+				<File Id="263289546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Main Theme Variation V2.wav</ShortName>
+					<CachePath>SFX/Main Theme Variation V2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="324168328" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Intro Loop V2.wav</ShortName>
+					<CachePath>SFX/Intro Loop V2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="443042347" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Role Change V1.wav</ShortName>
+					<CachePath>SFX/Role Change V1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1028424601" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Main Theme V3.wav</ShortName>
+					<CachePath>SFX/Main Theme V3_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1256513485" Name="Bullet" DurationType="Infinite">
+				<Event Id="4008519529" Name="IntroLoopStart" DurationType="OneShot" DurationMin="38.4" DurationMax="38.4">
 					<MediaRefs>
-						<MediaRef Id="105588453"/>
-						<MediaRef Id="315691479"/>
+						<MediaRef Id="324168328"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="524425647" Name="MainThemeStart" DurationType="OneShot" DurationMin="30.975147" DurationMax="30.975147">
+					<MediaRefs>
+						<MediaRef Id="1028424601"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3826150991" Name="MainThemeStart2" DurationType="OneShot" DurationMin="30.479795" DurationMax="30.479795">
+					<MediaRefs>
+						<MediaRef Id="263289546"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1096413557" Name="RoleChange" DurationType="OneShot" DurationMin="2.8680725" DurationMax="2.8680725">
+					<MediaRefs>
+						<MediaRef Id="443042347"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3332225442" Name="WinnerLoop" DurationType="OneShot" DurationMin="38.4" DurationMax="38.4">
+					<MediaRefs>
+						<MediaRef Id="15425480"/>
 					</MediaRefs>
 				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="3920142940" Name="timer"/>
-			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{EA54677D-A989-D926-3437-6C6E8DE1B665}</FileHash>
+	<FileHash>{FA45BFC9-18E1-9CF7-BAFA-5FD1C75A20A0}</FileHash>
 </SoundBanksInfo>
