@@ -31,6 +31,9 @@ public class Scarecrow : Player
     [SerializeField]
     private LayerMask obastaclesLayer;
 
+    [Header("Audio")]
+    [SerializeField]
+    private AK.Wwise.Event scarecrowAbility;
 
     private Player _abilityTarget = null;
     private bool _targetInRange = false;
@@ -118,6 +121,9 @@ public class Scarecrow : Player
     {
         Vector3 dir = (_abilityTarget.transform.position - transform.position).normalized;
 
+        // Audio
+        scarecrowAbility.Post(this.gameObject);
+
         animator.SetTrigger("Push");
         _abilityTarget.CanReadInput = false;
         _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -128,6 +134,9 @@ public class Scarecrow : Player
     private void PullAbility()
     {
         Vector3 dir = (transform.position - _abilityTarget.transform.position).normalized;
+
+        // Audio
+        scarecrowAbility.Post(this.gameObject);
 
         animator.SetTrigger("Pull");
         _abilityTarget.CanReadInput = false;

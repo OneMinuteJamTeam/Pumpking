@@ -4,8 +4,20 @@
 		<WorkUnit Name="Default Work Unit" ID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Music" ID="{3411465F-DC14-41BD-95CA-2D1BAE6B22F0}" ShortID="91568544">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Sound Name="Intro Loop" ID="{BBE839C8-7563-4EAD-8AC2-88BB1D1893D0}" ShortID="1020076988">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -31,6 +43,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Main Theme" ID="{A4459450-B9DB-4EE6-8779-B3C82C442567}" ShortID="13847969">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -53,6 +72,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Main Theme 2" ID="{8CB92251-7C04-4864-929E-87EA0D86ED2D}" ShortID="54486432">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -75,6 +101,14 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Winners Loop" ID="{809D7EE1-4333-44C7-8A6D-66B0CAE9923B}" ShortID="273584756">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -99,6 +133,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{A66A6B66-44DB-452F-8D6C-723E3E4460AF}" ShortID="474240466">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Sound Name="Crown Power Up NEW" ID="{40301DAF-4C47-4902-BA26-3AFCCD959343}" ShortID="104624129">
 							<ReferenceList>
@@ -192,7 +230,7 @@
 							<ChildrenList>
 								<Folder Name="Scarecrow" ID="{3EEB1136-9EFE-4AF4-9150-64DCC79E9F10}" ShortID="742222511">
 									<ChildrenList>
-										<Sound Name="Scarecrow Footsteps Loop NEW" ID="{D383052C-EFA2-4A9B-BBAD-975304885194}" ShortID="342784038">
+										<RandomSequenceContainer Name="Scer Foot" ID="{11C4FEE3-4FD2-4B1A-A5C5-95E6D5BBE921}" ShortID="262873628">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -202,23 +240,124 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Scarecrow Footsteps Loop NEW" ID="{C5C3816E-25A5-4612-A508-827721C76BC6}">
-													<Language>SFX</Language>
-													<AudioFile>Scarecrow Footsteps Loop NEW.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="995933647"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="Scarecrow Footsteps 1" ID="{D383052C-EFA2-4A9B-BBAD-975304885194}" ShortID="342784038">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Scarecrow Footsteps Loop NEW" ID="{C5C3816E-25A5-4612-A508-827721C76BC6}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0317460317460317"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.352380952380952"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Scarecrow Footsteps Loop NEW.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="563597763"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Scarecrow Footsteps Loop NEW" ID="{C5C3816E-25A5-4612-A508-827721C76BC6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Scarecrow Footsteps 2" ID="{24781D31-A1FC-4CCE-85F0-06CC6748788A}" ShortID="55357400">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Scarecrow Footsteps Loop NEW" ID="{9E8BB9F2-DE07-4BB8-A49D-D397890B54B9}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.390476190476191"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.653968253968255"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Scarecrow Footsteps Loop NEW.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="844206975"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Scarecrow Footsteps Loop NEW" ID="{9E8BB9F2-DE07-4BB8-A49D-D397890B54B9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Scarecrow Footsteps 3" ID="{AA6F1494-3E97-40CC-8446-09BA7D3BFC1C}" ShortID="146265963">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Scarecrow Footsteps Loop NEW" ID="{BB794665-1201-4201-A812-1102FA3F0F30}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.679365079365079"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.01587301587302"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Scarecrow Footsteps Loop NEW.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="290768641"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Scarecrow Footsteps Loop NEW" ID="{BB794665-1201-4201-A812-1102FA3F0F30}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Scarecrow Footsteps 4" ID="{2C751EDB-7E29-41D5-B456-1BA93DADB4DC}" ShortID="917436249">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Scarecrow Footsteps Loop NEW" ID="{21531A50-D65E-40CB-9950-D7336DE4F9CE}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.05714285714286"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.36190476190476"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Scarecrow Footsteps Loop NEW.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="995933647"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Scarecrow Footsteps Loop NEW" ID="{21531A50-D65E-40CB-9950-D7336DE4F9CE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Scarecrow Footsteps Loop NEW" ID="{C5C3816E-25A5-4612-A508-827721C76BC6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
 								<Folder Name="Pumpkin" ID="{ACAB19ED-CB68-49C3-B441-584EA1EEF658}" ShortID="631415984">
 									<ChildrenList>
-										<Sound Name="Pumpkin Footsteps Loop NEW" ID="{FFB61FBB-B0CA-484A-B54B-A873EF504B60}" ShortID="492186229">
+										<RandomSequenceContainer Name="Pump Foot" ID="{D66EB5BF-7003-4659-B8FF-AD1803AF0438}" ShortID="145096260">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -228,18 +367,115 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Pumpkin Footsteps Loop NEW" ID="{267722CE-C755-422B-B7FA-EDEFBEFD5CF7}">
-													<Language>SFX</Language>
-													<AudioFile>Pumpkin Footsteps Loop NEW.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="796915190"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="Pumpkin Footsteps 1" ID="{FFB61FBB-B0CA-484A-B54B-A873EF504B60}" ShortID="492186229">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Pumpkin Footsteps Loop NEW" ID="{267722CE-C755-422B-B7FA-EDEFBEFD5CF7}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.264890792910772"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Pumpkin Footsteps Loop NEW.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1016196785"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Pumpkin Footsteps Loop NEW" ID="{267722CE-C755-422B-B7FA-EDEFBEFD5CF7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Pumpkin Footsteps Loop 2" ID="{0C81119E-0A42-43FE-9961-C0782C4D0712}" ShortID="445583606">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Pumpkin Footsteps Loop NEW" ID="{A63A787A-9512-4542-80EE-0327162615DD}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.360816326530612"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.613696145124718"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Pumpkin Footsteps Loop NEW.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="966001949"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Pumpkin Footsteps Loop NEW" ID="{A63A787A-9512-4542-80EE-0327162615DD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Pumpkin Footsteps Loop 3" ID="{32A9BD84-6472-4901-A667-E10577DD9A14}" ShortID="536484475">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Pumpkin Footsteps Loop NEW" ID="{F58D5EE3-8DE5-444D-96FF-4743145A18DF}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.680121734971386"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.921639622902785"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Pumpkin Footsteps Loop NEW.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="496516119"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Pumpkin Footsteps Loop NEW" ID="{F58D5EE3-8DE5-444D-96FF-4743145A18DF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Pumpkin Footsteps Loop 4" ID="{08223C46-B6B1-4CCC-ACC0-0A23E0BB2908}" ShortID="739853337">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Pumpkin Footsteps Loop NEW" ID="{40E7F266-B937-440D-8130-F461345CF70B}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.04235827664399"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.25206349206349"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Pumpkin Footsteps Loop NEW.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="796915190"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Pumpkin Footsteps Loop NEW" ID="{40E7F266-B937-440D-8130-F461345CF70B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Pumpkin Footsteps Loop NEW" ID="{267722CE-C755-422B-B7FA-EDEFBEFD5CF7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>

@@ -10,6 +10,7 @@ public class Pickable : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
 
         if (other.gameObject.tag == "Player") {
+            MusicManager.Instance.PlaySFXCrown();
             other.gameObject.GetComponent<Player>().BoostSpeed(boostAmmount, boostDuration);
             Debug.Log("pickable picked");
             Destroy(gameObject);

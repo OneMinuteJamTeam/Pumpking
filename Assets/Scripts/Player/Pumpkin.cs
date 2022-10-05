@@ -15,6 +15,10 @@ public class Pumpkin : Player {
     [SerializeField] GameObject pumpkinRagdollPref;
     [SerializeField] GameObject scarecrowRagdollPref;
 
+    [Header("Audio")]
+    [SerializeField]
+    private AK.Wwise.Event pumpkinAbilityEvent;
+
     TrailRenderer trailRenderer;
 
     private bool dashActive = false;
@@ -36,6 +40,10 @@ public class Pumpkin : Player {
 
     protected override void UseAbility() {
         if (CanMove) {
+
+            // Audio
+            pumpkinAbilityEvent.Post(this.gameObject);
+
             dashActive = true;
             trailRenderer.emitting = true;
             if (disapearOnDash) model.SetActive(false);

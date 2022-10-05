@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 0c417dc9a2f5ba40bc782ff8916d7446
     GuidInternal: 
-    m_lastTime: -8585366970865291049
+    m_lastTime: -8585368021913238239
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585366970865281074
+    m_lastTime: -8585368021913238239
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b95e2e8f2c9b9345b7838b0daa09c14d
     GuidInternal: 
-    m_lastTime: -8585366970869047224
+    m_lastTime: -8585368021914031189
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 72147ac8fe599040b828a23ca1277f80
     GuidInternal: 
-    m_lastTime: -8585366970865320966
+    m_lastTime: -8585366423062033124
     List:
     - name: Main
       guid: 9f8427bb80a6614c8aa4d696afd28bee
@@ -373,8 +373,151 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8b5987b36d4a224d975cd20e32ab5477
     GuidInternal: 
-    m_lastTime: -8585366441856044806
+    m_lastTime: -8585366404571912298
     List:
+    - name: Ability
+      guid: 35b4b9eeda5aec4a9a715153efe92a9a
+      id: 1214237073
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: Ability
+        ObjectType: 4
+        guid: 35b4b9eeda5aec4a9a715153efe92a9a
+      Path: Events\Default Work Unit\SFX\Ability
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: CrownPowerUp
+      guid: b254822c6e502f4285747d83daa23279
+      id: 2291267978
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: Ability
+        ObjectType: 4
+        guid: 35b4b9eeda5aec4a9a715153efe92a9a
+      - ElementName: CrownPowerUp
+        ObjectType: 3
+        guid: b254822c6e502f4285747d83daa23279
+      Path: Events\Default Work Unit\SFX\Ability\CrownPowerUp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FlyTrap
+      guid: e57d6eb02d9bce42adc01398061101b8
+      id: 849065909
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: FlyTrap
+        ObjectType: 3
+        guid: e57d6eb02d9bce42adc01398061101b8
+      Path: Events\Default Work Unit\SFX\FlyTrap
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footsteps
+      guid: c63f89fdf3e0ae4bb09d60058c96a52f
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: Footsteps
+        ObjectType: 4
+        guid: c63f89fdf3e0ae4bb09d60058c96a52f
+      Path: Events\Default Work Unit\SFX\Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: IntroLoopStart
+      guid: 7a1380f047aecc4ba5b9c25b2c2af33f
+      id: 4008519529
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: Music
+        ObjectType: 4
+        guid: 7bf3d8aa0c4fb34cac39079053852a44
+      - ElementName: IntroLoopStart
+        ObjectType: 3
+        guid: 7a1380f047aecc4ba5b9c25b2c2af33f
+      Path: Events\Default Work Unit\Music\IntroLoopStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainThemeStart
+      guid: 12f7eff48cda304594033f34a9bfb827
+      id: 524425647
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: Music
+        ObjectType: 4
+        guid: 7bf3d8aa0c4fb34cac39079053852a44
+      - ElementName: MainThemeStart
+        ObjectType: 3
+        guid: 12f7eff48cda304594033f34a9bfb827
+      Path: Events\Default Work Unit\Music\MainThemeStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainThemeStart2
+      guid: 0c71aafb154fd642bee7900a39d040c9
+      id: 3826150991
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: Music
+        ObjectType: 4
+        guid: 7bf3d8aa0c4fb34cac39079053852a44
+      - ElementName: MainThemeStart2
+        ObjectType: 3
+        guid: 0c71aafb154fd642bee7900a39d040c9
+      Path: Events\Default Work Unit\Music\MainThemeStart2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music
       guid: 7bf3d8aa0c4fb34cac39079053852a44
       id: 3991942870
@@ -389,6 +532,118 @@ MonoBehaviour:
         ObjectType: 4
         guid: 7bf3d8aa0c4fb34cac39079053852a44
       Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PumpkinAbility
+      guid: 7ba5ae1892fc0b428517b0a3647a97fc
+      id: 1895303939
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: Ability
+        ObjectType: 4
+        guid: 35b4b9eeda5aec4a9a715153efe92a9a
+      - ElementName: PumpkinAbility
+        ObjectType: 3
+        guid: 7ba5ae1892fc0b428517b0a3647a97fc
+      Path: Events\Default Work Unit\SFX\Ability\PumpkinAbility
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PumpkinFootstep
+      guid: eb85db0a0708644083ece1edb81c096f
+      id: 3397687769
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: Footsteps
+        ObjectType: 4
+        guid: c63f89fdf3e0ae4bb09d60058c96a52f
+      - ElementName: PumpkinFootstep
+        ObjectType: 3
+        guid: eb85db0a0708644083ece1edb81c096f
+      Path: Events\Default Work Unit\SFX\Footsteps\PumpkinFootstep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: RoleChange
+      guid: 6a0e848b1b828a4e99085da9c7b96933
+      id: 1096413557
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: RoleChange
+        ObjectType: 3
+        guid: 6a0e848b1b828a4e99085da9c7b96933
+      Path: Events\Default Work Unit\SFX\RoleChange
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ScarecrowAbility
+      guid: 2f80d118efc93548ad185e0ccddd0e54
+      id: 719842716
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: Ability
+        ObjectType: 4
+        guid: 35b4b9eeda5aec4a9a715153efe92a9a
+      - ElementName: ScarecrowAbility
+        ObjectType: 3
+        guid: 2f80d118efc93548ad185e0ccddd0e54
+      Path: Events\Default Work Unit\SFX\Ability\ScarecrowAbility
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: ScarecrowFootstep
+      guid: 38a4a2914cf58148b16bd0e35820ba74
+      id: 3533688396
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      - ElementName: Footsteps
+        ObjectType: 4
+        guid: c63f89fdf3e0ae4bb09d60058c96a52f
+      - ElementName: ScarecrowFootstep
+        ObjectType: 3
+        guid: 38a4a2914cf58148b16bd0e35820ba74
+      Path: Events\Default Work Unit\SFX\Footsteps\ScarecrowFootstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -409,6 +664,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: WinnerLoop
+      guid: dfe7ba8f6d6cfa41ac4c492b2c63b560
+      id: 3332225442
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: Music
+        ObjectType: 4
+        guid: 7bf3d8aa0c4fb34cac39079053852a44
+      - ElementName: WinnerLoop
+        ObjectType: 3
+        guid: dfe7ba8f6d6cfa41ac4c492b2c63b560
+      Path: Events\Default Work Unit\Music\WinnerLoop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -421,7 +696,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: a7c3d6f108a93c4485d8c4675310337e
     GuidInternal: 
-    m_lastTime: -8585366970869465928
+    m_lastTime: -8585368002775177085
     List:
     - name: timer
       guid: 3c25bf9352d04240a4eaba6c7c9dae57
@@ -448,7 +723,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-    m_lastTime: -8585366970869455959
+    m_lastTime: -8585368021914061102
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -489,7 +764,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Soundseed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8585366970869455959
+    m_lastTime: -8585368021914061102
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -643,7 +918,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 26a2cf3f54d5e44d97d8d153a2b71fe1
     GuidInternal: 
-    m_lastTime: -8585366970865301019
+    m_lastTime: -8585368021913248213
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -657,7 +932,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 4286cd428eff844fb0a0132db6e56cc4
     GuidInternal: 
-    m_lastTime: -8585366970865301019
+    m_lastTime: -8585368021913248213
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -671,10 +946,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: e375f4689ff85f4a91c081a36665d58e
     GuidInternal: 
-    m_lastTime: -8585366970865291049
+    m_lastTime: -8585368021913238239
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 060000000700000008000000090000000a0000000b0000000c0000000d0000002b0000002c0000002e00000030000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

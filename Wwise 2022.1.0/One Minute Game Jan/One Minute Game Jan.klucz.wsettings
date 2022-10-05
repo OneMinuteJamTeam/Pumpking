@@ -3,6 +3,13 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{BF0374A9-3CEC-40F1-95F1-71055FB01017}">
 			<PropertyList>
+				<Property Name="Event Action List\{0ADB85EB-0807-4064-83EC-E1EDB81C096F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{18AEA57B-FC92-420B-8517-B0A3647A97FC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{18D1802F-C9EF-4835-AD18-5E0CCDDD0E54}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2C8254B2-506E-422F-8574-7D83DAA23279}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8B840E6A-821B-4E8A-9908-5DA9C7B96933}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{91A2A438-F54C-4881-B16B-D0E35820BA74}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B06E7DE5-9B2D-42CE-ADC0-1398061101B8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E911714F-B569-48A6-84DE-F8AE6AEE2DB4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
@@ -126,6 +133,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{D28BF4A5-9339-4264-9B99-B85F8475E2C2}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>
