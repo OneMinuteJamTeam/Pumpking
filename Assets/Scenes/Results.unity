@@ -730,7 +730,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &817060426
 GameObject:
@@ -1594,6 +1594,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
   m_PrefabInstance: {fileID: 1414650583}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1414650585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7314131294129514080, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+  m_PrefabInstance: {fileID: 1414650583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1414650586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414650584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afcb913db6036284ab506433f2eb14fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crownObj: {fileID: 1414650585}
 --- !u!1 &1501241034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,6 +1842,24 @@ PrefabInstance:
 --- !u!1 &1791017140 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+  m_PrefabInstance: {fileID: 1791017139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1791017141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791017140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afcb913db6036284ab506433f2eb14fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crownObj: {fileID: 1791017142}
+--- !u!1 &1791017142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2672794349402099007, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
   m_PrefabInstance: {fileID: 1791017139}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2022150152

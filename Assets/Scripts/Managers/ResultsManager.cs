@@ -27,7 +27,9 @@ public class ResultsManager : Singleton<ResultsManager>
             pumpkinRagdoll.SetActive(true);
             StartCoroutine(winAnimation(pumpkinRagdoll));
             scareCrowRagdollDead.SetActive(true);
-            
+
+            pumpkinRagdoll.GetComponent<ResultRagdoll>().SetActiveCrown(true);
+
             winText.text = "Player 1 wins!";
         }
         else if (PlayerPrefs.GetInt("P1Points") < PlayerPrefs.GetInt("P2Points")) 
@@ -35,6 +37,8 @@ public class ResultsManager : Singleton<ResultsManager>
             scareCrowRagdoll.SetActive(true);
             StartCoroutine(winAnimation(scareCrowRagdoll));
             pumpkinRagdollDead.SetActive(true);
+
+            scareCrowRagdoll.GetComponent<ResultRagdoll>().SetActiveCrown(true);
 
             winText.text = "Player 2 wins!";
         }
