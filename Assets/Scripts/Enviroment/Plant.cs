@@ -12,6 +12,9 @@ public class Plant : MonoBehaviour {
 
     [SerializeField] private Animator animator;
 
+    [Header("Audio")]
+    [SerializeField] private AK.Wwise.Event plantSFX;
+
     private Player rootedPlayer = null;
     private bool isActive = true;
 
@@ -30,6 +33,10 @@ public class Plant : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.tag == "Player" && rootedPlayer == null && isActive) {
+
+            // Audio
+            plantSFX.Post(this.gameObject);
+
             Player otherPlayer = other.gameObject.GetComponent<Player>();
             rootedPlayer = otherPlayer;
             otherPlayer.CanMove = false;

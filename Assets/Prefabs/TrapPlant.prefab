@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6667650961951680625}
   - component: {fileID: 6667650961951680630}
   - component: {fileID: 6667650961951680626}
+  - component: {fileID: 6614547867294354364}
   m_Layer: 0
   m_Name: TrapPlant
   m_TagString: Untagged
@@ -116,6 +117,32 @@ MonoBehaviour:
   activeMaterial: {fileID: 2100000, guid: 31ac3b15791d2da4eaa66ecd63a3d965, type: 2}
   unactiveMaterial: {fileID: 2100000, guid: 2a178753eebcc294ea1ba6cbd331e61e, type: 2}
   animator: {fileID: 1476527526019819234}
+  plantSFX:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 399b264d983219d429a48fc1af4bf7ef, type: 2}
+--- !u!114 &6614547867294354364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6667650961951680631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347122b2fe94d7343a23a34728285d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &3710801468293683115
 PrefabInstance:
   m_ObjectHideFlags: 0
