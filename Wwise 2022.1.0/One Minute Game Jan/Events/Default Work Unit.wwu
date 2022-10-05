@@ -1,27 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" PersistMode="Standalone">
-			<ChildrenList>
-				<Event Name="Bullet" ID="{E911714F-B569-48A6-84DE-F8AE6AEE2DB4}">
-					<ChildrenList>
-						<Action Name="" ID="{5F9C9E5B-0753-4EB2-8AF8-848E52B16DE8}" ShortID="963752366">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Bullet" ID="{BB9B31AA-8DA3-4D3D-8B7E-38025AA96C56}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{261511ED-BF54-42E7-B476-E3D7FD4554BA}" ShortID="111975543">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="hearthbeat" ID="{9CFF0A3A-E28C-41D6-A2A0-284047ADB838}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>
