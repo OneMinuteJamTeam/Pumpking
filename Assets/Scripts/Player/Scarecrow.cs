@@ -125,9 +125,14 @@ public class Scarecrow : Player
         scarecrowAbility.Post(this.gameObject);
 
         animator.SetTrigger("Push");
-        _abilityTarget.CanReadInput = false;
-        _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
+
+        if (_targetInRange)
+        {
+            _abilityTarget.CanReadInput = false;
+            _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
+        }
+        
         StartCoroutine(COStartAbilityEffectTimer());
     }
 
@@ -139,9 +144,14 @@ public class Scarecrow : Player
         scarecrowAbility.Post(this.gameObject);
 
         animator.SetTrigger("Pull");
-        _abilityTarget.CanReadInput = false;
-        _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
-        _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pullForce, ForceMode.Impulse);
+
+        if (_targetInRange)
+        {
+            _abilityTarget.CanReadInput = false;
+            _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pullForce, ForceMode.Impulse);
+        }
+      
         StartCoroutine(COStartAbilityEffectTimer());
     }
 
