@@ -32,7 +32,142 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="SFX" ID="{A66A6B66-44DB-452F-8D6C-723E3E4460AF}" ShortID="474240466"/>
+				<Folder Name="SFX" ID="{A66A6B66-44DB-452F-8D6C-723E3E4460AF}" ShortID="474240466">
+					<ChildrenList>
+						<Sound Name="Crown Power Up NEW" ID="{40301DAF-4C47-4902-BA26-3AFCCD959343}" ShortID="104624129">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Crown Power Up NEW" ID="{603DB45B-CA70-4677-A3CC-0BC572EE58EF}">
+									<Language>SFX</Language>
+									<AudioFile>Crown Power Up NEW.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="413565637"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Crown Power Up NEW" ID="{603DB45B-CA70-4677-A3CC-0BC572EE58EF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Fly trap NEW" ID="{C3C4AF18-1F94-48F3-8AF6-165D6B04B34C}" ShortID="777273628">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Fly trap NEW" ID="{61A1E1EB-2D3E-451B-941F-310AB3B6CD1F}">
+									<Language>SFX</Language>
+									<AudioFile>Fly trap NEW.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="641490"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Fly trap NEW" ID="{61A1E1EB-2D3E-451B-941F-310AB3B6CD1F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pumpkin Dash NEW" ID="{64CDD59E-7EA3-438E-9C46-0B865719120A}" ShortID="872138222">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pumpkin Dash NEW" ID="{CC72239C-CF11-4BA5-A5F9-16D12533C376}">
+									<Language>SFX</Language>
+									<AudioFile>Pumpkin Dash NEW.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="624687650"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pumpkin Dash NEW" ID="{CC72239C-CF11-4BA5-A5F9-16D12533C376}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pumpkin Footsteps Loop NEW" ID="{FFB61FBB-B0CA-484A-B54B-A873EF504B60}" ShortID="492186229">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pumpkin Footsteps Loop NEW" ID="{267722CE-C755-422B-B7FA-EDEFBEFD5CF7}">
+									<Language>SFX</Language>
+									<AudioFile>Pumpkin Footsteps Loop NEW.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="796915190"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pumpkin Footsteps Loop NEW" ID="{267722CE-C755-422B-B7FA-EDEFBEFD5CF7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Scarecrow Ability NEW" ID="{F06719A8-9C4F-44D5-AFA5-2BD4952A3AD5}" ShortID="498568097">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Scarecrow Ability NEW" ID="{086610C5-8846-4676-A9CB-5DA3FB19769F}">
+									<Language>SFX</Language>
+									<AudioFile>Scarecrow Ability NEW.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="695975351"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Scarecrow Ability NEW" ID="{086610C5-8846-4676-A9CB-5DA3FB19769F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Scarecrow Footsteps Loop NEW" ID="{D383052C-EFA2-4A9B-BBAD-975304885194}" ShortID="342784038">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Scarecrow Footsteps Loop NEW" ID="{C5C3816E-25A5-4612-A508-827721C76BC6}">
+									<Language>SFX</Language>
+									<AudioFile>Scarecrow Footsteps Loop NEW.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="995933647"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Scarecrow Footsteps Loop NEW" ID="{C5C3816E-25A5-4612-A508-827721C76BC6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
