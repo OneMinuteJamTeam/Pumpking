@@ -38,7 +38,19 @@ public class UIRoleManager : MonoBehaviour
 
     private void SetTexts()
     {
-        pumpkinText.text = pumpkinRagdoll.GetRole().ToString();
-        scarecrowText.text = scarecrowRagdoll.GetRole().ToString();
+        Player.eRole prole = pumpkinRagdoll.GetRole();
+        Player.eRole srole = scarecrowRagdoll.GetRole();
+
+        pumpkinText.text = prole.ToString();
+        scarecrowText.text = srole.ToString();
+
+        if (prole == Player.eRole.Chaser) {
+            pumpkinText.color = Color.red;
+            scarecrowText.color = ColorsManager.Instance.EscapeeUiColor;
+        }
+        else {
+            pumpkinText.color = ColorsManager.Instance.EscapeeUiColor;
+            scarecrowText.color = Color.red;
+        }
     }
 }
