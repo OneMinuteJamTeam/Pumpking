@@ -9,10 +9,10 @@ public class ResultsManager : Singleton<ResultsManager>
 {
     [Header("References")]
     [SerializeField] TextMeshProUGUI winText;
-    [SerializeField] GameObject pumpkinRagdoll;
-    [SerializeField] GameObject scareCrowRagdoll;
-    [SerializeField] GameObject pumpkinRagdollDead;
-    [SerializeField] GameObject scareCrowRagdollDead;
+    [SerializeField] Ragdoll pumpkinRagdoll;
+    [SerializeField] Ragdoll scareCrowRagdoll;
+    [SerializeField] Ragdoll pumpkinRagdollDead;
+    [SerializeField] Ragdoll scareCrowRagdollDead;
     [SerializeField] TextMeshProUGUI resultScoreText;
 
     private void Start() {
@@ -24,29 +24,29 @@ public class ResultsManager : Singleton<ResultsManager>
 
         if (p1Points > p2Points) 
         {
-            pumpkinRagdoll.SetActive(true);
-            StartCoroutine(winAnimation(pumpkinRagdoll));
-            scareCrowRagdollDead.SetActive(true);
+            pumpkinRagdoll.gameObject.SetActive(true);
+            StartCoroutine(winAnimation(pumpkinRagdoll.gameObject));
+            scareCrowRagdollDead.gameObject.SetActive(true);
 
-            //pumpkinRagdoll.GetComponent<ResultRagdoll>().SetActiveCrown(true);
+            pumpkinRagdoll.ShowCrown(true);
 
             winText.text = "Player 1 wins!";
         }
         else if (PlayerPrefs.GetInt("P1Points") < PlayerPrefs.GetInt("P2Points")) 
         {
-            scareCrowRagdoll.SetActive(true);
-            StartCoroutine(winAnimation(scareCrowRagdoll));
-            pumpkinRagdollDead.SetActive(true);
+            scareCrowRagdoll.gameObject.SetActive(true);
+            StartCoroutine(winAnimation(scareCrowRagdoll.gameObject));
+            pumpkinRagdollDead.gameObject.SetActive(true);
 
-            //scareCrowRagdoll.GetComponent<ResultRagdoll>().SetActiveCrown(true);
+            scareCrowRagdoll.ShowCrown(true);
 
             winText.text = "Player 2 wins!";
         }
         else 
         {
             winText.text = "Draw!";
-            scareCrowRagdoll.SetActive(true);
-            pumpkinRagdoll.SetActive(true);
+            scareCrowRagdoll.gameObject.SetActive(true);
+            pumpkinRagdoll.gameObject.SetActive(true);
         }
        
     }

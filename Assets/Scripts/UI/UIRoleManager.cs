@@ -32,6 +32,8 @@ public class UIRoleManager : MonoBehaviour
     private void Start()
     {
         SetTexts();
+        pumpkinRagdoll.ShowCrown(false);
+        scarecrowRagdoll.ShowCrown(false);
     }
 
     private void SetTexts()

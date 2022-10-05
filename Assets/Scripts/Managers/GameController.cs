@@ -197,6 +197,9 @@ public class GameController : Singleton<GameController>
         //_scarecrow.SetIsEscaping(isScarecrowEscpaing);
         //_pumpkin.SetIsEscaping(isPumpkinEscaping);
 
+        Debug.Log("p1 escaping: " + isPumpkinEscaping);
+        Debug.Log("p2 escaping: "+ isScarecrowEscpaing);
+        
         if (isScarecrowEscpaing) {
             _scarecrow.SetRole(Player.eRole.Escapee);
             _pumpkin.SetRole(Player.eRole.Chaser);

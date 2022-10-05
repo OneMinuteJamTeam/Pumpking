@@ -204,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLight: {fileID: 1726117575}
+  crownModel: {fileID: 2672794349402099007}
 --- !u!1001 &1871552155637550292
 PrefabInstance:
   m_ObjectHideFlags: 0

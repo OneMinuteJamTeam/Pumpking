@@ -17,7 +17,7 @@ public class ScarecrowRagdoll : Ragdoll
         base.SetRole(_role);
         bool isEscaping = _role == Player.eRole.Escapee;
 
-        PlayerPrefs.SetInt(Player.P1_ESCAPEE_KEY, isEscaping ? 1 : 0);
+        PlayerPrefs.SetInt(Player.P2_ESCAPEE_KEY, isEscaping ? 1 : 0);
         if (isEscaping) {
             lanternMeshRenderer.material = escapingMaterial;
         }

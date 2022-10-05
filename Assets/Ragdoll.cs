@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ragdoll : MonoBehaviour
 {
     [SerializeField] Light playerLight;
+    [SerializeField] GameObject crownModel;
     private Player.eRole role;
     public virtual void SetRole(Player.eRole _role) {
             role = _role;
@@ -27,6 +28,9 @@ public class Ragdoll : MonoBehaviour
         else SetRole(Player.eRole.Escapee);
     }
 
+    public void ShowCrown(bool show) {
+        crownModel.SetActive(show);
+    }
 
 
 }

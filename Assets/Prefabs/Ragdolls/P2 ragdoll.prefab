@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLight: {fileID: 204699131}
+  crownModel: {fileID: 1050979732525939528}
   lanternMeshRenderer: {fileID: 6421265374172985613}
   chasingMaterial: {fileID: 2100000, guid: 608d8f26824fce648bb87264568c4286, type: 2}
   escapingMaterial: {fileID: 2100000, guid: 23b918aedad9c4140ac0e50126bc8247, type: 2}

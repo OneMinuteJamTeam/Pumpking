@@ -21,8 +21,8 @@ public abstract class Player : MonoBehaviour
     public bool CanReadInput { get; set; }
     public bool CanMove { get; set; }
 
-    public static string P1_ESCAPEE_KEY = "ESCAPEE_KEY";
-    public static string P2_ESCAPEE_KEY = "ESCAPEE_KEY";
+    public static string P1_ESCAPEE_KEY = "P1ESCAPEE_KEY";
+    public static string P2_ESCAPEE_KEY = "P2ESCAPEE_KEY";
 
     [Header("References")]
     [SerializeField]
