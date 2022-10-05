@@ -378,7 +378,7 @@ PrefabInstance:
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 648576253}
+      objectReference: {fileID: 648576254}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -392,12 +392,24 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayAudio1
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenuUIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: AudioUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
