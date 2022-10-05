@@ -21,6 +21,13 @@ public class Pumpkin : Player {
 
     TrailRenderer trailRenderer;
 
+    public bool IsAffectedByPushPull { get; set; }
+
+    protected override void HandleInput() {
+        if(!IsAffectedByPushPull)
+            base.HandleInput();
+    }
+
     private bool dashActive = false;
     protected override void Awake() {
         base.Awake();
@@ -39,20 +46,17 @@ public class Pumpkin : Player {
     }
 
     protected override void UseAbility() {
-        if (CanMove) {
-
-            // Audio
+            //sound
             pumpkinAbilityEvent.Post(this.gameObject);
 
             dashActive = true;
             trailRenderer.emitting = true;
             if (disapearOnDash) model.SetActive(false);
-            CanReadInput = false;
 
             rb.velocity = transform.forward * dashSpeed;
+            IsSpeedControlled = false;
 
             StartCoroutine(EndDashCor());
-        }
     }
 
     private IEnumerator EndDashCor() {
@@ -62,7 +66,7 @@ public class Pumpkin : Player {
     private void EndDash() {
         if (dashActive) {
             if (disapearOnDash) model.SetActive(true);
-            CanReadInput = true;
+            if(!IsAffectedByPushPull)IsSpeedControlled = true;
             trailRenderer.emitting = false;
         }
     }

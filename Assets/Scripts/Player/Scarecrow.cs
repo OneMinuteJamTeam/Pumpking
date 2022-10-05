@@ -35,7 +35,7 @@ public class Scarecrow : Player
     [SerializeField]
     private AK.Wwise.Event scarecrowAbility;
 
-    private Player _abilityTarget = null;
+    private Pumpkin _abilityTarget = null;
     private bool _targetInRange = false;
 
     public override void SetRole(eRole _role)
@@ -80,7 +80,8 @@ public class Scarecrow : Player
         */
         CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
 
-        CanReadInput = false;
+        CanUseAbility = false;
+        CanMove = false;
 
         // Choose Pull or Push
         if (Role == eRole.Escapee)
@@ -128,7 +129,9 @@ public class Scarecrow : Player
 
         if (_targetInRange)
         {
-            _abilityTarget.CanReadInput = false;
+            _abilityTarget.IsAffectedByPushPull = true;
+            _abilityTarget.IsSpeedControlled = false;
+            _abilityTarget.CanUseAbility = false;
             _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
             _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pushForce, ForceMode.Impulse);
         }
@@ -147,7 +150,9 @@ public class Scarecrow : Player
 
         if (_targetInRange)
         {
-            _abilityTarget.CanReadInput = false;
+            _abilityTarget.IsAffectedByPushPull = true;
+            _abilityTarget.IsSpeedControlled = false;
+            _abilityTarget.CanUseAbility = false;
             _abilityTarget.GetComponent<Rigidbody>().velocity = Vector3.zero;
             _abilityTarget.GetComponent<Rigidbody>().AddForce(dir * pullForce, ForceMode.Impulse);
         }
@@ -158,14 +163,16 @@ public class Scarecrow : Player
     private IEnumerator COStartAbilityEffectTimer()
     {
         yield return new WaitForSeconds(abilityDuration);
-        _abilityTarget.CanReadInput = true;
-        CanReadInput = true;
+        _abilityTarget.IsSpeedControlled = true;
+        _abilityTarget.IsAffectedByPushPull = false;
+        _abilityTarget.CanUseAbility = true;
+        CanMove = true;
     }
 
     private void FindTarget()
     {
-        Player[] players = FindObjectsOfType<Player>();
-        foreach (Player p in players)
+        Pumpkin[] players = FindObjectsOfType<Pumpkin>();
+        foreach (Pumpkin p in players)
         {
             if (!this.Equals(p))
                 _abilityTarget = p;
