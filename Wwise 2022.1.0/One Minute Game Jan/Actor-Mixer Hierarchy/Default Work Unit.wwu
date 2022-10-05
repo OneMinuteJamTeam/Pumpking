@@ -10,6 +10,14 @@
 					</PropertyList>
 					<ChildrenList>
 						<Sound Name="Intro Loop" ID="{BBE839C8-7563-4EAD-8AC2-88BB1D1893D0}" ShortID="1020076988">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -35,6 +43,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Main Theme" ID="{A4459450-B9DB-4EE6-8779-B3C82C442567}" ShortID="13847969">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -57,6 +72,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Main Theme 2" ID="{8CB92251-7C04-4864-929E-87EA0D86ED2D}" ShortID="54486432">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -79,6 +101,14 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Winners Loop" ID="{809D7EE1-4333-44C7-8A6D-66B0CAE9923B}" ShortID="273584756">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
