@@ -4,6 +4,10 @@
 		<WorkUnit Name="Default Work Unit" ID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}" PersistMode="Standalone">
 			<ChildrenList>
 				<Folder Name="Music" ID="{3411465F-DC14-41BD-95CA-2D1BAE6B22F0}" ShortID="91568544">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Sound Name="Intro Loop" ID="{BBE839C8-7563-4EAD-8AC2-88BB1D1893D0}" ShortID="1020076988">
 							<ReferenceList>
@@ -99,6 +103,10 @@
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{A66A6B66-44DB-452F-8D6C-723E3E4460AF}" ShortID="474240466">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Sound Name="Crown Power Up NEW" ID="{40301DAF-4C47-4902-BA26-3AFCCD959343}" ShortID="104624129">
 							<ReferenceList>

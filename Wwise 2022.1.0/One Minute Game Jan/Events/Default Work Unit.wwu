@@ -3,8 +3,109 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{B387598B-4A6D-4D22-975C-D20E32AB5477}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Music" ID="{AAD8F37B-4F0C-4CB3-AC39-079053852A44}" ShortID="357085039"/>
-				<Folder Name="SFX" ID="{27969693-17B6-4809-8BED-5575491D0DEC}" ShortID="223387562"/>
+				<Folder Name="Music" ID="{AAD8F37B-4F0C-4CB3-AC39-079053852A44}" ShortID="357085039">
+					<ChildrenList>
+						<Event Name="IntroLoopStart" ID="{F080137A-AE47-4BCC-A5B9-C25B2C2AF33F}">
+							<ChildrenList>
+								<Action Name="" ID="{8F2B6CB7-3E41-4799-9B79-1B5D55123B39}" ShortID="181236795">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Winners Loop" ID="{809D7EE1-4333-44C7-8A6D-66B0CAE9923B}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E42E43F4-1C86-4E6F-B241-AC419CC0B513}" ShortID="697556331">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro Loop" ID="{BBE839C8-7563-4EAD-8AC2-88BB1D1893D0}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MainThemeStart" ID="{F4EFF712-DA8C-4530-9403-3F34A9BFB827}">
+							<ChildrenList>
+								<Action Name="" ID="{B84D7E0C-72EC-40D9-B2C4-8FA87E09ECA2}" ShortID="221300049">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro Loop" ID="{BBE839C8-7563-4EAD-8AC2-88BB1D1893D0}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4463FFFF-F566-4876-8324-93F0E688C774}" ShortID="1032691852">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Theme" ID="{A4459450-B9DB-4EE6-8779-B3C82C442567}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MainThemeStart2" ID="{FBAA710C-4F15-42D6-BEE7-900A39D040C9}">
+							<ChildrenList>
+								<Action Name="" ID="{4BCBACE2-F815-4F30-98E5-8559762D87A9}" ShortID="389561584">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Theme 2" ID="{8CB92251-7C04-4864-929E-87EA0D86ED2D}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WinnerLoop" ID="{8FBAE7DF-6C6D-41FA-AC4C-492B2C63B560}">
+							<ChildrenList>
+								<Action Name="" ID="{9248D6AB-985A-47EF-85D2-AE0B87EF5D5A}" ShortID="868253137">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Theme 2" ID="{8CB92251-7C04-4864-929E-87EA0D86ED2D}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{7B1B686E-69EE-4088-AD71-853F59E0624D}" ShortID="615505271">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Winners Loop" ID="{809D7EE1-4333-44C7-8A6D-66B0CAE9923B}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{27969693-17B6-4809-8BED-5575491D0DEC}" ShortID="223387562">
+					<ChildrenList>
+						<Event Name="RoleChange" ID="{8B840E6A-821B-4E8A-9908-5DA9C7B96933}">
+							<ChildrenList>
+								<Action Name="" ID="{3B62B762-71E1-4838-9C7F-E70FD72412FB}" ShortID="45635246">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Theme" ID="{A4459450-B9DB-4EE6-8779-B3C82C442567}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{90D6B16B-ACDD-4658-A9FF-FF8E7E59220A}" ShortID="762975128">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Role Change" ID="{A2A96023-0B18-469B-9A3F-75FF171551B8}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
