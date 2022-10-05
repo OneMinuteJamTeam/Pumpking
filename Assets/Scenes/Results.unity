@@ -189,7 +189,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2840479997773682026, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.1
+      value: -4.100006
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_text
@@ -1929,6 +1929,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1999704856, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999704856, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726280531085597218, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726280531085597218, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726280531838348154, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726280531838348154, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726280532551241323, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726280532551241323, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7709761513083553670, guid: 8e1fae841cd76374dbfaea6b59bbde15, type: 3}
       propertyPath: m_Name
       value: Secondary Menu Prefabs
@@ -2045,7 +2077,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2840479997773682026, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.79999924
+      value: 0.7999878
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_text

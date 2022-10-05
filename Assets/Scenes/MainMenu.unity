@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 13f6e5eed33d84c76979f1ec06b5e48c, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 51b74d7bad397457d883c5940f7664d8, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &26819186
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.368477
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3524876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.7704782
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207198, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4520462930207199, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
+      propertyPath: m_Name
+      value: Fog Volume
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bb0053643a52a441a97bb7adf2a0e01, type: 3}
 --- !u!1001 &68876219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -292,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.a
-      value: 0.78431374
+      value: 0.60784316
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.b
@@ -1903,7 +1960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.a
-      value: 1
+      value: 0.60784316
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577419, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_Colors.m_HighlightedColor.b
