@@ -74,8 +74,8 @@ public class GameController : Singleton<GameController>
 
         GameUIManager.Instance.SetScoreText(Player1Points, Player2Points);
 
-        _pumpkin.CanReadInput = false;
-        _scarecrow.CanReadInput = false;
+        _pumpkin.CanUseAbility = false;
+        _scarecrow.CanUseAbility = false;
 
         StartCoroutine(givePointCor(SwapEndGameDelayTime));
     }
@@ -134,8 +134,10 @@ public class GameController : Singleton<GameController>
         timer.StartTimerAt(30, true);
         timer.StopTimer();
 
-        _pumpkin.CanReadInput = false;
-        _scarecrow.CanReadInput = false;
+        _pumpkin.CanUseAbility = false;
+        _scarecrow.CanUseAbility = false;
+        _pumpkin.CanMove = false;
+        _scarecrow.CanMove = false;
 
         Destroy(pickablesContainer);
 
@@ -180,8 +182,8 @@ public class GameController : Singleton<GameController>
     }
 
     public void EnablePlayersMovement() {
-        _pumpkin.CanReadInput = true;
-        _scarecrow.CanReadInput = true;
+        _pumpkin.CanUseAbility = true;
+        _scarecrow.CanUseAbility = true;
         _pumpkin.CanMove = true;
         _scarecrow.CanMove = true;
     }

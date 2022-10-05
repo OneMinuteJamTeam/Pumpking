@@ -18,8 +18,9 @@ public abstract class Player : MonoBehaviour
 
     //public bool IsEscaping { get => isEscaping; }
     public eRole Role { get { return role; } }
-    public bool CanReadInput { get; set; }
+    public bool CanUseAbility { get; set; }
     public bool CanMove { get; set; }
+    public bool IsSpeedControlled { get; set; }
 
     public static string P1_ESCAPEE_KEY = "P1ESCAPEE_KEY";
     public static string P2_ESCAPEE_KEY = "P2ESCAPEE_KEY";
@@ -44,8 +45,6 @@ public abstract class Player : MonoBehaviour
     [SerializeField] 
     protected GameObject model;
     protected eRole role;
-
-    protected bool canUseAbility = true;
 
     protected Rigidbody rb;
     protected Vector3 lastSpeedDirection;
@@ -79,9 +78,10 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void Awake()
     {
-        CanReadInput = false;
-        canUseAbility = true;
+        CanUseAbility = false;  
         CanMove = true;
+        IsSpeedControlled = true;
+
         rb = GetComponent<Rigidbody>();
         coolDownBar = GameUIManager.Instance.GetCooldownBar(playerNumber);
         animator = model.GetComponent<Animator>();
@@ -95,58 +95,45 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void Update()
     {
-        HandleInput();
+        HandleMovement();
         HandleRotation();
+        HandleAbility();
     }
 
     protected abstract void UseAbility();
     
     // PLAYER CAN ROTATE WHEN TRAPPED
-    protected virtual void HandleInput() {
-        if (CanReadInput) 
-        {
-            // Handle Input P1
-            if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1)
-            {
-                
-                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
-                if (CanMove)
-                {
+    protected virtual void HandleMovement() {
+
+        Debug.Log(playerNumber+": is speed controlled: "+IsSpeedControlled);
+
+        if (IsSpeedControlled) {
+            if (CanMove) {
+                if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1) {
+                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
                     animator.SetBool("Moving", true);
                     rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
                     RotateSpeedWithWalls();
                 }
-                else
-                {
-                    rb.velocity = Vector3.zero;
-                    animator.SetBool("Moving", false);
-                }
-            }
-            // Handle Input P2
-            else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2)
-            {
-                lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
-                if (CanMove)
-                {
+                else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2) {
+                    lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
                     animator.SetBool("Moving", true);
                     rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
                     RotateSpeedWithWalls();
                 }
-                else
-                {
+                else {
                     animator.SetBool("Moving", false);
                     rb.velocity = Vector3.zero;
                 }
             }
-            else
-            {
-                rb.velocity = Vector3.zero;
+            else {
                 animator.SetBool("Moving", false);
+                rb.velocity = Vector3.zero;
             }
-            HandleAbility();
         }
-        else animator.SetBool("Moving",false);
     }
+        
+       
 
     private void HandleRotation()
     {
@@ -158,15 +145,15 @@ public abstract class Player : MonoBehaviour
 
     private void HandleAbility()
     {
-        if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsAbilityPlayer1Pressed && canUseAbility) 
+        if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsAbilityPlayer1Pressed && CanUseAbility) 
         {
-            canUseAbility = false;
+            CanUseAbility = false;
             UseAbility();
             StartCoroutine(COStartCooldown());
         }
-        else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsAbilityPlayer2Pressed && canUseAbility)
+        else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsAbilityPlayer2Pressed && CanUseAbility)
         {
-            canUseAbility = false;
+            CanUseAbility = false;
             UseAbility();
             StartCoroutine(COStartCooldown());
         }
@@ -182,7 +169,7 @@ public abstract class Player : MonoBehaviour
             yield return null;
         }
         //yield return new WaitForSeconds(abilityCooldown);
-        canUseAbility = true;
+        CanUseAbility = true;
     }
 
     Vector3? hitWallNormal = null;
