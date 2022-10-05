@@ -71,11 +71,13 @@ public class Scarecrow : Player
 
     protected override void UseAbility()
     {
+        /*
         if(!HasTarget)
         {
             canUseAbility = true;
             return;
         }
+        */
         CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
 
         CanReadInput = false;
@@ -107,13 +109,11 @@ public class Scarecrow : Player
             }
             _targetInRange = true;
             abilityVisual.SetActive(true);
-            CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target InRange");
         }
         else
         {
             _targetInRange = false; 
             abilityVisual.SetActive(false);
-            CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Target Not InRange");
         }
     }
 
