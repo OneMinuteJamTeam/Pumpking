@@ -18,6 +18,10 @@ public class Scarecrow : Player
     private Material escapeeMaterial;
     [SerializeField]
     private Material chaserMaterial;
+    [SerializeField]
+    private TrailRenderer chasingTrail;
+    [SerializeField]
+    private TrailRenderer escapingTrail;
 
     [Header("Scarecrow Settings")]
     [SerializeField]
@@ -37,6 +41,7 @@ public class Scarecrow : Player
 
     private Pumpkin _abilityTarget = null;
     private bool _targetInRange = false;
+    private TrailRenderer activeTrail;
 
     public override void SetRole(eRole _role)
     {
@@ -47,10 +52,12 @@ public class Scarecrow : Player
         if (isEscaping) {
             lanternMeshRend.material = escapeeMaterial;
             abilityVisual.GetComponent<SpriteRenderer>().color = ColorsManager.Instance.EscapeeLightColor;
+            activeTrail = escapingTrail;
         }
         else {
             lanternMeshRend.material = chaserMaterial;
             abilityVisual.GetComponent<SpriteRenderer>().color = ColorsManager.Instance.ChaserLightColor;
+            activeTrail = chasingTrail;
         };
     }
 
@@ -60,6 +67,11 @@ public class Scarecrow : Player
 
         FindTarget();
         abilityVisual.SetActive(false);
+
+        chasingTrail.emitting = false;
+        escapingTrail.emitting = false;
+
+        activeTrail = chasingTrail;
     }
 
     protected override void Update()
@@ -78,8 +90,8 @@ public class Scarecrow : Player
             return;
         }
         */
-        CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
-
+        //CustomLog.Log(CustomLog.CustomLogType.PLAYER, "Ability used");
+        activeTrail.emitting = true;
         CanUseAbility = false;
         CanMove = false;
 
@@ -167,6 +179,7 @@ public class Scarecrow : Player
         _abilityTarget.IsAffectedByPushPull = false;
         _abilityTarget.CanUseAbility = true;
         CanMove = true;
+        activeTrail.emitting = false;
     }
 
     private void FindTarget()
