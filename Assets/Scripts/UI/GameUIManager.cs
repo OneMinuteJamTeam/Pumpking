@@ -36,9 +36,9 @@ public class GameUIManager : Singleton<GameUIManager>
         CustomSceneManager.Instance.LoadScene("MainMenu");
     }
 
-    public void DebugOnPlayerWins(int p) {
-        GameController.Instance.DebugPlayerWins(p);
-    }
+    //public void DebugOnPlayerWins(int p) {
+    //    GameController.Instance.DebugPlayerWins(p);
+    //}
 
     public MyUIBar GetCooldownBar(Player.PlayerNumber p) {
         if (p == Player.PlayerNumber.PlayerOne) return p1CooldownBar;
@@ -64,7 +64,7 @@ public class GameUIManager : Singleton<GameUIManager>
 
     public void ShowPausePanel(bool active) 
     {
-        Debug.Log("show pause panel called: "+active);
+        //Debug.Log("show pause panel called: "+active);
         pausePanel.SetActive(active);
     }
 

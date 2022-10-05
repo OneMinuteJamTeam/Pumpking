@@ -208,11 +208,12 @@ public abstract class Player : MonoBehaviour
     }
     private IEnumerator endSpeedBoost(float _duration) 
     {
-        Debug.Log("boost speed picked, ending in " + _duration + " seconds");
+        //Debug.Log("boost speed picked, ending in " + _duration + " seconds");
         yield return new WaitForSeconds(_duration);
         moveSpeed = _originalMoveSpeed;
         crownObj.SetActive(false);
-        Debug.Log("boost speed ended");
+        //Debug.Log("boost speed ended");
+        //Debug.Log("boost speed ended");
     }
     #endregion
 } 

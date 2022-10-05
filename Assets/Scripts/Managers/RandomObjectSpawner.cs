@@ -8,12 +8,12 @@ public class RandomObjectSpawner : MonoBehaviour
     private GameObject generatedObject;
      
     private void Awake() {
-        Debug.Log("start called");
+        //Debug.Log("start called");
         for (int i = 0; i < transform.childCount; i++) {
             transform.GetChild(i).gameObject.SetActive(false);
         }
         chosenId = Random.Range(0, transform.childCount);
-        Debug.Log("chosen id: " + chosenId);
+        //Debug.Log("chosen id: " + chosenId);
     }
 
     public void Spawn() {

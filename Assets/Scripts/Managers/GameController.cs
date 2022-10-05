@@ -54,36 +54,42 @@ public class GameController : Singleton<GameController>
             GivePointToEscapee();
     }
 
+    private bool isGivingPoint = false;
     /// <summary>
     /// 
     /// </summary>
     /// <param name="_player"></param>
     /// <param name="_wait">waits some time before swap</param>
     public void GivePoint(int _player) {
-        if (_player == 0)
-            Player1Points++;
-        else if (_player == 1)
-            Player2Points++;
-        else
-            Debug.LogError("GameController: assigned point to player " + _player + ", that doesn't exist");
 
-        PlayerPrefs.SetInt("P1Points", Player1Points);
-        PlayerPrefs.SetInt("P2Points", Player2Points);
+        if (!isGivingPoint) {
+            isGivingPoint = true;
 
-        //Debug.Log("P1 "+Player1Points + " - P2 " + Player2Points);
+            if (_player == 0)
+                Player1Points++;
+            else if (_player == 1)
+                Player2Points++;
 
-        GameUIManager.Instance.SetScoreText(Player1Points, Player2Points);
+            PlayerPrefs.SetInt("P1Points", Player1Points);
+            PlayerPrefs.SetInt("P2Points", Player2Points);
 
-        _pumpkin.CanUseAbility = false;
-        _scarecrow.CanUseAbility = false;
+            //Debug.Log("P1 "+Player1Points + " - P2 " + Player2Points);
 
-        StartCoroutine(givePointCor(SwapEndGameDelayTime));
+            GameUIManager.Instance.SetScoreText(Player1Points, Player2Points);
+
+            _pumpkin.CanUseAbility = false;
+            _scarecrow.CanUseAbility = false;
+
+            StartCoroutine(givePointCor(SwapEndGameDelayTime));
+        }
     }
     private IEnumerator givePointCor(float _waitTime) {
-        _rolesSwapped = true;
-        if (_round == 2)
-            _roundOver = true;
+        ////_rolesSwapped = true;
+        //if (_round == 2)
+        //    _roundOver = true;
+
         yield return new WaitForSeconds(_waitTime);
+
         if (_round == 1) {
             _round++;
             SwapRoles();
@@ -92,6 +98,7 @@ public class GameController : Singleton<GameController>
             _roundOver = true;
             CustomSceneManager.Instance.LoadScene("Results");
         }
+        isGivingPoint = false;
     }
 
     private void GivePointToEscapee() {
@@ -102,20 +109,20 @@ public class GameController : Singleton<GameController>
     }
 
     // TO-DO: DELETE
-    public void DebugPlayerWins(int playerWhoWins) 
-    {
-        if (playerWhoWins == 0) 
-        {
-            Player1Points = Player2Points = 0;
-            CustomSceneManager.Instance.LoadScene("Results");
-        }
-        else if (playerWhoWins == 1)
-            Player1Points = 10;
-        else
-            Player2Points = 10;
+    //public void DebugPlayerWins(int playerWhoWins) 
+    //{
+    //    if (playerWhoWins == 0) 
+    //    {
+    //        Player1Points = Player2Points = 0;
+    //        CustomSceneManager.Instance.LoadScene("Results");
+    //    }
+    //    else if (playerWhoWins == 1)
+    //        Player1Points = 10;
+    //    else
+    //        Player2Points = 10;
 
-        CustomSceneManager.Instance.LoadScene("Results");
-    }
+    //    CustomSceneManager.Instance.LoadScene("Results");
+    //}
 
     public void ResetPoints()
     {
@@ -128,7 +135,8 @@ public class GameController : Singleton<GameController>
 
     private void SwapRoles()
     {
-        CustomLog.Log(CustomLog.CustomLogType.GAMEPLAY, "ROLES SWAP");
+        //CustomLog.Log(CustomLog.CustomLogType.GAMEPLAY, "ROLES SWAP");
+        
         _rolesSwapped = true;
 
         timer.StartTimerAt(30, true);
@@ -154,6 +162,7 @@ public class GameController : Singleton<GameController>
 
         crownsTrapsSpawner.Spawn();
         MusicManager.Instance.PlaySecondHalfTheme();
+
     }
 
     #region Pause Handling
@@ -190,7 +199,7 @@ public class GameController : Singleton<GameController>
 
     public void ResumeTimer() {
         timer.ResumeTimer();
-    }
+    
 
     private void InitPlayersRoles() {
         bool isPumpkinEscaping = PlayerPrefs.GetInt(Player.P1_ESCAPEE_KEY) == 1 ? true : false;
@@ -198,8 +207,8 @@ public class GameController : Singleton<GameController>
         //_scarecrow.SetIsEscaping(isScarecrowEscpaing);
         //_pumpkin.SetIsEscaping(isPumpkinEscaping);
 
-        Debug.Log("p1 escaping: " + isPumpkinEscaping);
-        Debug.Log("p2 escaping: "+ isScarecrowEscpaing);
+        //Debug.Log("p1 escaping: " + isPumpkinEscaping);
+        //Debug.Log("p2 escaping: "+ isScarecrowEscpaing);
         
         if (isScarecrowEscpaing) {
             _scarecrow.SetRole(Player.eRole.Escapee);
