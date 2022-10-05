@@ -131,8 +131,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 883999800}
     m_Modifications:
     - target: {fileID: 2840479997773682026, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682026, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_text
@@ -140,7 +144,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontSize
-      value: 79.75
+      value: 86.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_margin.w
+      value: -13.629784
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_margin.y
+      value: 5.313385
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontAsset
@@ -165,6 +177,10 @@ PrefabInstance:
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997988577412, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_Color.b
@@ -1655,7 +1671,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontSize
-      value: 79.75
+      value: 72.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_margin.w
+      value: 5.602005
+      objectReference: {fileID: 0}
+    - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
+      propertyPath: m_margin.y
+      value: 3.9416046
       objectReference: {fileID: 0}
     - target: {fileID: 2840479997773682027, guid: 72a7e3da37762f64a9821976e972d37f, type: 3}
       propertyPath: m_fontAsset
