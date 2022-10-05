@@ -95,7 +95,7 @@ public abstract class Player : MonoBehaviour
 
     protected virtual void Update()
     {
-        HandleInput();
+        HandleMovement();
         HandleRotation();
         HandleAbility();
     }
@@ -103,7 +103,7 @@ public abstract class Player : MonoBehaviour
     protected abstract void UseAbility();
     
     // PLAYER CAN ROTATE WHEN TRAPPED
-    protected virtual void HandleInput() {
+    protected virtual void HandleMovement() {
 
         Debug.Log(playerNumber+": is speed controlled: "+IsSpeedControlled);
 

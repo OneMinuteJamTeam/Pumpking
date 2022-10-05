@@ -23,9 +23,9 @@ public class Pumpkin : Player {
 
     public bool IsAffectedByPushPull { get; set; }
 
-    protected override void HandleInput() {
+    protected override void HandleMovement() {
         if(!IsAffectedByPushPull)
-            base.HandleInput();
+            base.HandleMovement();
     }
 
     private bool dashActive = false;
