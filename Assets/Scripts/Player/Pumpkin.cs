@@ -27,9 +27,11 @@ public class Pumpkin : Player {
         chaserTrailRenderer.emitting = escapeeTrailRenderer.emitting = false;
     }
 
-    public override void SetIsEscaping(bool isEscaping) {
-        base.SetIsEscaping(isEscaping);
-        PlayerPrefs.SetInt("PumpkinEscaping", isEscaping ? 1 : 0);
+    public override void SetRole(eRole _role) {
+        base.SetRole(_role);
+
+        bool isEscaping = _role == eRole.Escapee;
+        PlayerPrefs.SetInt(P1_ESCAPEE_KEY, isEscaping ? 1 : 0);
         if (isEscaping)
             trailRenderer = escapeeTrailRenderer;
         else
@@ -65,11 +67,10 @@ public class Pumpkin : Player {
         }
     }
 
-
     private void OnCollisionEnter(Collision collision) {
     EndDash();
     if (collision.collider.tag.Equals("Player")) {
-            if (!IsEscaping)
+            if (Role == eRole.Chaser)
                 GameController.Instance.GivePoint(((int)PlayerNumber.PlayerOne));
             else
                 GameController.Instance.GivePoint((int)PlayerNumber.PlayerTwo);

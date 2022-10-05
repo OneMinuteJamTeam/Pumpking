@@ -135,8 +135,8 @@ public class GameController : Singleton<GameController>
         MusicManager.Instance.PlaySFXSwapRole();
         GameUIManager.Instance.PlaySwapPanel();
 
-        _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
-        _scarecrow.SetIsEscaping(!_scarecrow.IsEscaping);
+        _pumpkin.SwapRole();
+        _scarecrow.SwapRole();  
 
         GameUIManager.Instance.UpdateRolesText();
 
@@ -149,9 +149,9 @@ public class GameController : Singleton<GameController>
 
     private void GivePointToEscapee()
     {
-        if (_pumpkin.IsEscaping)
+        if (_pumpkin.Role == Player.eRole.Escapee)
             GivePoint((int)_pumpkin.GetPlayerNumber());
-        else if (_scarecrow.IsEscaping)
+        else if (_scarecrow.Role == Player.eRole.Escapee)
             GivePoint((int)_scarecrow.GetPlayerNumber());
     }
 
@@ -192,10 +192,21 @@ public class GameController : Singleton<GameController>
     }
 
     private void InitPlayersRoles() {
-        bool isPumpkinEscaping = PlayerPrefs.GetInt("PumpkinEscaping") == 1 ? true : false;
-        bool isScarecrowEscpaing = PlayerPrefs.GetInt("ScarecrowEscaping") == 1 ? true : false;
-        _scarecrow.SetIsEscaping(isScarecrowEscpaing);
-        _pumpkin.SetIsEscaping(isPumpkinEscaping);
+        bool isPumpkinEscaping = PlayerPrefs.GetInt(Player.P1_ESCAPEE_KEY) == 1 ? true : false;
+        bool isScarecrowEscpaing = PlayerPrefs.GetInt(Player.P2_ESCAPEE_KEY) == 1 ? true : false;
+        //_scarecrow.SetIsEscaping(isScarecrowEscpaing);
+        //_pumpkin.SetIsEscaping(isPumpkinEscaping);
+
+        if (isScarecrowEscpaing) {
+            _scarecrow.SetRole(Player.eRole.Escapee);
+            _pumpkin.SetRole(Player.eRole.Chaser);
+        }
+        else {
+            _scarecrow.SetRole(Player.eRole.Chaser);
+            _pumpkin.SetRole(Player.eRole.Escapee);
+        }
+        
+        
     }
 
     #endregion

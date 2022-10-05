@@ -38,9 +38,11 @@ public class Scarecrow : Player
     private Player _abilityTarget = null;
     private bool _targetInRange = false;
 
-    public override void SetIsEscaping(bool isEscaping)
+    public override void SetRole(eRole _role)
     {
-        base.SetIsEscaping(isEscaping);
+        base.SetRole(_role);
+        bool isEscaping = _role == eRole.Escapee;
+
         PlayerPrefs.SetInt("ScarecrowEscaping", isEscaping ? 1 : 0);
         if (isEscaping) {
             lanternMeshRend.material = escapeeMaterial;
@@ -79,7 +81,7 @@ public class Scarecrow : Player
         CanReadInput = false;
 
         // Choose Pull or Push
-        if (IsEscaping)
+        if (Role == eRole.Escapee)
             PushAbility();
         else
             PullAbility();

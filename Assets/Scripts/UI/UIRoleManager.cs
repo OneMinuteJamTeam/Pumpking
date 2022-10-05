@@ -11,6 +11,11 @@ public class UIRoleManager : MonoBehaviour
     private TextMeshProUGUI pumpkinText;
     [SerializeField]
     private TextMeshProUGUI scarecrowText;
+    [SerializeField]
+    PumpkinRagdoll pumpkinRagdoll;
+    [SerializeField]
+    ScarecrowRagdoll scarecrowRagdoll;
+
 
     public void LoadScene(string sceneName)
     {
@@ -19,7 +24,8 @@ public class UIRoleManager : MonoBehaviour
 
     public void SwapRoles()
     {
-        RoleSwapper.Instance.SwapRoles();
+        scarecrowRagdoll.SwapRole();
+        pumpkinRagdoll.SwapRole();
         SetTexts();
     }
 
@@ -30,7 +36,7 @@ public class UIRoleManager : MonoBehaviour
 
     private void SetTexts()
     {
-        pumpkinText.text = RoleSwapper.Instance.PumpkinRole.ToString();
-        scarecrowText.text = RoleSwapper.Instance.ScarecrowRole.ToString();
+        pumpkinText.text = pumpkinRagdoll.GetRole().ToString();
+        scarecrowText.text = scarecrowRagdoll.GetRole().ToString();
     }
 }

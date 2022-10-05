@@ -1,44 +1,30 @@
-using UnityEngine;
+//using UnityEngine;
 
-public class RoleSwapper : Singleton<RoleSwapper>
-{
-    public enum Role
-    {
-        Chaser,
-        Escapee
-    }
+//public class RoleSwapper : Singleton<RoleSwapper> {
+//    [SerializeField] PumpkinRagdoll pumpkin;
+//    [SerializeField] ScarecrowRagdoll scarecrow;
 
-    public Role PumpkinRole { get; private set; }
-    public Role ScarecrowRole { get; private set; }
+//    public void SwapRoles() {
+//        pumpkin.SwapRole();
+//        scarecrow.SwapRole();
+//    }
 
-    public void SwapRoles()
-    {
-        if (PumpkinRole == Role.Chaser)
-            SetRoles(Role.Escapee, Role.Chaser);
-        else
-            SetRoles(Role.Chaser, Role.Escapee);
-    }
+//    //protected override void Awake() {
+//    //    base.Awake();
 
-    protected override void Awake()
-    {
-        base.Awake();
-        SetRoles(Role.Chaser, Role.Escapee);
-    }
+//    //    SetRoles(Player.eRole.Chaser, Player.eRole.Escapee);
+//    //}
 
-    private void SetRoles(Role pumpkin, Role scarecrow)
-    {
-        PlayerPrefs.DeleteAll();
-        if (pumpkin == Role.Escapee)
-            PlayerPrefs.SetInt("PumpkinEscaping", 1);
-        else
-            PlayerPrefs.SetInt("PumpkinEscaping", 0);
+//    //private void SetRoles(Player.eRole _pumpkinRole, Player.eRole _scarecrowRole) {
+//    //    PlayerPrefs.DeleteAll();
 
-        if (scarecrow == Role.Escapee)
-            PlayerPrefs.SetInt("ScarecrowEscaping", 1);
-        else
-            PlayerPrefs.SetInt("ScarecrowEscaping", 0);
-
-        PumpkinRole = pumpkin;
-        ScarecrowRole = scarecrow;
-    }
-}
+//    //    if (_pumpkinRole == ESCAPEE) {
+//    //        pumpkin.SetIsEscaping(true);
+//    //        scarecrow.SetIsEscaping(false);
+//    //    }
+//    //    else {
+//    //        pumpkin.SetIsEscaping(true);
+//    //        scarecrow.SetIsEscaping(false);
+//    //    }
+//    //}
+//}
