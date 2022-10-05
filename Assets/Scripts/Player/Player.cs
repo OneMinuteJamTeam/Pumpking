@@ -135,14 +135,14 @@ public abstract class Player : MonoBehaviour
     protected virtual void HandleInput() {
         if (CanReadInput) 
         {
-
             // Handle Input P1
             if (playerNumber == PlayerNumber.PlayerOne && InputManager.Instance.IsMovingPlayer1)
             {
-                animator.SetBool("Moving", true);
+                
                 lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x, 0, InputManager.Instance.MoveDirectionPlayer1.y);
                 if (CanMove)
                 {
+                    animator.SetBool("Moving", true);
                     rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer1.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer1.y * moveSpeed);
                     RotateSpeedWithWalls();
                 }
@@ -156,9 +156,9 @@ public abstract class Player : MonoBehaviour
             else if (playerNumber == PlayerNumber.PlayerTwo && InputManager.Instance.IsMovingPlayer2)
             {
                 lastSpeedDirection = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x, 0, InputManager.Instance.MoveDirectionPlayer2.y);
-                animator.SetBool("Moving", true);
                 if (CanMove)
                 {
+                    animator.SetBool("Moving", true);
                     rb.velocity = new Vector3(InputManager.Instance.MoveDirectionPlayer2.x * moveSpeed, 0.0f, InputManager.Instance.MoveDirectionPlayer2.y * moveSpeed);
                     RotateSpeedWithWalls();
                 }
@@ -175,6 +175,7 @@ public abstract class Player : MonoBehaviour
             }
             HandleAbility();
         }
+        else animator.SetBool("Moving",false);
     }
 
     private void HandleRotation()
