@@ -139,6 +139,13 @@
 					</PropertyList>
 					<ChildrenList>
 						<Sound Name="Crown Power Up NEW" ID="{40301DAF-4C47-4902-BA26-3AFCCD959343}" ShortID="104624129">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -161,6 +168,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Fly trap NEW" ID="{C3C4AF18-1F94-48F3-8AF6-165D6B04B34C}" ShortID="777273628">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -231,6 +245,13 @@
 								<Folder Name="Scarecrow" ID="{3EEB1136-9EFE-4AF4-9150-64DCC79E9F10}" ShortID="742222511">
 									<ChildrenList>
 										<RandomSequenceContainer Name="Scer Foot" ID="{11C4FEE3-4FD2-4B1A-A5C5-95E6D5BBE921}" ShortID="262873628">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
@@ -357,6 +378,11 @@
 										<RandomSequenceContainer Name="Pump Foot" ID="{D66EB5BF-7003-4659-B8FF-AD1803AF0438}" ShortID="145096260">
 											<PropertyList>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -481,6 +507,13 @@
 							</ChildrenList>
 						</Folder>
 						<Sound Name="Role Change" ID="{A2A96023-0B18-469B-9A3F-75FF171551B8}" ShortID="738230595">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
