@@ -104,6 +104,80 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Ability" ID="{EEB9B435-5ADA-4AEC-9A71-5153EFE92A9A}" ShortID="187475877">
+							<ChildrenList>
+								<Event Name="ScarecrowAbility" ID="{18D1802F-C9EF-4835-AD18-5E0CCDDD0E54}">
+									<ChildrenList>
+										<Action Name="" ID="{A263FEED-85DB-4B0E-9E26-0FC7CAF206F9}" ShortID="919815913">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Scarecrow Ability NEW" ID="{F06719A8-9C4F-44D5-AFA5-2BD4952A3AD5}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PumpkinAbility" ID="{18AEA57B-FC92-420B-8517-B0A3647A97FC}">
+									<ChildrenList>
+										<Action Name="" ID="{9D5CB703-71A0-4059-96B7-476E62636035}" ShortID="436781645">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Pumpkin Dash NEW" ID="{64CDD59E-7EA3-438E-9C46-0B865719120A}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="CrownPowerUp" ID="{2C8254B2-506E-422F-8574-7D83DAA23279}">
+									<ChildrenList>
+										<Action Name="" ID="{63111AEA-BC9D-4865-8B0A-39C7C62675FA}" ShortID="854776362">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Crown Power Up NEW" ID="{40301DAF-4C47-4902-BA26-3AFCCD959343}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Footsteps" ID="{FD893FC6-E0F3-4BAE-B09D-60058C96A52F}" ShortID="32478490">
+							<ChildrenList>
+								<Event Name="PumpkinFootstep" ID="{0ADB85EB-0807-4064-83EC-E1EDB81C096F}">
+									<ChildrenList>
+										<Action Name="" ID="{A0E2F614-1131-4134-B179-F1A56C040020}" ShortID="35983895">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Pump Foot" ID="{D66EB5BF-7003-4659-B8FF-AD1803AF0438}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="ScarecrowFootstep" ID="{91A2A438-F54C-4881-B16B-D0E35820BA74}">
+									<ChildrenList>
+										<Action Name="" ID="{07E499B9-69A2-4BF7-A81D-D4EE9BA732DE}" ShortID="7121305">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Scer Foot" ID="{11C4FEE3-4FD2-4B1A-A5C5-95E6D5BBE921}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="FlyTrap" ID="{B06E7DE5-9B2D-42CE-ADC0-1398061101B8}">
+							<ChildrenList>
+								<Action Name="" ID="{1E9F3064-C15A-4655-8F16-721F7A6E1531}" ShortID="40164068">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fly trap NEW" ID="{C3C4AF18-1F94-48F3-8AF6-165D6B04B34C}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

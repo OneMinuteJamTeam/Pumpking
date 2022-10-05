@@ -1,14 +1,32 @@
 Event	ID	Name			Wwise Object Path	Notes
 	524425647	MainThemeStart			\Default Work Unit\Music\MainThemeStart	
+	719842716	ScarecrowAbility			\Default Work Unit\SFX\Ability\ScarecrowAbility	
+	849065909	FlyTrap			\Default Work Unit\SFX\FlyTrap	
 	1096413557	RoleChange			\Default Work Unit\SFX\RoleChange	
+	1895303939	PumpkinAbility			\Default Work Unit\SFX\Ability\PumpkinAbility	
+	2291267978	CrownPowerUp			\Default Work Unit\SFX\Ability\CrownPowerUp	
 	3332225442	WinnerLoop			\Default Work Unit\Music\WinnerLoop	
+	3397687769	PumpkinFootstep			\Default Work Unit\SFX\Footsteps\PumpkinFootstep	
+	3533688396	ScarecrowFootstep			\Default Work Unit\SFX\Footsteps\ScarecrowFootstep	
 	3826150991	MainThemeStart2			\Default Work Unit\Music\MainThemeStart2	
 	4008519529	IntroLoopStart			\Default Work Unit\Music\IntroLoopStart	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	15425480	Winners Loop	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Winner Loop V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Winners Loop		6773856
-	263289546	Main Theme 2	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Main Theme Variation V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Main Theme 2		5376732
-	324168328	Intro Loop	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Intro Loop V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Intro Loop		6773856
-	443042347	Role Change	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Role Change V1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Role Change		506024
-	1028424601	Main Theme	C:\Users\rossc\OneDrive\Documents\GitHub\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Main Theme V3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Main Theme		5464112
+	641490	Fly trap NEW	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Fly trap NEW_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fly trap NEW		169056
+	15425480	Winners Loop	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Winner Loop V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Winners Loop		6773856
+	263289546	Main Theme 2	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Main Theme Variation V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Main Theme 2		5376732
+	290768641	Scarecrow Footsteps 3	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Scarecrow Footsteps Loop NEW_A3AE8465.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Footsteps\Scarecrow\Scer Foot\Scarecrow Footsteps 3		64704
+	324168328	Intro Loop	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Intro Loop V2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Intro Loop		6773856
+	413565637	Crown Power Up NEW	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Crown Power Up NEW_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Crown Power Up NEW		537696
+	443042347	Role Change	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Role Change V1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Role Change		506024
+	496516119	Pumpkin Footsteps Loop 3	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Pumpkin Footsteps Loop NEW_791137FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Footsteps\Pumpkin\Pump Foot\Pumpkin Footsteps Loop 3		46468
+	563597763	Scarecrow Footsteps 1	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Scarecrow Footsteps Loop NEW_740C5972.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Footsteps\Scarecrow\Scer Foot\Scarecrow Footsteps 1		61656
+	624687650	Pumpkin Dash NEW	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Pumpkin Dash NEW_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Pumpkin Dash NEW		192096
+	695975351	Scarecrow Ability NEW	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Scarecrow Ability NEW_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Scarecrow Ability NEW		153696
+	796915190	Pumpkin Footsteps Loop 4	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Pumpkin Footsteps Loop NEW_3606BB73.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Footsteps\Pumpkin\Pump Foot\Pumpkin Footsteps Loop 4		40360
+	844206975	Scarecrow Footsteps 2	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Scarecrow Footsteps Loop NEW_186B8941.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Footsteps\Scarecrow\Scer Foot\Scarecrow Footsteps 2		50684
+	966001949	Pumpkin Footsteps Loop 2	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Pumpkin Footsteps Loop NEW_2FE0CE9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Footsteps\Pumpkin\Pump Foot\Pumpkin Footsteps Loop 2		48648
+	995933647	Scarecrow Footsteps 4	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Scarecrow Footsteps Loop NEW_208E3B38.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Footsteps\Scarecrow\Scer Foot\Scarecrow Footsteps 4		58608
+	1016196785	Pumpkin Footsteps 1	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Pumpkin Footsteps Loop NEW_39746392.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Footsteps\Pumpkin\Pump Foot\Pumpkin Footsteps 1		50956
+	1028424601	Main Theme	D:\Kuba\One Minute GameJam\One-Minute-Game\Wwise 2022.1.0\One Minute Game Jan\.cache\Windows\SFX\Main Theme V3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Main Theme		5464112
 

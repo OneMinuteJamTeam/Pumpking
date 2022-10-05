@@ -153,10 +153,14 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{654E46E0-718D-7576-141B-340878CA6F55}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{E7004E65-685C-782A-E018-99D294576000}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
+				<File Id="641490" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Fly trap NEW.wav</ShortName>
+					<CachePath>SFX/Fly trap NEW_10C4C929.wem</CachePath>
+				</File>
 				<File Id="15425480" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Winner Loop V2.wav</ShortName>
 					<CachePath>SFX/Winner Loop V2_10C4C929.wem</CachePath>
@@ -165,13 +169,57 @@
 					<ShortName>Main Theme Variation V2.wav</ShortName>
 					<CachePath>SFX/Main Theme Variation V2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="290768641" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scarecrow Footsteps Loop NEW.wav</ShortName>
+					<CachePath>SFX/Scarecrow Footsteps Loop NEW_A3AE8465.wem</CachePath>
+				</File>
 				<File Id="324168328" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Intro Loop V2.wav</ShortName>
 					<CachePath>SFX/Intro Loop V2_10C4C929.wem</CachePath>
 				</File>
+				<File Id="413565637" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Crown Power Up NEW.wav</ShortName>
+					<CachePath>SFX/Crown Power Up NEW_10C4C929.wem</CachePath>
+				</File>
 				<File Id="443042347" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Role Change V1.wav</ShortName>
 					<CachePath>SFX/Role Change V1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="496516119" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pumpkin Footsteps Loop NEW.wav</ShortName>
+					<CachePath>SFX/Pumpkin Footsteps Loop NEW_791137FC.wem</CachePath>
+				</File>
+				<File Id="563597763" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scarecrow Footsteps Loop NEW.wav</ShortName>
+					<CachePath>SFX/Scarecrow Footsteps Loop NEW_740C5972.wem</CachePath>
+				</File>
+				<File Id="624687650" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pumpkin Dash NEW.wav</ShortName>
+					<CachePath>SFX/Pumpkin Dash NEW_10C4C929.wem</CachePath>
+				</File>
+				<File Id="695975351" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scarecrow Ability NEW.wav</ShortName>
+					<CachePath>SFX/Scarecrow Ability NEW_10C4C929.wem</CachePath>
+				</File>
+				<File Id="796915190" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pumpkin Footsteps Loop NEW.wav</ShortName>
+					<CachePath>SFX/Pumpkin Footsteps Loop NEW_3606BB73.wem</CachePath>
+				</File>
+				<File Id="844206975" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scarecrow Footsteps Loop NEW.wav</ShortName>
+					<CachePath>SFX/Scarecrow Footsteps Loop NEW_186B8941.wem</CachePath>
+				</File>
+				<File Id="966001949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pumpkin Footsteps Loop NEW.wav</ShortName>
+					<CachePath>SFX/Pumpkin Footsteps Loop NEW_2FE0CE9B.wem</CachePath>
+				</File>
+				<File Id="995933647" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Scarecrow Footsteps Loop NEW.wav</ShortName>
+					<CachePath>SFX/Scarecrow Footsteps Loop NEW_208E3B38.wem</CachePath>
+				</File>
+				<File Id="1016196785" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Pumpkin Footsteps Loop NEW.wav</ShortName>
+					<CachePath>SFX/Pumpkin Footsteps Loop NEW_39746392.wem</CachePath>
 				</File>
 				<File Id="1028424601" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Main Theme V3.wav</ShortName>
@@ -179,6 +227,16 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="2291267978" Name="CrownPowerUp" DurationType="OneShot" DurationMin="2.8" DurationMax="2.8">
+					<MediaRefs>
+						<MediaRef Id="413565637"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="849065909" Name="FlyTrap" DurationType="OneShot" DurationMin="0.88" DurationMax="0.88">
+					<MediaRefs>
+						<MediaRef Id="641490"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4008519529" Name="IntroLoopStart" DurationType="OneShot" DurationMin="38.4" DurationMax="38.4">
 					<MediaRefs>
 						<MediaRef Id="324168328"/>
@@ -194,9 +252,35 @@
 						<MediaRef Id="263289546"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1895303939" Name="PumpkinAbility" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="624687650"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3397687769" Name="PumpkinFootstep" DurationType="OneShot" DurationMin="0.20970522" DurationMax="0.2648908">
+					<MediaRefs>
+						<MediaRef Id="496516119"/>
+						<MediaRef Id="796915190"/>
+						<MediaRef Id="966001949"/>
+						<MediaRef Id="1016196785"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1096413557" Name="RoleChange" DurationType="OneShot" DurationMin="2.8680725" DurationMax="2.8680725">
 					<MediaRefs>
 						<MediaRef Id="443042347"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="719842716" Name="ScarecrowAbility" DurationType="OneShot" DurationMin="0.8" DurationMax="0.8">
+					<MediaRefs>
+						<MediaRef Id="695975351"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3533688396" Name="ScarecrowFootstep" DurationType="OneShot" DurationMin="0.26349208" DurationMax="0.33650795">
+					<MediaRefs>
+						<MediaRef Id="290768641"/>
+						<MediaRef Id="563597763"/>
+						<MediaRef Id="844206975"/>
+						<MediaRef Id="995933647"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3332225442" Name="WinnerLoop" DurationType="OneShot" DurationMin="38.4" DurationMax="38.4">
@@ -207,5 +291,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FA45BFC9-18E1-9CF7-BAFA-5FD1C75A20A0}</FileHash>
+	<FileHash>{6C04EE4B-A744-B988-3C2C-AD25CEC4E22A}</FileHash>
 </SoundBanksInfo>
