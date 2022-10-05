@@ -94,6 +94,13 @@ public class GameController : Singleton<GameController>
         }
     }
 
+    private void GivePointToEscapee() {
+        if (_pumpkin.Role == Player.eRole.Escapee)
+            GivePoint((int)_pumpkin.GetPlayerNumber());
+        else if (_scarecrow.Role == Player.eRole.Escapee)
+            GivePoint((int)_scarecrow.GetPlayerNumber());
+    }
+
     // TO-DO: DELETE
     public void DebugPlayerWins(int playerWhoWins) 
     {
@@ -145,14 +152,6 @@ public class GameController : Singleton<GameController>
 
         crownsTrapsSpawner.Spawn();
         MusicManager.Instance.PlaySecondHalfTheme();
-    }
-
-    private void GivePointToEscapee()
-    {
-        if (_pumpkin.Role == Player.eRole.Escapee)
-            GivePoint((int)_pumpkin.GetPlayerNumber());
-        else if (_scarecrow.Role == Player.eRole.Escapee)
-            GivePoint((int)_scarecrow.GetPlayerNumber());
     }
 
     #region Pause Handling
