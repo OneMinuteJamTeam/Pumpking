@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c383794cc28ca4a4497791d8784380cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rootTime: 0.5
+  rootTime: 0.7
   reactivateTime: 0.5
   activeMaterial: {fileID: 2100000, guid: 31ac3b15791d2da4eaa66ecd63a3d965, type: 2}
   unactiveMaterial: {fileID: 2100000, guid: 2a178753eebcc294ea1ba6cbd331e61e, type: 2}
