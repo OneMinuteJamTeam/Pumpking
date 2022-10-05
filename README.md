@@ -5,8 +5,6 @@
 
 **Pumpking** was created as a submission for the "**One Minute Game Jam**" 
 
-https://itch.io/jam/one-minute-game-jam-8
-
 ## The Game
 
 Our spooky game is short and sweet! 
@@ -45,7 +43,7 @@ Player 1: W/A/S/D Move - Q/E Ability
 
 Player 2: I/J/K/L Move - U/O Ability
 
-You can download and play the game here: https://itch.io/jam/one-minute-game-jam-8
+You can download and play the game here: https://acemoisan.itch.io/pumpking
 
 ## Team
 
