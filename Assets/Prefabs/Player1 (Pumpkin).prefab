@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 477475240911130141}
   - component: {fileID: 477475240911130142}
   - component: {fileID: 5448707292747710238}
+  - component: {fileID: 5476530809290586611}
   m_Layer: 7
   m_Name: Player1 (Pumpkin)
   m_TagString: Player
@@ -191,6 +192,10 @@ MonoBehaviour:
   escapeeTrailRenderer: {fileID: 3973773541264925452}
   pumpkinRagdollPref: {fileID: 6121427034608591733, guid: 33198703f1e3ad142b96ee0b309dc985, type: 3}
   scarecrowRagdollPref: {fileID: 792296854035660116, guid: 35781ff58600fa2488f827bc64d0d911, type: 3}
+  pumpkinAbilityEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1f21a61a5fd4da2419e19982d2685b1e, type: 2}
 --- !u!54 &477475240911130142
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -221,6 +226,28 @@ CapsuleCollider:
   m_Height: 0.9055844
   m_Direction: 1
   m_Center: {x: 0.018114805, y: 0.43192342, z: 0}
+--- !u!114 &5476530809290586611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477475240911130139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347122b2fe94d7343a23a34728285d6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &6316367237634732832
 GameObject:
   m_ObjectHideFlags: 0
