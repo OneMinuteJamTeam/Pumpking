@@ -1314,7 +1314,7 @@ GameObject:
   - component: {fileID: 1930554132}
   - component: {fileID: 1930554130}
   m_Layer: 0
-  m_Name: BGMManager
+  m_Name: MusicManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1352,6 +1352,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: fa1df62edca1dad4cb0c8356f4ea373d, type: 2}
+  sfxCrown:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 95c8f91b24aa8894e88d9ceae1ad8ab9, type: 2}
 --- !u!4 &1930554131
 Transform:
   m_ObjectHideFlags: 0

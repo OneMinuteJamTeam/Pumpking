@@ -132,7 +132,7 @@ public class GameController : Singleton<GameController>
 
         Destroy(pickablesContainer);
 
-        BGMManager.Instance.PlaySFXSwapRole();
+        MusicManager.Instance.PlaySFXSwapRole();
         GameUIManager.Instance.PlaySwapPanel();
 
         _pumpkin.SetIsEscaping(!_pumpkin.IsEscaping);
@@ -144,7 +144,7 @@ public class GameController : Singleton<GameController>
         _scarecrow.transform.position = P2SpawnPos.position;
 
         crownsTrapsSpawner.Spawn();
-        BGMManager.Instance.PlaySecondHalfTheme();
+        MusicManager.Instance.PlaySecondHalfTheme();
     }
 
     private void GivePointToEscapee()

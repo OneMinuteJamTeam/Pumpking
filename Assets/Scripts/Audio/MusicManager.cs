@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BGMManager : SingletonDontDest<BGMManager>
+public class MusicManager : SingletonDontDest<MusicManager>
 {
     [Header("BGM Music")]
     [SerializeField]
@@ -18,6 +18,8 @@ public class BGMManager : SingletonDontDest<BGMManager>
     [Header("SFX")]
     [SerializeField]
     private AK.Wwise.Event sfxSwapRole;
+    [SerializeField]
+    private AK.Wwise.Event sfxCrown;
     // Add other events here
 
     private uint currentEventID;
@@ -26,6 +28,11 @@ public class BGMManager : SingletonDontDest<BGMManager>
     {
         firstGameEvent.Stop(this.gameObject);
         sfxSwapRole.Post(this.gameObject);
+    }
+
+    public void PlaySFXCrown()
+    {
+        sfxCrown.Post(this.gameObject);
     }
 
     public void PlaySecondHalfTheme()
