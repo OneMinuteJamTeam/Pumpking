@@ -1333,7 +1333,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2914810054283311323, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
       propertyPath: m_RootOrder
@@ -1605,7 +1605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
@@ -1630,6 +1630,10 @@ PrefabInstance:
     - target: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
       propertyPath: m_Name
       value: P2 ragdoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 2914810054283311322, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2914810054283311323, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
       propertyPath: m_RootOrder
@@ -1908,6 +1912,10 @@ PrefabInstance:
     - target: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
       propertyPath: m_Name
       value: P1 ragdoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858609712450269582, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
