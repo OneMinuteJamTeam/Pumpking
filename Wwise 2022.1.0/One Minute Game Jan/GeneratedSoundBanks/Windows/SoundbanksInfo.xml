@@ -153,7 +153,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{392D3D7A-B620-26D2-B16B-8DF87DC7827D}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{5168C3A4-2C27-F385-2DA4-9EFF6C2DD2A7}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -165,9 +165,17 @@
 					<ShortName>Winner Loop V2.wav</ShortName>
 					<CachePath>SFX/Winner Loop V2_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="106209819" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Resident Evil - Menu Selection Sound RMcD.wav</ShortName>
+					<CachePath>SFX/Resident Evil - Menu Selection Sound RMcD_10C4C929.wem</CachePath>
+				</File>
 				<File Id="263289546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Main Theme Variation V2.wav</ShortName>
 					<CachePath>SFX/Main Theme Variation V2_10C4C929.wem</CachePath>
+				</File>
+				<File Id="284786450" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Resident Evil - Menu Selection 2 Sound RMcD.wav</ShortName>
+					<CachePath>SFX/Resident Evil - Menu Selection 2 Sound RMcD_10C4C929.wem</CachePath>
 				</File>
 				<File Id="290768641" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Scarecrow Footsteps Loop NEW.wav</ShortName>
@@ -283,6 +291,16 @@
 						<MediaRef Id="995933647"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1846620334" Name="UIMenu" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="106209819"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4077887960" Name="UIMenu2" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="284786450"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3332225442" Name="WinnerLoop" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="15425480"/>
@@ -291,5 +309,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7BFEFD92-080C-F165-627F-66B0ADB2D0CB}</FileHash>
+	<FileHash>{6EB88EE8-4DFA-6F0E-E0EE-83A381527EE9}</FileHash>
 </SoundBanksInfo>

@@ -140,6 +140,8 @@
 					<ChildrenList>
 						<Sound Name="Crown Power Up NEW" ID="{40301DAF-4C47-4902-BA26-3AFCCD959343}" ShortID="104624129">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>4</Value>
@@ -522,6 +524,8 @@
 						</Folder>
 						<Sound Name="Role Change" ID="{A2A96023-0B18-469B-9A3F-75FF171551B8}" ShortID="738230595">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="13"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-11</Value>
@@ -549,6 +553,58 @@
 								<ActiveSource Name="Role Change V1" ID="{10D1E3D3-D9E4-4D3C-B998-459108561033}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Folder Name="UI" ID="{5FEA6F8B-85D5-4EF4-BF75-BD128B8CAE2E}" ShortID="55504043">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="24"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Sound Name="UI Menu" ID="{AEDC958C-B705-47AD-B9D5-B930259878DE}" ShortID="523118263">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Resident Evil - Menu Selection Sound RMcD" ID="{1D264463-9FDA-43C3-B600-1DAFCB309867}">
+											<Language>SFX</Language>
+											<AudioFile>Resident Evil - Menu Selection Sound RMcD.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="106209819"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Resident Evil - Menu Selection Sound RMcD" ID="{1D264463-9FDA-43C3-B600-1DAFCB309867}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI Menu2" ID="{CA0A9F91-B9DC-4249-B47A-0A961DA69A2B}" ShortID="387781055">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Resident Evil - Menu Selection 2 Sound RMcD" ID="{6892655D-BF25-47AA-8411-D669B9628F65}">
+											<Language>SFX</Language>
+											<AudioFile>Resident Evil - Menu Selection 2 Sound RMcD.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="284786450"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Resident Evil - Menu Selection 2 Sound RMcD" ID="{6892655D-BF25-47AA-8411-D669B9628F65}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

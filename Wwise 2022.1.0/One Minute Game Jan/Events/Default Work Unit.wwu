@@ -181,6 +181,32 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="UI" ID="{CE9D7F87-AFFE-4B1A-A562-E6E6A9D9BA5E}" ShortID="718288932">
+							<ChildrenList>
+								<Event Name="UIMenu" ID="{D5AC77BF-B38C-4B70-9C95-0B76E32F5C90}">
+									<ChildrenList>
+										<Action Name="" ID="{38656676-5A86-4366-9880-D14A65E6E062}" ShortID="18026442">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI Menu" ID="{AEDC958C-B705-47AD-B9D5-B930259878DE}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="UIMenu2" ID="{AEB8DA71-EAA5-4ABD-9DA3-CD4B449D6112}">
+									<ChildrenList>
+										<Action Name="" ID="{4A161A5F-AD08-4EBD-A85B-344B5933A1F0}" ShortID="438525832">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="UI Menu2" ID="{CA0A9F91-B9DC-4249-B47A-0A961DA69A2B}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
