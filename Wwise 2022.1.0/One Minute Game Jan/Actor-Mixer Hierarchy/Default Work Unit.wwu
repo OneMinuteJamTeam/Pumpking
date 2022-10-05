@@ -30,6 +30,72 @@
 								<ActiveSource Name="Intro Loop V2" ID="{4112512C-6F02-418B-ADDE-16DA64F7E314}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Main Theme" ID="{A4459450-B9DB-4EE6-8779-B3C82C442567}" ShortID="13847969">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Main Theme V3" ID="{6CF2481E-0F23-425C-A21B-0AA75D9E0D43}">
+									<Language>SFX</Language>
+									<AudioFile>Main Theme V3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1028424601"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Main Theme V3" ID="{6CF2481E-0F23-425C-A21B-0AA75D9E0D43}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Main Theme 2" ID="{8CB92251-7C04-4864-929E-87EA0D86ED2D}" ShortID="54486432">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Main Theme Variation V2" ID="{995F00C5-A44B-417D-BADF-D8E5A304701F}">
+									<Language>SFX</Language>
+									<AudioFile>Main Theme Variation V2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="263289546"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Main Theme Variation V2" ID="{995F00C5-A44B-417D-BADF-D8E5A304701F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Winners Loop" ID="{809D7EE1-4333-44C7-8A6D-66B0CAE9923B}" ShortID="273584756">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Winner Loop V2" ID="{75674B57-7E19-4E0D-AFC2-C15FD4A261B4}">
+									<Language>SFX</Language>
+									<AudioFile>Winner Loop V2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="15425480"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Winner Loop V2" ID="{75674B57-7E19-4E0D-AFC2-C15FD4A261B4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{A66A6B66-44DB-452F-8D6C-723E3E4460AF}" ShortID="474240466">
@@ -178,6 +244,28 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<Sound Name="Role Change" ID="{A2A96023-0B18-469B-9A3F-75FF171551B8}" ShortID="738230595">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{985AC251-B705-475E-977E-EA4C43248CF2}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8F2E5EB9-9B2C-4593-B783-8B0DAA09C14D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Role Change V1" ID="{10D1E3D3-D9E4-4D3C-B998-459108561033}">
+									<Language>SFX</Language>
+									<AudioFile>Role Change V1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="443042347"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Role Change V1" ID="{10D1E3D3-D9E4-4D3C-B998-459108561033}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
