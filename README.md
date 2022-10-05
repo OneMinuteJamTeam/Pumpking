@@ -45,6 +45,8 @@ Player 1: W/A/S/D Move - Q/E Ability
 
 Player 2: I/J/K/L Move - U/O Ability
 
+You can download and play the game here: https://itch.io/jam/one-minute-game-jam-8
+
 ## Team
 
 **Developers**:
