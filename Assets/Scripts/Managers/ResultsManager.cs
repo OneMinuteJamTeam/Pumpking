@@ -28,7 +28,7 @@ public class ResultsManager : Singleton<ResultsManager>
             StartCoroutine(winAnimation(pumpkinRagdoll));
             scareCrowRagdollDead.SetActive(true);
 
-            pumpkinRagdoll.GetComponent<ResultRagdoll>().SetActiveCrown(true);
+            //pumpkinRagdoll.GetComponent<ResultRagdoll>().SetActiveCrown(true);
 
             winText.text = "Player 1 wins!";
         }
@@ -38,7 +38,7 @@ public class ResultsManager : Singleton<ResultsManager>
             StartCoroutine(winAnimation(scareCrowRagdoll));
             pumpkinRagdollDead.SetActive(true);
 
-            scareCrowRagdoll.GetComponent<ResultRagdoll>().SetActiveCrown(true);
+            //scareCrowRagdoll.GetComponent<ResultRagdoll>().SetActiveCrown(true);
 
             winText.text = "Player 2 wins!";
         }

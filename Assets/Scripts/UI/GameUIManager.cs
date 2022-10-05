@@ -48,7 +48,7 @@ public class GameUIManager : Singleton<GameUIManager>
     public void UpdateRolesText()
     {
         Pumpkin p = FindObjectOfType<Pumpkin>();
-        if (p.IsEscaping)
+        if (p.Role == Player.eRole.Escapee)
         {
             pumpkinRoleText.text = "Escapee";
             scarecrowRoleText.text = "Chaser";

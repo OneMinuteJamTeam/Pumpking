@@ -283,6 +283,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pumpkinText: {fileID: 612780631}
   scarecrowText: {fileID: 282685056}
+  pumpkinRagdoll: {fileID: 765398695}
+  scarecrowRagdoll: {fileID: 1925599833}
 --- !u!1001 &180398175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -946,6 +948,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642671579}
   m_CullTransparentMesh: 1
+--- !u!114 &765398695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 765398695, guid: 2eb57795ba672d84d98797b93bb6cb6e, type: 3}
+  m_PrefabInstance: {fileID: 323704806}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a05239fb7f46a684985eb4fdd0082e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1007468314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1007468315}
+  - component: {fileID: 1007468316}
+  m_Layer: 0
+  m_Name: SwapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1007468315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007468314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.31608492, y: 0.57630205, z: 10.765079}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1007468316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007468314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba338ce735b6e0b44b74fe5fbb83aec6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pumpkin: {fileID: 765398695}
+  scarecrow: {fileID: 1925599833}
 --- !u!1 &1020840164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2791,17 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &1925599833 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1925599833, guid: 995c6340a3ff5f04b86178998ef7cb12, type: 3}
+  m_PrefabInstance: {fileID: 1682090684}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badf010b10e6a134fb912038fd081ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2089744030
 GameObject:
   m_ObjectHideFlags: 0

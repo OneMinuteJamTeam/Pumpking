@@ -11,9 +11,18 @@ public abstract class Player : MonoBehaviour
         PlayerTwo,
     }
 
-    public bool IsEscaping { get => isEscaping; }
+    public enum eRole {
+        Chaser,
+        Escapee
+    }
+
+    //public bool IsEscaping { get => isEscaping; }
+    public eRole Role { get { return role; } }
     public bool CanReadInput { get; set; }
     public bool CanMove { get; set; }
+
+    public static string P1_ESCAPEE_KEY = "ESCAPEE_KEY";
+    public static string P2_ESCAPEE_KEY = "ESCAPEE_KEY";
 
     [Header("References")]
     [SerializeField]
@@ -28,12 +37,13 @@ public abstract class Player : MonoBehaviour
     protected float rotationSpeed = 100.0f;
     [SerializeField]
     protected float abilityCooldown = 2.0f;
-    [SerializeField]
-    protected bool isEscaping = false;
+    //[SerializeField]
+    //protected bool isEscaping = false;
     [SerializeField]
     protected PlayerNumber playerNumber;
     [SerializeField] 
     protected GameObject model;
+    protected eRole role;
 
     protected bool canUseAbility = true;
 
@@ -46,10 +56,10 @@ public abstract class Player : MonoBehaviour
 
     protected Animator animator;
 
-    public virtual void SetIsEscaping(bool isEscaping)
+    public virtual void SetRole(eRole _role)
     {
-        this.isEscaping = isEscaping;
-        if (isEscaping) {
+        role = _role;
+        if (_role == eRole.Escapee) {
             playerLight.color = ColorsManager.Instance.EscapeeLightColor;
             coolDownBar.SetColor(ColorsManager.Instance.EscapeeUiColor);
         }
@@ -58,6 +68,11 @@ public abstract class Player : MonoBehaviour
             playerLight.color = ColorsManager.Instance.ChaserLightColor;
             coolDownBar.SetColor(ColorsManager.Instance.ChaserUiColor);
         }
+    }
+
+    public void SwapRole() {
+        if(role == eRole.Escapee) SetRole(eRole.Chaser);
+        else SetRole(eRole.Escapee);
     }
 
     public PlayerNumber GetPlayerNumber() => playerNumber;

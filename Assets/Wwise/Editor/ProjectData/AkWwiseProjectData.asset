@@ -373,11 +373,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 8b5987b36d4a224d975cd20e32ab5477
     GuidInternal: 
-    m_lastTime: -8585366970869465928
+    m_lastTime: -8585366441856044806
     List:
-    - name: Bullet
-      guid: 4f7111e969b5a64884def8ae6aee2db4
-      id: 1256513485
+    - name: Music
+      guid: 7bf3d8aa0c4fb34cac39079053852a44
+      id: 3991942870
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -385,10 +385,27 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 8b5987b36d4a224d975cd20e32ab5477
-      - ElementName: Bullet
-        ObjectType: 3
-        guid: 4f7111e969b5a64884def8ae6aee2db4
-      Path: Events\Default Work Unit\Bullet
+      - ElementName: Music
+        ObjectType: 4
+        guid: 7bf3d8aa0c4fb34cac39079053852a44
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX
+      guid: 93969627b61709488bed5575491d0dec
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8b5987b36d4a224d975cd20e32ab5477
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 93969627b61709488bed5575491d0dec
+      Path: Events\Default Work Unit\SFX
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
