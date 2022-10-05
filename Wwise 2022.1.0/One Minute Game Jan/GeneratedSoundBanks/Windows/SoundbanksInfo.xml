@@ -153,7 +153,7 @@
 				</AcousticTexture>
 			</AcousticTextures>
 		</SoundBank>
-		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{3F37F41F-FB31-C5CE-4B8B-ACA10BF746B3}">
+		<SoundBank Id="3161908922" Type="User" Language="SFX" Hash="{8F03BABE-B84A-B809-4E4A-3320CAA9B5EF}">
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<Media>
@@ -247,7 +247,7 @@
 						<MediaRef Id="1028424601"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3826150991" Name="MainThemeStart2" DurationType="OneShot" DurationMin="30.479795" DurationMax="30.479795">
+				<Event Id="3826150991" Name="MainThemeStart2" DurationType="OneShot" DurationMin="32.979797" DurationMax="32.979797">
 					<MediaRefs>
 						<MediaRef Id="263289546"/>
 					</MediaRefs>
@@ -291,5 +291,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BC685A17-066F-D7C3-9B12-9E6EC3EC1246}</FileHash>
+	<FileHash>{38F77311-67AA-37D4-0E28-BC11B42EB291}</FileHash>
 </SoundBanksInfo>

@@ -50,6 +50,9 @@
 						<Event Name="MainThemeStart2" ID="{FBAA710C-4F15-42D6-BEE7-900A39D040C9}">
 							<ChildrenList>
 								<Action Name="" ID="{4BCBACE2-F815-4F30-98E5-8559762D87A9}" ShortID="389561584">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2.5"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Main Theme 2" ID="{8CB92251-7C04-4864-929E-87EA0D86ED2D}" WorkUnitID="{CC10CEEE-B04B-4B0B-A5D3-DB113DB17827}"/>
