@@ -105,7 +105,7 @@ public abstract class Player : MonoBehaviour
     // PLAYER CAN ROTATE WHEN TRAPPED
     protected virtual void HandleMovement() {
 
-        Debug.Log(playerNumber+": is speed controlled: "+IsSpeedControlled);
+        //Debug.Log(playerNumber+": is speed controlled: "+IsSpeedControlled);
 
         if (IsSpeedControlled) {
             if (CanMove) {

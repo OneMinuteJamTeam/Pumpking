@@ -71252,6 +71252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7388373762313411122, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+      propertyPath: trailRenderer
+      value: 
+      objectReference: {fileID: 2072093695}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
 --- !u!114 &2072093694 stripped
@@ -71265,6 +71269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea80be84cb3da0469551a1bd6ecccc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!96 &2072093695 stripped
+TrailRenderer:
+  m_CorrespondingSourceObject: {fileID: 1669269786049042395, guid: 5d0cdefb79434da42b9d7942f34bb052, type: 3}
+  m_PrefabInstance: {fileID: 2072093693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2072175837
 GameObject:
   m_ObjectHideFlags: 0
