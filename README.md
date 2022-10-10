@@ -5,7 +5,7 @@
 
 **Pumpking** was created as a submission for the "**One Minute Game Jam**" 
 
-Check the trailer here: https://www.youtube.com/watch?v=gbmbs2iLoRY&ab_channel=Nicol%C3%B2Bertoli
+Check the trailer here: https://www.youtube.com/watch?v=r3uRZQ_iafY
 
 ## The Game
 
