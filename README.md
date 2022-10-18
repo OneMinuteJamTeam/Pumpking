@@ -1,12 +1,11 @@
 # Pumpking
 [![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3.svg?style=flat&logo=unity)](https://www.unity.com)
 
-#<img src="https://img.itch.zone/aW1hZ2UvMTczNDUyMi8xMDIxMDgzNC5wbmc=/original/Zor0yU.png" width="750">
-{% include embed.html url="https://www.youtube.com/embed/r3uRZQ_iafY" %}
+<img src="https://img.itch.zone/aW1hZ2UvMTczNDUyMi8xMDIxMDgzNC5wbmc=/original/Zor0yU.png" width="750">
 
 **Pumpking** was created as a submission for the "**One Minute Game Jam**" 
 
-#Check the trailer here: https://www.youtube.com/watch?v=r3uRZQ_iafY
+Check the trailer here: https://www.youtube.com/watch?v=r3uRZQ_iafY
 
 ## The Game
 
